@@ -1,16 +1,13 @@
-import Home from '@/Pages/Home'
-import Research from '@/Pages/Research'
 
 
 import React from 'react'
+import Home from './(Pages)/Home/page'
+
 
 const page = () => {
   return (
     <>
-   
-      <Home />
-      <Research />
-
+    <Home/>
     </>
   )
 }
