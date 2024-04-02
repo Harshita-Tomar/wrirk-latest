@@ -10,7 +10,7 @@ const Header = () => {
         <Image className="rounded-full"  width={60} height={60} src="/Images/wrirkLogo.png" alt="image" />
         <div className='flex gap-7 items-center'>
             <a href="/" className='text-[#000000B2] hover:text-black'>Home</a>
-            <a href="/Research" className='text-[#000000B2] hover:text-black'>Research</a>
+            <a href="research" className='text-[#000000B2] hover:text-black'>Research</a>
             <a href="#" className='text-[#000000B2] hover:text-black'>Pricing</a>
             <a href="#" className='text-[#000000B2] hover:text-black'>Services</a>
             <a href="#" className='text-[#000000B2] hover:text-black'>Portfolio</a>

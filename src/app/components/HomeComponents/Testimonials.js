@@ -1,6 +1,7 @@
-import TestimonialCards from '@/Utils/HomeUtils/TestimonialCards'
+
 import React from 'react'
 import "@fontsource/dm-sans";
+import TestimonialCards from '@/app/Utils/HomeUtils/TestimonialCards';
 
 const Testimonials = () => {
     return (

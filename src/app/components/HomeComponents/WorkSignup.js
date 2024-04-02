@@ -1,6 +1,7 @@
-import WorkCards from '@/Utils/HomeUtils/WorkCards'
+
 import React from 'react'
 import Image from 'next/image';
+import WorkCards from '@/app/Utils/HomeUtils/WorkCards';
 
 const WorkSignup = () => {
     return (
