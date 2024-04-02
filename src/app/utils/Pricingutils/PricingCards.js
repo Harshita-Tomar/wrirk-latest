@@ -7,7 +7,7 @@ const PricingCards = () => {
     <div className='rounded-[30px] py-10 px-8 border-[1px] border-[#EFF0F6] shadow-custom font-sans'>
       <div className='flex justify-start items-center py-3'>
         <div>image</div>
-        <h2 className='text-[#064454] font-bold ps-4 text-[20px]'>Implementation/Analysis</h2>
+        <h2 className='text-[#064454] font-bold ps-4 text-[20px]'>Implementation / Analysis</h2>
       </div>
       <p className='text-[#575757] text-[16px] leading-[26px]'>Lead generation strategy refers to the marketing process of involving and capturing interest in a product or service in order to .</p>
       <div className='flex items-end'>
@@ -29,6 +29,11 @@ const PricingCards = () => {
         <li className='flex items-center justify-start'><Image className="rounded-full me-2 mt-1" width={25} height={25} src="/Images/check.png" alt="image" /><p className='text-[14px]'>500 Respondent</p> 
         </li>
       </ul>
+
+<div className='flex items-center justify-center pb-4 pt-8'>
+  <button className='px-24 py-4 rounded-full text-[16px] text-white font-medium bg-[#064454]'>Get started</button>
+</div>
+
     </div>
   )
 }
