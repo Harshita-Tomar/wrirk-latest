@@ -1,6 +1,7 @@
 import React from 'react'
 import Image from 'next/image';
 import { global } from 'styled-jsx/css'
+import Link from 'next/link';
 // import Link from 'next/link';
 
 const Header = () => {
@@ -12,7 +13,7 @@ const Header = () => {
             <a href="/" className='text-[#000000B2] hover:text-black'>Home</a>
             <a href="/Research" className='text-[#000000B2] hover:text-black'>Research</a>
             <a href="#" className='text-[#000000B2] hover:text-black'>Pricing</a>
-            <a href="#" className='text-[#000000B2] hover:text-black'>Services</a>
+            <Link href="/service" className='text-[#000000B2] hover:text-black'>Services</Link>
             <a href="#" className='text-[#000000B2] hover:text-black'>Portfolio</a>
             <div className='h-9 border-s-[1px] border-[#000000B2] py-3 px-1'></div>
             <a href="#" className='hover:text-[#2E8095]'>Sign in</a>

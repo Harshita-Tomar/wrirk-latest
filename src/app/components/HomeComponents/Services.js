@@ -1,6 +1,6 @@
 import React from 'react'
-import ServiceCards from '@/Utils/HomeUtils/ServiceCards';
 import Image from 'next/image';
+import ServiceCards from '@/app/Utils/HomeUtils/ServiceCards';
 
 const Services = () => {
     return (
