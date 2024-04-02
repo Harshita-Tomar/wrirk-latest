@@ -1,3 +1,5 @@
+import Footer from "./components/Footer";
+import Header from "./components/Header";
 import "./globals.css";
 import '@fontsource/poppins'; 
 
@@ -9,7 +11,11 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className="font-poppins 2xl:container 2xl:mx-auto xl:mx-auto lg:mx-0 md:mx-0 sm:mx-0 mx-0">{children}</body>
+      <body className="font-poppins 2xl:container 2xl:mx-auto xl:mx-auto lg:mx-0 md:mx-0 sm:mx-0 mx-0">
+        <Header />
+        {children}
+        <Footer />
+        </body>
     </html>
   );
 }

@@ -13,7 +13,6 @@ import WorkSignup from '@/app/components/HomeComponents/WorkSignup'
 const Home = () => {
   return (
     <>
-      <Header />
       <Hero />
       <About />
       <Services />
@@ -21,7 +20,6 @@ const Home = () => {
       <WorkSignup />
       <GetinTouch />
       <Testimonials />
-      <Footer />
     </>
   )
 }
