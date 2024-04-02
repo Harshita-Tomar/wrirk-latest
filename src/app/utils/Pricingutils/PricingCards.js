@@ -6,7 +6,7 @@ const PricingCards = () => {
   return (
     <div className='rounded-[30px] py-10 px-8 border-[1px] border-[#EFF0F6] shadow-custom font-sans'>
       <div className='flex justify-start items-center py-3'>
-        <div>image</div>
+      <div className='p-2 flex items-center justify-center bg-[#ECEBFF] rounded-lg'><Image  width={30} height={30} src="/Images/pricingcard-logo1.png" alt="image" /></div>
         <h2 className='text-[#064454] font-bold ps-4 text-[20px]'>Implementation / Analysis</h2>
       </div>
       <p className='text-[#575757] text-[16px] leading-[26px]'>Lead generation strategy refers to the marketing process of involving and capturing interest in a product or service in order to .</p>

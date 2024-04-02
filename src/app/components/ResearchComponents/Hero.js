@@ -8,7 +8,7 @@ const Hero = () => {
   return (
     <div class="divide-y divide-white relative">
       {/* <div class="container mx-auto"> */}
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-4 relative">
+      {/* <div class="grid grid-cols-1 md:grid-cols-2 gap-4 relative">
         <div class="bg-cyan-800 text-white p-4 w-full max-w-md relative " style={{ height: '33rem' }} >
 
           <div style={{ marginTop: '2rem' }} >
@@ -46,10 +46,10 @@ const Hero = () => {
           <h2 class="text-lg font-bold">Div 2</h2>
           <p>This div is visible on laptop, tablet, and mobile devices.</p>
         </div>
-      </div>
+      </div> */}
       {/* </div> */}
 
-      <div class="absolute top-[395px] h-48 w-full bg-cyan-950 rounded-tl-3xl ">
+      {/* <div class="absolute top-[395px] h-48 w-full bg-cyan-950 rounded-tl-3xl ">
         <div class="absolute inset-0">
           <div class="flex justify-center items-center h-full">
             <div class="text-center text-sky-200">
@@ -57,10 +57,10 @@ const Hero = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
 
 
-      <div class="container mx-auto mt-8" style={{ marginTop: '5rem' }}>
+      {/* <div class="container mx-auto mt-8" style={{ marginTop: '5rem' }}>
         <div class="grid grid-cols-2 gap-4 lg:grid-cols-3 " style={{ borderColor: 'red' }}>
           <div class=" p-4">
             <div class="max-w-sm rounded-3xl  overflow-hidden shadow-lg">
@@ -105,7 +105,7 @@ const Hero = () => {
           </div>
           <div class=" p-4">
             <div class="max-w-sm rounded-3xl overflow-hidden shadow-lg">
-              {/* <Image  width={200} height={520} src="/Images/researchport.png" alt="image" /> */}
+             
               <img class="block mx-auto w-full max-w-96 max-h-full " src="/Images/researchport.png" alt="image" />
 
               <div class="px-6 py-4">
@@ -188,11 +188,11 @@ const Hero = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
 
 
 
-      <div class="p-4 " style={{ marginTop: '3rem' }}>
+      {/* <div class="p-4 " style={{ marginTop: '3rem' }}>
         <div class="grid lg:grid-cols-2 gap-4 sm:grid-cols-1 gap-4 md:grid-cols-2 gap-4">
 
           <div class="p-4 text-xl ">
@@ -337,7 +337,7 @@ const Hero = () => {
 
 
         </div>
-      </div>
+      </div> */}
     </div>
 
   );

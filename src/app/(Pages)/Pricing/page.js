@@ -6,10 +6,8 @@ import PricingSection from '@/app/components/Pricing Components/PricingSection';
 const Pricing = () => {
   return (
     <>
-    
      <Hero/>
      <PricingSection/>
-  
     </>
   )
 }
