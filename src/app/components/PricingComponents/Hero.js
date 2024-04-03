@@ -19,15 +19,13 @@ const Hero = () => {
                 <div className='flex justify-center items-center p-2 gap-4'>
                     <div className='flex relative'>
                         <Image className="rounded-full" width={16} height={16} src="/Images/imgsm1.png" alt="image" />
-                        <Image className="rounded-full  " width={16} height={16} src="/Images/imgsm2.png" alt="image" />
+                        <Image className="rounded-full" width={16} height={16} src="/Images/imgsm2.png" alt="image" />
                         <Image className="rounded-full" width={16} height={16} src="/Images/imgsm3.png" alt="image" />
                     </div>
                     <div>
                         <p className='text-[10px] underline text-[#000000BF]'>+500 Happy Scholars</p>
                     </div>
                 </div>
-
-
 
                 <div className="mt-4 flex items-center justify-center mx-auto  ">
                     <ul className="flex flex-wrap text-sm font-medium text-center bg-[#064454] text-white p-1 rounded-sm" id="default-tab" data-tabs-toggle="#default-tab-content" role="tablist">
@@ -36,7 +34,7 @@ const Hero = () => {
                         </li>
                         <li role="presentation">
                             <button className="inline-block rounded-sm px-2 py-1" id="abroad-tab" data-tabs-target="#abroad" type="button" role="tab" aria-controls="abroad" aria-selected="false">Abroad University</button>
-                        </li>                      
+                        </li>
                     </ul>
                 </div>
                 {/*<div id="default-tab-content">
@@ -47,8 +45,6 @@ const Hero = () => {
                         <p className="text-sm text-black">p</p>
                     </div>                  
                 </div>*/}
-
-
             </div>
         </>
     )

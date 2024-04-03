@@ -20,10 +20,8 @@ const WorkCards = () => {
                             <a href="#" className='text-black text-[12px] font-bold'>Read more</a>
                         </div>
                     </div>
-                </div>
-                
-
-            </div>
+                </div>            
+            </div>     
         </>
     )
 }
