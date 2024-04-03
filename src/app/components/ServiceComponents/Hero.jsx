@@ -12,8 +12,7 @@ const Hero = () => {
             multiple items and navigate between them using the control buttons and indicators.
             Use the responsive carousel component to allow users to slide through multiple
             items and navigate between them using the control buttons and indicators.</h3>
-<div className='pt-6 pb-16'> <button type='button' className='bg-[#064454] text-white px-8 py-2 rounded-lg'>Contact Us</button></div>
-         
+          <div className='pt-6 pb-16'><button type='button' className='bg-[#064454] text-white px-8 py-2 rounded-lg'>Contact Us</button></div>         
         </div>
         <div className='bg-[#064454] px-4 pt-4 pb-24 rounded-bl-[150px] relative z-0'>
           <div className='flex items-start justify-center'>
