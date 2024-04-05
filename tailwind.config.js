@@ -25,6 +25,8 @@ module.exports = {
       'serif': ['ui-serif', 'Georgia'],
       'mono': ['ui-monospace', 'SFMono-Regular'],
       'grypen': ['"Qwitcher Grypen"', 'cursive'],
+      'roboto': [ 'Roboto', 'sans-serif'],
+
       // Add any other custom font families here
     },
     boxShadow: {

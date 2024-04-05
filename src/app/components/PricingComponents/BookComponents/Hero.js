@@ -8,18 +8,18 @@ const Hero = () => {
 	return (
 		<>
 			{/* Heading div */}
-			<div className='flex justify-between items-center w-full px-10 py-6 bg-[#2E8095]'>
-				<div className='2xl:leading-[44px] xl:leading-[44px] lg:leading-[44px] md:leading-[30px] sm:leading-[24px] leading-[24px]'>
-					<h3 className='2xl:text-[46px] xl:text-[46px] lg:text-[42px] md:text-[30px] sm:text-[20px] text-[20px] text-white font-black tracking-wide'>BOOK </h3>
+			<div className='flex justify-between items-center w-full 2xl:px-10 xl:px-10 lg:px-10 md:px-6 sm:px-4 px-4 py-6 bg-[#2E8095]'>
+				<div className='2xl:leading-[44px] xl:leading-[44px] lg:leading-[44px] md:leading-[36px] sm:leading-[30px] leading-[30px]'>					
+					<h3 className='2xl:text-[42px] xl:text-[42px] lg:text-[42px] md:text-[36px] sm:text-[30px] text-[28px] text-white font-black tracking-wide'>BOOK </h3>
 				</div>
 				<div className='w-full flex items-center justify-end overflow-hidden object-cover'>
-					<Image className="rounded-md" width={200} height={200} src="/Images/book-img.png" alt="image" />
+					<Image className="rounded-md 2xl:ps-0 xl:ps-0 lg:ps-0 md:ps-10 sm:ps-10 ps-10" width={200} height={200} src="/Images/book-img.png" alt="image" />
 				</div>
 			</div>
 
 			{/* Admission proposal section */}
 
-			<div className='w-full px-10 py-10'>
+			<div className='w-full 2xl:px-10 xl:px-10 lg:px-10 md:px-6 sm:px-4 px-4 py-10'>
 				<div className='rounded-[20px] border-[1px] border-[#00000066] shadow-custom2 flex items-center justify-between'>
 					<div className='2xl:px-20 xl:px-20 lg:px-20 md:px-10 sm:px-6 px-6 py-6 2xl:w-2/3 xl:w-2/3 lg:w-2/3 md:w-full sm:w-full w-full'>
 
@@ -45,9 +45,12 @@ const Hero = () => {
 
 						{/* buttons */}
 
-						<div className="grid grid-cols-3 2xl:gap-4 xl:gap-4 lg:gap-4 md:gap-3 sm:gap-3 gap-3 xl:w-2/3 3xl:2/3 2xl:w-2/3 lg:w-2/3 md:w-full sm:w-full w-full  justify-between relative 2xl:py-4 xl:py-4 lg:py-4 md:py-4 sm:py-4 py-4">
-							<button className="cursor-pointer 2xl:px-6 xl:px-6 lg:px-6 md:px-4 sm:px-2 px-2 py-2 border-[1px] text-white bg-[#2E8095] rounded-md text-center text-wrap">Standard/<br/>Manual</button>
+						<div className="grid grid-cols-3 2xl:gap-4 xl:gap-4 lg:gap-4 md:gap-3 sm:gap-3 gap-3 xl:w-2/3 3xl:2/3 2xl:w-2/3 lg:w-2/3 md:w-full sm:w-full w-full  justify-between relative 2xl:py-4 xl:py-4 lg:py-4 md:py-4 sm:py-4 py-4 2xl:text-[14px] xl:text-[14px] lg:text-[14px] md:text-[14px] sm:text-[12px] text-[12px]">
+
+							<button className="cursor-pointer 2xl:px-6 xl:px-6 lg:px-6 md:px-4 sm:px-2 px-2 py-2 border-[1px] text-white bg-[#2E8095] rounded-md text-center text-wrap leading-[16px]">Standard/<br/>Manual</button>
+
 							<button className="cursor-pointer 2xl:px-6 xl:px-6 lg:px-6 md:px-4 sm:px-2 px-2 py-2 border-[1px] text-cyan-700 border-cyan-700 rounded-md text-center">Mendely</button>
+
 							<button className="cursor-pointer 2xl:px-6 xl:px-6 lg:px-6 md:px-4 sm:px-2 px-2 py-2 border-[1px] text-cyan-700 border-cyan-700 rounded-md text-center">Zotero</button>
 						</div>	
 
@@ -146,7 +149,7 @@ const Hero = () => {
 							<div className='rounded-[20px] border-[1px] border-[#2E8095]'>
 
 								<div className="relative overflow-x-auto rounded-[18px]">
-									<h3 className='py-2 px-10 text-[20px] font-bold'>Price Distribution</h3>
+									<h3 className='py-8 px-10 text-[20px] font-bold'>Price Distribution</h3>
 									<table className="w-full text-sm text-left rtl:text-right text-black">
 										<tbody>
 											<tr className="bg-white">
@@ -177,10 +180,10 @@ const Hero = () => {
 												<th scope="row" className="px-10 py-2 font-medium text-black whitespace-nowrap border-e-[2px] border-[#00000059]">
 													Revise
 												</th>
-												<td className="px-10 pt-2 pb-6">
+												<td className="px-10 py-2">
 													₹5000
 												</td>
-											</tr>
+											</tr>																				
 											<tr className="bg-white">
 												<th scope="row" className="px-10 pt-2 pb-6 font-medium text-black whitespace-nowrap border-e-[2px] border-[#00000059]">
 													No. of Pages
@@ -195,7 +198,7 @@ const Hero = () => {
 													Total
 												</th>
 												<td className="px-10 py-4">
-													₹75000
+													₹45000
 												</td>
 											</tr>
 										</tbody>

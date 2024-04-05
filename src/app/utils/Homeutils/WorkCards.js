@@ -10,9 +10,9 @@ const WorkCards = () => {
                 <Image width={350} height={250} src="/Images/work1img.png" alt="image" objectFit="cover" layout="responsive" />
                 </div>
                 <div className='px-2  py-2'>
-                    <h1 className='font-extrabold text-[#2D3748] text-[24px] py-3 ps-5 pe-7'>long established</h1>
-                    <p className='font-normal text-[#718096] text-[14px] leading-[20.9px] ps-5 pe-7 py-1'>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that....</p>
-                    <div className='flex gap-10 justify-between items-center ps-5 pe-7 py-6'>
+                    <h1 className='font-extrabold text-[#2D3748] 2xl:text-[24px] xl:text-[24px] lg:text-[24px] md:text-[24px] sm:text-[24px] text-[24px] 2xl:py-5 xl:py-5 lg:py-5 md:py-4 sm:py-2 py-2 2xl:ps-5 xl:ps-5 lg:ps-5 md:ps-2 sm:ps-2 ps-2 2xl:pe-7 xl:pe-7 lg:pe-7 md:pe-2 sm:pe-2 pe-2'>long established</h1>
+                    <p className='font-normal text-[#718096] text-[14px] leading-[20.9px] 2xl:ps-5 xl:ps-5 lg:ps-5 md:ps-2 sm:ps-2 ps-2 2xl:pe-7 xl:pe-7 lg:pe-7 md:pe-2 sm:pe-2 pe-2 py-1 text-justify'>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that....</p>
+                    <div className='flex gap-10 justify-between items-center 2xl:ps-5 xl:ps-5 lg:ps-5 md:ps-2 sm:ps-2 ps-2 2xl:pe-7 xl:pe-7 lg:pe-7 md:pe-2 sm:pe-2 pe-2 2xl:py-6 xl:py-6 lg:py-6 md:py-4 sm:py-2 py-2'>
                         <div>
                             <p className='text-[#718096] text-[12px] font-thin'>May 20th 2020</p>
                         </div>

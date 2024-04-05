@@ -7,7 +7,7 @@ import PortfolioCards from '@/app/utils/Portfolioutils/PortfolioCards'
 const PortCardSection = () => {
 	return (
 		<>
-			<div className='w-full mx-auto px-4 pt-8 pb-10'>
+			<div className='w-full mx-auto px-4 pt-8 pb-6'>
 
 				<h1 className="text-[30px] text-center text-black font-black font-mulish pb-4">WRIRK IMPLEMENTATIONS</h1>
 

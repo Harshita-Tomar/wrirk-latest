@@ -31,7 +31,7 @@ const PricingCards = () => {
       </ul>
 
 <div className='flex items-center justify-center pb-4 pt-8'>
-  <button className='px-24 py-4 rounded-full text-[16px] text-white font-medium bg-[#064454]'>Get started</button>
+  <button className='2xl:px-24 xl:px-24 lg:px-24 md:px-16 sm:px-16 px-16 py-4 rounded-full text-[16px] text-white font-medium bg-[#064454]'>Get started</button>
 </div>
 
     </div>

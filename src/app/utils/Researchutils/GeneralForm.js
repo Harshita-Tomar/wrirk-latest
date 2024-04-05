@@ -1,4 +1,7 @@
 import React from 'react'
+import { IoSearchOutline, IoChevronDownSharp } from 'react-icons/io5';
+import { BsTag } from 'react-icons/bs';
+import Image from 'next/image';
 
 const GeneralForm = () => {
   return (

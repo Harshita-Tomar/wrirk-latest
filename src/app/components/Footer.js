@@ -11,7 +11,7 @@ const Footer = () => {
 
           <div>
             <Image className="ps-1" width={80} height={80} src="/Images/wrirkfootlogo.png" alt="image" />
-            <p className='py-1 pe-5 text-[14px] text-[#FFFFFF]'>Collaboration platform for modern teams.</p>
+            <p className='py-2 pe-5 ps-2 text-[14px] text-[#FFFFFF]'>Collaboration platform for modern teams.</p>
           </div>
 
           <div className='text-white'>

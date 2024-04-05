@@ -34,7 +34,7 @@ const Serviceform = () => {
                         </div>
 
                         <div className='flex justify-center mb-0 pb-0'>
-                           <button type="submit" class="text-white px-10  text-lg rounded-[25px] bg-sky-600 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Send</button>
+                           <button type="submit" class="text-white px-16 font-medium text-[18px] rounded-[25px] bg-[#2A96B1] hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300  sm:w-auto px-5 py-2.5 text-center">Send</button>
                         </div>  
                     </form>
                 </div>

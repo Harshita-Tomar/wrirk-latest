@@ -12,7 +12,7 @@ const Testimonials = () => {
                     </div>
                     <h1 className='2xl:text-[34px] xl:text-[34px] lg:text-[34px] md:text-[26px] sm:text-[22px] text-[22px] text-white font-semibold tracking-wider'>Hear what our clients say</h1>
                     <p className='py-1 text-[#E4DDDD] font-thin 2xl:text-[18px] xl:text-[18px] lg:text-[18px] md:text-[14px] sm:text-[14px] text-[14px]'>Don’t just take our word for it. Here are a few (of many) reviews of GatherPlace.</p>
-                    <div className='grid 2xl:grid-cols-2 xl:grid-cols-2 lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-1 grid-cols-1 items-center justify-center 2xl:gap-x-20 xl:gap-x-20 lg:gap-x-20 md:gap-x-10 sm:gap-x-10 gap-x-10 2xl:gap-y-16 xl:gap-y-16 lg:gap-y-16 md:gap-y-10 sm:gap-y-10 gap-y-10 2xl:py-6 xl:py-6 lg:py-6 md:py-4 sm:py-4 py-4'>
+                    <div className='grid 2xl:grid-cols-2 xl:grid-cols-2 lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-1 grid-cols-1 items-center justify-center 2xl:gap-x-20 xl:gap-x-20 lg:gap-x-20 md:gap-x-10 sm:gap-x-10 gap-x-10 2xl:gap-y-16 xl:gap-y-16 lg:gap-y-16 md:gap-y-10 sm:gap-y-10 gap-y-10 2xl:py-6 xl:py-6 lg:py-6 md:py-4 sm:py-4 py-4 relative overflow-y-auto h-[500px]'>
                         <TestimonialCards />
                         <TestimonialCards />
                         <TestimonialCards />
