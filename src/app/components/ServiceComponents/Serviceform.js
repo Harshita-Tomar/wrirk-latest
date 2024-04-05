@@ -3,6 +3,7 @@ import React from 'react'
 const Serviceform = () => {
     return (
         <div className='mb-8'>
+                 <h1 className='text-center text-[17px] font-medium text-[#000000]'>Request for free Research Problem</h1>
             <div className='grid grid-cols-1 sm:grid-cols-2'>
                 <div className='bg-[#064454] rounded-3xl m-6 md:m-4 lg:m-20'>
                     <form className='m-8 sm:m-6 md:m-8 lg:m-12'>
@@ -39,7 +40,7 @@ const Serviceform = () => {
                 </div>
                 
                 <div className='mt-20 ms-28'>
-                    <img src="/Images/image (2).png" alt="fkjg" />
+                    <img src="/Images/service_slider1.png" alt="image" />
                 </div>
             </div>
         </div>

@@ -71,8 +71,8 @@ const About = () => {
                     </div>
 
                     {/* Second coloum */}
-                    <div className='rounded-tl-[30px] ps-[2px] py-[2px] bg-[#2E8095] absolute w-[36%] h-[643px] right-0 top-[-100px] 2xl:flex xl:flex lg:flex md:hidden sm:hidden hidden'>
-                        <video width="750" height="500" controls autoPlay className='object-fill rounded-tl-[30px]'>
+                    <div className='rounded-tl-[30px] shadow-custom2 bg-[#2E8095] absolute w-[36%] h-[655px] right-0 top-[-100px] 2xl:flex xl:flex lg:flex md:hidden sm:hidden hidden'>
+                        <video width="750" height="500" muted autoPlay loop className='object-fill rounded-tl-[30px]'>
                             <source src="/videos/myVideo.mp4" type="video/mp4" />
                             Your browser does not support the video tag.
                         </video>

@@ -7,15 +7,13 @@ import GeneralForm from '@/app/utils/Researchutils/GeneralForm';
 const Hero = () => {
 	return (
 		<>
-
 			{/* Heading div */}
 			<div className='flex justify-between items-center w-full px-10 py-6 bg-[#2E8095]'>
 				<div className='2xl:leading-[44px] xl:leading-[44px] lg:leading-[44px] md:leading-[30px] sm:leading-[24px] leading-[24px]'>
-					<h3 className='2xl:text-[30px] xl:text-[30px] lg:text-[30px] md:text-[20px] sm:text-[16px] text-[14px] text-white font-black tracking-wide m-0'>ADMISSION </h3>
-					<h3 className='2xl:text-[42px] xl:text-[42px] lg:text-[42px] md:text-[30px] sm:text-[20px] text-[20px] text-white font-black tracking-wide'>PROPOSAL </h3>
+					<h3 className='2xl:text-[46px] xl:text-[46px] lg:text-[42px] md:text-[30px] sm:text-[20px] text-[20px] text-white font-black tracking-wide'>BOOK </h3>
 				</div>
 				<div className='w-full flex items-center justify-end overflow-hidden object-cover'>
-					<Image className="rounded-md" width={200} height={200} src="/Images/admission-img.png" alt="image" />
+					<Image className="rounded-md" width={200} height={200} src="/Images/book-img.png" alt="image" />
 				</div>
 			</div>
 
@@ -24,19 +22,9 @@ const Hero = () => {
 			<div className='w-full px-10 py-10'>
 				<div className='rounded-[20px] border-[1px] border-[#00000066] shadow-custom2 flex items-center justify-between'>
 					<div className='2xl:px-20 xl:px-20 lg:px-20 md:px-10 sm:px-6 px-6 py-6 2xl:w-2/3 xl:w-2/3 lg:w-2/3 md:w-full sm:w-full w-full'>
-						<h1 className='text-[24px] font-semibold'>Writing Tool</h1>
 
-						{/* buttons */}
-
-						<div className="grid grid-cols-2 2xl:gap-7 xl:gap-7 lg:gap-7 md:gap-5 sm:gap-5 gap-5 xl:w-96 3xl:80 2xl:w-80 lg:w-80 md:w-80 sm:w-full w-full  justify-between relative 2xl:py-4 xl:py-4 lg:py-4 md:py-4 sm:py-4 py-4">
-							<button className="cursor-pointer 2xl:px-6 xl:px-6 lg:px-6 md:px-4 sm:px-2 px-2 py-2 border-[1px] text-white bg-[#2E8095] rounded-md text-center">Word</button>
-							<button className="cursor-pointer 2xl:px-6 xl:px-6 lg:px-6 md:px-4 sm:px-2 px-2 py-2 border-[1px] text-cyan-700 border-cyan-700 rounded-md text-center">Latex</button>
-						</div>
-
-						<h1 className='text-[22px] font-semibold py-4'>Reference Tool</h1>
-
-						<div className='flex items-center justify-start py-2 gap-6 w-2/3 2xl:text-[14px] xl:text-[14px] lg:text-[14px] md:text-[14px] sm:text-[12px] text-[12px]'>
-							<div className='w-1/3 '>Page Count</div>
+					<div className='flex items-center justify-start py-2 gap-6 w-2/3 2xl:text-[14px] xl:text-[14px] lg:text-[14px] md:text-[14px] sm:text-[12px] text-[12px]'>
+							<div className='w-1/3 '>No. of Pages</div>
 							<div className='w-2/3 '>
 								<form className="max-w-xs mx-auto">
 									<div className="relative flex items-center max-w-[8rem]">
@@ -50,9 +38,21 @@ const Hero = () => {
 									</div>
 								</form>
 							</div>
-						</div>
+						</div>		
 
-						<div className='flex items-center justify-start py-2 gap-6 w-2/3 2xl:text-[14px] xl:text-[14px] xl:text-[14px] lg:text-[14px] md:text-[14px] sm:text-[12px] text-[12px]'>
+						
+						<h1 className='text-[22px] font-semibold pt-6'>Reference Tool</h1>
+
+						{/* buttons */}
+
+						<div className="grid grid-cols-3 2xl:gap-4 xl:gap-4 lg:gap-4 md:gap-3 sm:gap-3 gap-3 xl:w-2/3 3xl:2/3 2xl:w-2/3 lg:w-2/3 md:w-full sm:w-full w-full  justify-between relative 2xl:py-4 xl:py-4 lg:py-4 md:py-4 sm:py-4 py-4">
+							<button className="cursor-pointer 2xl:px-6 xl:px-6 lg:px-6 md:px-4 sm:px-2 px-2 py-2 border-[1px] text-white bg-[#2E8095] rounded-md text-center text-wrap">Standard/<br/>Manual</button>
+							<button className="cursor-pointer 2xl:px-6 xl:px-6 lg:px-6 md:px-4 sm:px-2 px-2 py-2 border-[1px] text-cyan-700 border-cyan-700 rounded-md text-center">Mendely</button>
+							<button className="cursor-pointer 2xl:px-6 xl:px-6 lg:px-6 md:px-4 sm:px-2 px-2 py-2 border-[1px] text-cyan-700 border-cyan-700 rounded-md text-center">Zotero</button>
+						</div>	
+
+
+						<div className='flex items-center justify-start  pt-6 pb-2 gap-6 w-2/3 2xl:text-[14px] xl:text-[14px] xl:text-[14px] lg:text-[14px] md:text-[14px] sm:text-[12px] text-[12px]'>
 							<div className='w-1/3 '>Revise</div>
 							<div className='w-2/3 '>
 								<form className="max-w-xs mx-auto">
@@ -67,12 +67,8 @@ const Hero = () => {
 									</div>
 								</form>
 							</div>
-						</div>
-
-						<div className="flex items-center py-2 2xl:text-[14px] xl:text-[14px] lg:text-[14px] md:text-[14px] sm:text-[12px] text-[12px]">
-							<label for="default-radio-1" className=" pe-4 font-medium text-black"> PPT Required</label>
-							<input id="default-radio-1" type="radio" value="" name="default-radio" className="cursor-pointer w-6 h-6 rounded-0 text-[#2E8095] bg-[#2E8095] border-[#2E8095] focus:ring-[#2E8095] focus:ring-1" />
-						</div>
+						</div>		
+			
 
 					</div>
 
@@ -107,59 +103,37 @@ const Hero = () => {
 									<tbody>
 										<tr className="bg-white">
 											<th scope="row" className="2xl:px-10 xl:px-10 lg:px-10 md:px-10 sm:px-4 px-4 py-2 font-medium text-black whitespace-nowrap border-e-[2px] border-[#00000059]">
-												Page Count
-											</th>
-											<td className="2xl:px-10 xl:px-10 lg:px-10 md:px-10 sm:px-4 px-4 py-2 border-e-[2px] border-[#00000059]">
-												10
-											</td>
-											<td className="2xl:px-10 xl:px-10 lg:px-10 md:px-10 sm:px-4 px-4 py-2">
-												20
-											</td>
-										</tr>
-										<tr className="bg-white">
-											<th scope="row" className="2xl:px-10 xl:px-10 lg:px-10 md:px-10 sm:px-4 px-4 py-2 font-medium text-black whitespace-nowrap border-e-[2px] border-[#00000059]">
-												Writing Tool
-											</th>
-											<td className="2xl:px-10 xl:px-10 lg:px-10 md:px-10 sm:px-4 px-4 py-2 border-e-[2px] border-[#00000059]">
-												Word
-											</td>
-											<td className="2xl:px-10 xl:px-10 lg:px-10 md:px-10 sm:px-4 px-4 py-2">
-
-											</td>
-										</tr>
-										<tr className="bg-white">
-											<th scope="row" className="2xl:px-10 xl:px-10 lg:px-10 md:px-10 sm:px-4 px-4 py-2 font-medium text-black whitespace-nowrap border-e-[2px] border-[#00000059]">
-												Reference  Tool
-											</th>
-											<td className="2xl:px-10 xl:px-10 lg:px-10 md:px-10 sm:px-4 px-4 py-2 border-e-[2px] border-[#00000059]">
-												Standard/Manual
-											</td>
-											<td className="2xl:px-10 xl:px-10 lg:px-10 md:px-10 sm:px-4 px-4 py-2">
-
-											</td>
-										</tr>
-										<tr className="bg-white">
-											<th scope="row" className="2xl:px-10 xl:px-10 lg:px-10 md:px-10 sm:px-4 px-4 py-2 font-medium text-black whitespace-nowrap border-e-[2px] border-[#00000059]">
-												PPT Required
-											</th>
-											<td className="2xl:px-10 xl:px-10 lg:px-10 md:px-10 sm:px-4 px-4 py-2 border-e-[2px] border-[#00000059]">
-												No
-											</td>
-											<td className="2xl:px-10 xl:px-10 lg:px-10 md:px-10 sm:px-4 px-4 py-2">
-
-											</td>
-										</tr>
-										<tr className="bg-white">
-											<th scope="row" className="2xl:px-10 xl:px-10 lg:px-10 md:px-10 sm:px-4 px-4 py-2 font-medium text-black whitespace-nowrap border-e-[2px] border-[#00000059]">
 												Revise
 											</th>
 											<td className="2xl:px-10 xl:px-10 lg:px-10 md:px-10 sm:px-4 px-4 py-2 border-e-[2px] border-[#00000059]">
-												0
+											0
+											</td>
+											<td className="2xl:px-10 xl:px-10 lg:px-10 md:px-10 sm:px-4 px-4 py-2">
+												4
+											</td>
+										</tr>
+										<tr className="bg-white">
+											<th scope="row" className="2xl:px-10 xl:px-10 lg:px-10 md:px-10 sm:px-4 px-4 py-2 font-medium text-black whitespace-nowrap border-e-[2px] border-[#00000059]">
+											 Tool
+											</th>
+											<td className="2xl:px-10 xl:px-10 lg:px-10 md:px-10 sm:px-4 px-4 py-2 border-e-[2px] border-[#00000059]">
+											Standard/Manual
 											</td>
 											<td className="2xl:px-10 xl:px-10 lg:px-10 md:px-10 sm:px-4 px-4 py-2">
 
 											</td>
 										</tr>
+										<tr className="bg-white">
+											<th scope="row" className="2xl:px-10 xl:px-10 lg:px-10 md:px-10 sm:px-4 px-4 py-2 font-medium text-black whitespace-nowrap border-e-[2px] border-[#00000059]">
+												No. of Pages
+											</th>
+											<td className="2xl:px-10 xl:px-10 lg:px-10 md:px-10 sm:px-4 px-4 py-2 border-e-[2px] border-[#00000059]">
+												5
+											</td>
+											<td className="2xl:px-10 xl:px-10 lg:px-10 md:px-10 sm:px-4 px-4 py-2">
+
+											</td>
+										</tr>									
 									</tbody>
 								</table>
 							</div>
@@ -173,71 +147,55 @@ const Hero = () => {
 
 								<div className="relative overflow-x-auto rounded-[18px]">
 									<h3 className='py-2 px-10 text-[20px] font-bold'>Price Distribution</h3>
-									<table className="w-full text-sm text-left rtl:text-right text-black">								
+									<table className="w-full text-sm text-left rtl:text-right text-black">
 										<tbody>
 											<tr className="bg-white">
 												<th scope="row" className="px-10 py-2 font-medium text-black whitespace-nowrap border-e-[2px] border-[#00000059]">
-												Base Price
+													Base Price
 												</th>
 												<td className="px-10 py-2">
-												₹20000
+													₹20000
 												</td>
 											</tr>
 											<tr className="bg-white">
 												<th scope="row" className="px-10 py-2 font-medium text-black whitespace-nowrap border-e-[2px] border-[#00000059]">
-												Add-ons 
+													Add-ons
 												</th>
 												<td className="px-10 py-2">
-												₹20000
+													₹20000
 												</td>
-											</tr>
+											</tr>																				
 											<tr className="bg-white">
 												<th scope="row" className="px-10 py-2 font-medium text-black whitespace-nowrap border-e-[2px] border-[#00000059]">
-												Page count
+													Reference Tool
 												</th>
 												<td className="px-10 py-2">
-												₹10000
+													₹5000
 												</td>
-											</tr>
+											</tr>										
 											<tr className="bg-white">
 												<th scope="row" className="px-10 py-2 font-medium text-black whitespace-nowrap border-e-[2px] border-[#00000059]">
-												Writing Tool
+													Revise
 												</th>
-												<td className="px-10 py-2">
-												₹10000
-												</td>
-											</tr>
-											<tr className="bg-white">
-												<th scope="row" className="px-10 py-2 font-medium text-black whitespace-nowrap border-e-[2px] border-[#00000059]">
-												Reference Tool
-												</th>
-												<td className="px-10 py-2">
-												₹5000
-												</td>
-											</tr>
-											<tr className="bg-white">
-												<th scope="row" className="px-10 py-2 font-medium text-black whitespace-nowrap border-e-[2px] border-[#00000059]">
-												PPT
-												</th>
-												<td className="px-10 py-2">
-												₹5000
+												<td className="px-10 pt-2 pb-6">
+													₹5000
 												</td>
 											</tr>
 											<tr className="bg-white">
 												<th scope="row" className="px-10 pt-2 pb-6 font-medium text-black whitespace-nowrap border-e-[2px] border-[#00000059]">
-												Revise
+													No. of Pages
 												</th>
 												<td className="px-10 pt-2 pb-6">
-												₹5000
+													₹5000
 												</td>
 											</tr>
 
 											<tr className="bg-[#2E8095] text-white text-[16px] font-bold">
 												<th scope="row" className="px-10 py-4 font-medium  whitespace-nowrap]">
-											Total
+													Total
 												</th>
 												<td className="px-10 py-4">
-												₹75000
+													₹75000
 												</td>
 											</tr>
 										</tbody>
@@ -263,4 +221,3 @@ const Hero = () => {
 }
 
 export default Hero
-

@@ -9,9 +9,9 @@ const Cards = () => {
     <div className="container mx-auto mt-8" style={{ marginTop: '5rem' }}>
       <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 " >
         {/* its use for small screen two coll  */}
-      {/* <div className="grid grid-cols-2 gap-4 lg:grid-cols-3  " > */}
+        {/* <div className="grid grid-cols-2 gap-4 lg:grid-cols-3  " > */}
 
-     
+
         <div className=" p-4">
           <div className="max-w-xs md:max-w-sm rounded-3xl  overflow-hidden shadow-lg shadow-black">
             <img className="block mx-auto w-full max-w-96 max-h-full " src="/Images/research.png" alt="image" />
@@ -21,7 +21,7 @@ const Cards = () => {
               a company's corporate brand will always be representative of a favourable image. When customer's vendors, and even workers and investors have a favourable impression of a......
 
               <spam className="bg-gray-400 flex justify-center items-center rounded-md border border-white">
-              <a href="post" >Business-Management-And-Accounting</a>
+                <a href="post" >Business-Management-And-Accounting</a>
               </spam>
 
               <div className="inline-flex space-x-3">
@@ -115,7 +115,7 @@ const Cards = () => {
               </div>
 
             </div>
-            
+
           </div>
         </div>
         <div className=" p-4">
@@ -126,9 +126,11 @@ const Cards = () => {
 
               a company's corporate brand will always be representative of a favourable image. When customer's vendors, and even workers and investors have a favourable impression of a......
 
+              <a href='/research/researchcontent' > 
               <spam className="bg-gray-400 flex justify-center items-center rounded-md border border-white">
                 Business-Management-And-Accounting
               </spam>
+              </a>
 
               <div className="inline-flex space-x-3">
                 <span className="flex items-center">

@@ -3,11 +3,11 @@ import React from 'react'
 const GeneralForm = () => {
   return (
 	<>
-	  <div className=" p-4 ">
+	  <div className="p-1">
             <h3 className="text-center text-[20px] pb-6">Request For Free Research Problem</h3>
-            <div className="max-w-xl mx-auto bg-[#064454] shadow-md rounded-md p-6">
+            <div className="bg-[#064454] shadow-md rounded-[20px] p-6">
 
-              <form action="#" method="POST">
+              <form action="#" method="POST" className='2xl:p-10 xl:p-10 lg:p-10 md:p-3 sm:p-2 p-2'>
                 <div className="mb-4">
                   <input type="text" id="name" name="name" placeholder="Name" className="mt-1 block w-full h-12 rounded-md border-gray-300 shadow-sm focus:border-blue-300 focus:ring focus:ring-blue-200 focus:ring-opacity-50 pl-4" />
                 </div>
