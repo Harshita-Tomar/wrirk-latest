@@ -27,26 +27,26 @@ const Hero = () => {
 
         </div>
       </div>
-      <div className='absolute left-0 px-8 py-2 top-[78.5%] right-[12%]  bg-[#D5E1F285]  rounded-r-full xs:right-[20%] xs:top-[75%] xs:py-7 sm:right-[18%] sm:top-[80%] sm:py-5 md:right-[23%] md:top-[78%] md:py-8 lg:top-[78%] lg:py-8 xl:top-[78%] xl:py-8'>
+      <div className='absolute left-0 px-8 py-4 top-[78.5%] right-[12%]  bg-[#D5E1F285]  rounded-r-full xs:right-[20%] xs:top-[75%] xs:py-7 sm:right-[18%] sm:top-[80%] sm:py-5 md:right-[23%] md:top-[78%] md:py-9 lg:top-[78%] lg:py-9 xl:top-[78%] xl:py-9'>
         <div className='flex justify-between'>
           <div>
-            <h3 className='text-center text-[#064454] text-[10px] font-black opacity-75 sm:text-[20px]'>99%</h3>
-            <h4 className='text-[#064454] text-[10px] font-bold sm:text-[13px]'>Clint Retention</h4>
+            <h3 className='text-center text-[#064454] text-[12px] font-bold opacity-75 sm:text-[17px] md:lg:text[56px] lg:text[56px] xl:text[56px]'>99%</h3>
+            <h4 className='text-[#064454] text-[7px] font-bold sm:text-[13px] md:text[23px] lg:text[23px] xl:text[23px]'>Clint Retention</h4>
           </div>
 
           <div>
-            <h3 className='text-center text-[#064454] text-[10px] font-black opacity-75 sm:text-[20px]'>7</h3>
-            <h4 className='text-[#064454] text-[10px] font-bold sm:text-[13px]'>Year Of Service</h4>
+            <h3 className='text-center text-[#064454] text-[12px] font-bold opacity-75 sm:text-[17px] md:lg:text[56px] lg:text[56px] xl:text[56px]'>7</h3>
+            <h4 className='text-[#064454] text-[7px] font-bold sm:text-[13px] md:text[23px] lg:text[23px] xl:text[23px]'>Year Of Service</h4>
           </div>
 
           <div>
-            <h3 className='text-center text-[#064454] text-[10px] font-black opacity-75 sm:text-[20px]'>30+</h3>
-            <h4 className='text-[#064454] text-[10px] font-bold sm:text-[13px]'>Team Of Professionals</h4>
+            <h3 className='text-center text-[#064454] text-[12px] font-bold opacity-75 sm:text-[17px] md:lg:text[56px] lg:text[56px] xl:text[56px]'>30+</h3>
+            <h4 className='text-[#064454] text-[7px] font-bold sm:text-[13px] md:text[23px] lg:text[23px] xl:text[23px]'>Team Of Professionals</h4>
           </div>
 
           <div>
-            <h3 className='text-center text-[#064454] text-[10px] font-black opacity-75 sm:text-[20px]'>221+</h3>
-            <h4 className='text-[#064454] text-[10px] font-bold sm:text-[13px]'>Satisfied Clients</h4>
+            <h3 className='text-center text-[#064454] text-[12px] font-bold opacity-75 sm:text-[17px] md:lg:text[56px] lg:text[56px] xl:text[56px]'>221+</h3>
+            <h4 className='text-[#064454] text-[7px] font-bold sm:text-[13px] md:text[23px] lg:text[23px] xl:text[23px]'>Satisfied Clients</h4>
           </div>
 
         </div>

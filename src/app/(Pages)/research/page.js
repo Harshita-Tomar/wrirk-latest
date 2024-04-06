@@ -1,9 +1,10 @@
 
 // import Hero from '@/app/components/ResearchComponents/Hero'
-import Cards from '@/app/components/ResearchComponents/Cards'
+import ResearchCardSection from '@/app/components/ResearchComponents/ResearchCardSection'
 import ResearchForm from '@/app/components/ResearchComponents/ResearchForm'
 import FindResearch from '@/app/components/ResearchComponents/FindResearch'
-import MiddleHeader from '@/app/components/ResearchComponents/MiddleHeader'
+import Testing from '@/app/components/ResearchComponents/Testing'
+
 
 import React from 'react'
 
@@ -12,9 +13,9 @@ const Research = () => {
     <>
       {/* <Hero /> */}
       <FindResearch />
-      <MiddleHeader/>
-      <Cards />
+      <ResearchCardSection />
       <ResearchForm/>
+      <Testing/>
 
     </>
   )

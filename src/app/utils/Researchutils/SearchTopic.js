@@ -6,7 +6,7 @@ import Image from 'next/image';
 const SearchTopic = () => {
     return (
         <>
-            <div className="p-4 text-xl ">
+            <div className=" text-xl ">
                 <spam className="text-transparent bg-gradient-to-l from-red-500 via-yellow-500 to-green-500 bg-clip-text">Generate New Topic</spam>
 
                 <div className="border-2  p-2 mt-2 w-full  max-w-md relative" style={{

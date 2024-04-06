@@ -7,7 +7,7 @@ const Hero = () => {
         <>
             <div className="w-full pt-7">
                 
-                <div className="grid 2xl:grid-cols-3 xl:grid-cols-3 lg:grid-cols-3 md:grid-cols-3 sm:grid-cols-1 grid-cols-1 gap-5 2xl:ps-24 xl:ps-24 lg:24px md:ps-10 sm:ps-10 2xl:ps-6 xl:ps-6 lg:ps-6 md:ps-6 sm:ps-6 ps-6">
+                <div className="grid 2xl:grid-cols-3 xl:grid-cols-3 lg:grid-cols-3 md:grid-cols-3 sm:grid-cols-1 grid-cols-1 gap-5 2xl:ps-24p xl:ps-24 lg:24 md:ps-12 sm:ps-6 ps-6 2xl:pe-6 xl:pe-6 lg:pe-6 md:pe-6 sm:pe-6 pe-6">
 
                     {/* first coloum */}
                     <div className=" w-full 2xl:col-span-2 xl:col-span-2 lg:col-span-2 md:col-span-2 sm:col-span-1 col-span-1 2xl:pe-0 xl:pe-0 lg:pe-0 md:pe-6 sm:pe-6 pe-6">
