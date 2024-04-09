@@ -6,10 +6,10 @@ import Image from 'next/image';
 const SearchTopic = () => {
     return (
         <>
-            <div className=" text-xl ">
+            <div className=" text-xl ml-[56px] mb-[25px] ">
                 <spam className="text-transparent bg-gradient-to-l from-red-500 via-yellow-500 to-green-500 bg-clip-text">Generate New Topic</spam>
 
-                <div className="border-2  p-2 mt-2 w-full  max-w-md relative" style={{
+                <div className="border-2   mt-2 w-[429px] h-[520px]  relative" style={{
                     border: '2px solid transparent',
                     backgroundClip: 'padding-box',
                     borderImage: 'linear-gradient(to right, red 0%, orange 10%, yellow 20%, lime 30%, green 40%, teal 50%, blue 60%, indigo 70%, purple 80%, magenta 90%, teal 100%) 1'

@@ -1,7 +1,20 @@
-import React from 'react'
+"use client"
+import React, { useState } from 'react'
 import Image from 'next/image';
 
 const Hero = () => {
+    const [indian,setIndian] = useState(true);
+    const [aboard,setAboard] = useState(false);
+    const handlechange =(e)=>{
+        e.preventDefault();
+        setAboard(false)
+        setIndian(true)
+    }
+    const handlechange1 =(e)=>{
+        e.preventDefault();
+        setIndian(false)
+        setAboard(true)
+    }
     return (
         <>
             <div className='w-full text-center pt-16 pb-10 px-4'>
@@ -30,12 +43,13 @@ const Hero = () => {
                 <div className="mt-4 flex items-center justify-center mx-auto  ">
                     <ul className="flex flex-wrap text-sm font-medium text-center bg-[#064454] text-white p-1 rounded-sm" id="default-tab" data-tabs-toggle="#default-tab-content" role="tablist">
                         <li role="presentation">
-                            <button className="inline-block bg-[#FFA800] rounded-sm px-2 py-1" id="indian-tab" data-tabs-target="#indian" type="button" role="tab" aria-controls="indian" aria-selected="false">Indian University</button>
+                            <button className={`inline-block  rounded-sm px-2 py-1 ${indian ? 'bg-[#FFA800]' :'bg-[#064454]'}`} id="indian-tab" data-tabs-target="#indian" type="button" role="tab" aria-controls="indian" aria-selected="false" onClick={handlechange}>Indian University</button>
                         </li>
                         <li role="presentation">
-                            <button className="inline-block rounded-sm px-2 py-1" id="abroad-tab" data-tabs-target="#abroad" type="button" role="tab" aria-controls="abroad" aria-selected="false">Abroad University</button>
+                            <button className={`inline-block rounded-sm px-2 py-1 ${aboard ? 'bg-[#FFA800]' :'bg-[#064454]'}`} id="abroad-tab" data-tabs-target="#abroad" type="button" role="tab" aria-controls="abroad" aria-selected="false" onClick={handlechange1}>Abroad University</button>
                         </li>
                     </ul>
+
                 </div>
                 {/*<div id="default-tab-content">
                     <div className="block p-4 rounded-lg bg-gray-50 " id="indian" role="tabpanel" aria-labelledby="indian-tab">
@@ -51,3 +65,4 @@ const Hero = () => {
 }
 
 export default Hero
+

@@ -49,10 +49,11 @@ const Footer = () => {
               <li className="p-2">
                 <div className="flex">
                   <div className="mb-4 border-[1px] border-[#00000047] rounded-tl-md rounded-bl-md bg-white w-[90%] p-2">
-                    <input type="email" id="email" name="email" className="form-input block   placeholder:font-medium placeholder:text-[#064454]" placeholder="Email" required />
+                    <input type="email" id="email" name="email" className="form-input block   placeholder:font-medium placeholder:text-[#064454] focus:outline-none text-[#064454]" placeholder="Email" required />
+              
                   </div>
                   <button type="button" className="rounded-tr-md rounded-br-md bg-white mb-4 mx-0 text-black py-0 px-2">
-                  <RiArrowRightLine className='text-[26px] text-[#064454]' />
+                    <RiArrowRightLine className='text-[26px] text-[#064454]' />
                   </button>
                 </div>
               </li>
@@ -74,7 +75,7 @@ const Footer = () => {
 
         <div className='justify-end items-center 2xl:py-0 xl:py-0 lg:py-0 md:py-4 sm:py-4 py-4'>
           <p className='font-normal text-[14px] text-end text-[#FFFFFFB0]'>© 2023. Copyright Team MP Research Work Pvt. Ltd.
-           <br/> -Powered by <a href="/" className='hover:text-white'>MP2IT</a> </p>
+            <br /> -Powered by <a href="/" className='hover:text-white'>MP2IT</a> </p>
         </div>
       </div>
     </>

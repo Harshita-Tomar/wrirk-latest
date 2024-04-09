@@ -13,7 +13,7 @@ const PortCardSection = () => {
 
 				{/* search bar */}
 				<div className=" flex mx-auto justify-center items-center relative  xl:w-1/3 2xl:w-1/3 lg:w-1/3 md:w-2/3 sm:w-2/3 w-full">
-					<input type="search" placeholder="Type Keyword" className="px-3 py-2 w-full rounded-full border-[#D1D1D1] border-[1px] placeholder:text-[#999999] placeholder:text-[12px]" />
+					<input type="search" placeholder="Type Keyword" className="px-3 py-2 w-full rounded-full border-[#D1D1D1] border-[1px] placeholder:text-[#999999] placeholder:text-[12px] focus:outline-none" />
 					<button type="button" className="rounded-full bg-[#2E8095] absolute right-1 bottom-1 p-[5px]">
 						<IoSearchOutline className="text-[22px] font-thin text-white" />
 					</button>
@@ -23,7 +23,7 @@ const PortCardSection = () => {
 
 					{/* Research bar */}
 					<div className=" flex me-2 justify-center items-center relative w-full">
-						<input type="search" placeholder="All Research Area" className="px-3 py-2 w-full rounded-full border-[#D1D1D1] border-[1px] placeholder:text-[#999999] placeholder:text-[12px]" />
+						<input type="search" placeholder="All Research Area" className="px-3 py-2 w-full rounded-full border-[#D1D1D1] border-[1px] placeholder:text-[#999999] placeholder:text-[12px] focus:outline-none" />
 						<button type="button" className="rounded-full bg-[#2E8095] absolute right-1 bottom-1 p-[5px]">
 							<RiAlignRight className="text-[22px] font-thin text-white" />
 						</button>
@@ -31,7 +31,7 @@ const PortCardSection = () => {
 
 					{/* Domain bar */}
 					<div className=" flex 2xl:ms-2 xl:ms-2 lg:ms-2 md:ms-2 sm:ms-2 ms-0 2xl:mt-0 xl:mt-0 lg:mt-0 md:mt-0 sm:mt-0 mt-4 justify-center items-center relative w-full">
-						<input type="search" placeholder="All Domain" className="px-3 py-2 w-full rounded-full border-[#D1D1D1] border-[1px] placeholder:text-[#999999] placeholder:text-[12px]" />
+						<input type="search" placeholder="All Domain" className="px-3 py-2 w-full rounded-full border-[#D1D1D1] border-[1px] placeholder:text-[#999999] placeholder:text-[12px] focus:outline-none" />
 						<button type="button" className="rounded-full bg-[#2E8095] absolute right-1 bottom-1 p-[5px]">
 							<RiAlignRight className="text-[22px] font-[1px] text-white" />
 						</button>

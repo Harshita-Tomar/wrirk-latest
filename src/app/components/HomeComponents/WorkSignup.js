@@ -5,12 +5,14 @@ import WorkCards from '@/app/utils/Homeutils/WorkCards';
 const WorkSignup = () => {
     return (
         <>
-            <div className='w-full 2xl:py-20 xl:py-20 lg:py-20 md:py-14 sm:py-10 py-10 '>
+            <div className='w-full  '>
 
-                <div className='grid items-center justify-center w-full relative pb-14'>
+                <div className=' grid items-center justify-center w-full relative pb-14 bg-white'>
                     <h2 className='2xl:text-[36px] xl:text-[36px] lg:text-[36px] md:text-[28px] sm:text-[26px] text-[26px] font-extrabold items-center justify-center flex'>Work Signup Process</h2>
-                    <p className='font-medium items-center justify-center flex text-[12px] py-1 px-4 text-center'>Lorem ipsum dolor sit amet consectetur. Velit ut bibendum placerat duis eget blandit.</p>
+                    <p className='font-medium items-center justify-center flex text-[12px] p-0 text-center'>Lorem ipsum dolor sit amet consectetur. Velit ut bibendum placerat duis eget blandit.</p>
                 </div>
+                
+
 
                 <div className='w-full grid 2xl:ps-40 xl:ps-40 lg:ps-40 md:ps-14 sm:ps-6 ps-6 2xl:pe-40 xl:pe-40 lg:pe-40 md:pe-14 sm:pe-24 pe-14 py-6'>
                     <div className='justify-center items-center grid grid-rows-1'>

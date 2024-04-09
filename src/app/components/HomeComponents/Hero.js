@@ -7,7 +7,7 @@ const Hero = () => {
         <>
             <div className="w-full pt-7">
                 
-                <div className="grid 2xl:grid-cols-3 xl:grid-cols-3 lg:grid-cols-3 md:grid-cols-3 sm:grid-cols-1 grid-cols-1 gap-5 2xl:ps-24p xl:ps-24 lg:24 md:ps-12 sm:ps-6 ps-6 2xl:pe-6 xl:pe-6 lg:pe-6 md:pe-6 sm:pe-6 pe-6">
+                <div className="grid 2xl:grid-cols-3 xl:grid-cols-3 lg:grid-cols-3 md:grid-cols-3 sm:grid-cols-1 grid-cols-1 gap-5 2xl:ps-24p xl:ps-24 lg:ps-24 md:ps-12 sm:ps-6 ps-6 2xl:pe-6 xl:pe-6 lg:pe-6 md:pe-6 sm:pe-6 pe-6">
 
                     {/* first coloum */}
                     <div className=" w-full 2xl:col-span-2 xl:col-span-2 lg:col-span-2 md:col-span-2 sm:col-span-1 col-span-1 2xl:pe-0 xl:pe-0 lg:pe-0 md:pe-6 sm:pe-6 pe-6">
@@ -31,7 +31,7 @@ const Hero = () => {
 
                         <div className="grid grid-cols-2 2xl:gap-7 xl:gap-7 lg:gap-7 md:gap-5 sm:gap-5 gap-5 xl:w-96 2xl:w-96 lg:w-96 md:w-96 sm:w-full justify-between relative 2xl:py-7 xl:py-7 lg:py-7 md:py-4 sm:py-3 py-2">
                             <a href="#" className="cursor-pointer 2xl:px-10 xl:px-10 lg:px-10 md:px-4 sm:px-2 px-2 py-2 border-[1px] text-white bg-[#2E8095] rounded-xl text-center 2xl:text-[14px] xl:text-[14px] lg:text-[14px] md:text-[12px] sm:text-[12px] text-[12px] flex items-center justify-center">Quick Mail</a>
-                            <a href="#" className="cursor-pointer 2xl:px-10 xl:px-10 lg:px-10 md:px-4 sm:px-2 px-2 py-2 border-[1px] text-cyan-700 border-cyan-700 rounded-xl text-center 2xl:text-[14px] xl:text-[14px] lg:text-[14px] md:text-[12px] sm:text-[12px] text-[12px] flex items-center justify-center">Pricing</a>
+                            <a href="/Pricing" className="cursor-pointer 2xl:px-10 xl:px-10 lg:px-10 md:px-4 sm:px-2 px-2 py-2 border-[1px] text-cyan-700 border-cyan-700 rounded-xl text-center 2xl:text-[14px] xl:text-[14px] lg:text-[14px] md:text-[12px] sm:text-[12px] text-[12px] flex items-center justify-center">Pricing</a>
                         </div>
 
                         {/* suggestion and help */}
