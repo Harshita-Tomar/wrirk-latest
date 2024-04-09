@@ -5,16 +5,16 @@ import WorkCards from '@/app/utils/Homeutils/WorkCards';
 const WorkSignup = () => {
     return (
         <>
-            <div className='w-full  '>
+            <div className='w-full 2xl:pt-24 xl:pt-24 lg:pt-20 md:pt-16 sm:10 pt-10 '>
 
-                <div className=' grid items-center justify-center w-full relative pb-14 bg-white'>
+                <div className=' grid items-center justify-center w-full relative pb-8 bg-white'>
                     <h2 className='2xl:text-[36px] xl:text-[36px] lg:text-[36px] md:text-[28px] sm:text-[26px] text-[26px] font-extrabold items-center justify-center flex'>Work Signup Process</h2>
                     <p className='font-medium items-center justify-center flex text-[12px] p-0 text-center'>Lorem ipsum dolor sit amet consectetur. Velit ut bibendum placerat duis eget blandit.</p>
                 </div>
                 
 
 
-                <div className='w-full grid 2xl:ps-40 xl:ps-40 lg:ps-40 md:ps-14 sm:ps-6 ps-6 2xl:pe-40 xl:pe-40 lg:pe-40 md:pe-14 sm:pe-24 pe-14 py-6'>
+                <div className='w-full grid 2xl:ps-40 xl:ps-40 lg:ps-40 md:ps-14 sm:ps-6 ps-6 2xl:pe-40 xl:pe-40 lg:pe-40 md:pe-14 sm:pe-24 pe-14 pb-6 pt-20'>
                     <div className='justify-center items-center grid grid-rows-1'>
                         <div className='grid 2xl:grid-cols-2 xl:grid-cols-2 lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-1 grid-cols-1 justify-center items-center shadow-custom border-[2px] rounded-lg relative bg-white'> 
                         <div className='rounded-full 2xl:px-8 xl:px-8 lg:px-8 md:px-6 sm:px-6 px-6 2xl:p-6 xl:p-6 lg:p-6 md:p-4 sm:p-4 py-4 2xl:text-[36px] xl:text-[36px] lg:text-[36px] md:text-[28px] sm:text-[24px] text-[24px] bg-[#196572A6] absolute 2xl:right-[-60px] xl:right-[-60px] lg:right-[-60px] md:right-[-45px] sm:right-[-45px] right-[-45px] 2xl:top-[-65px] xl:top-[-65px] lg:top-[-65px] md:top-[-45px] sm:top-[-45px] top-[-45px] z-[-1] text-white font-bold italic'>01</div>

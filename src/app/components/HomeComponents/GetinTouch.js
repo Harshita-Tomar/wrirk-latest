@@ -35,7 +35,7 @@ const GetinTouch = () => {
                 <form>
 
                   <div className="mb-4 border-[1px] border-[#00000047] rounded-md p-2">
-                    <input type="text" id="full_name" name="full_name" className="form-input block w-full" placeholder="Full Name" required />
+                    <input type="text" id="full_name" name="full_name" className="text-gray-700 focus:outline-none form-input block w-full" placeholder="Full Name" required />
                   </div>
 
                   {/*<div className="relative mb-4 border-[1px] border-[#00000047] rounded-md p-2">
@@ -45,15 +45,15 @@ const GetinTouch = () => {
 
                   <div className='grid grid-cols-2 gap-x-5'>
                     <div className="mb-4 border-[1px] border-[#00000047] rounded-md p-2">
-                      <input type="email" id="email" name="email" className="form-input block w-full" placeholder="Mail" required />
+                      <input type="email" id="email" name="email" className="text-gray-700 focus:outline-none form-input block w-full" placeholder="Mail" required />
                     </div>
                     <div className="mb-4 border-[1px] border-[#00000047] rounded-md p-2">
-                      <input type="tel" id="contact_number" name="contact_number" className="form-input block w-full" placeholder="Contact" required />
+                      <input type="tel" id="contact_number" name="contact_number" className="text-gray-700 focus:outline-none form-input block w-full" placeholder="Contact" required />
                     </div>
                   </div>
 
                   <div className="mb-4 border-[1px] border-[#00000047] rounded-md p-2">
-                    <select id="research_format" name="research_format" className="form-select block w-full">
+                    <select id="research_format" name="research_format" className="text-gray-700 focus:outline-none form-select block w-full">
                       <option value="Research Area">Research Area</option>
                       <option value="presentation">Presentation</option>
                       <option value="workshop">Workshop</option>
@@ -62,7 +62,7 @@ const GetinTouch = () => {
                   </div>
 
                   <div className="mb-4 border-[1px] border-[#00000047] rounded-md p-2">
-                    <select id="research_domain" name="research_domain" className="form-select block w-full">
+                    <select id="research_domain" name="research_domain" className="text-gray-700 focus:outline-none form-select block w-full">
                       <option value="Research Domain">Research Domain</option>
                       <option value="technology">Technology</option>
                       <option value="engineering">Engineering</option>
@@ -72,7 +72,7 @@ const GetinTouch = () => {
                     </select>
                   </div>
                   <div className="mb-4 border-[1px] border-[#00000047] rounded-md p-2">
-                    <textarea id="research_description" name="research_description" className="form-textarea block w-full" rows="4" placeholder="Please Write Your Concern here..."></textarea>
+                    <textarea id="research_description" name="research_description" className="text-gray-700 focus:outline-none form-textarea block w-full" rows="4" placeholder="Please Write Your Concern here..."></textarea>
                   </div>
                   <div className="flex justify-center">
                     <button type="submit" className="bg-[#2A96B1] text-white px-20 py-2 rounded-full hover:bg-cyan-700">Send</button>

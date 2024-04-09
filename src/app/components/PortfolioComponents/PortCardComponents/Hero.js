@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from 'next/image';
-import GeneralForm from '@/app/utils/Researchutils/GeneralForm';
+import GeneralForm from '@/app/utils/Formutils/GeneralForm';
 
 const Hero = () => {
 	return (

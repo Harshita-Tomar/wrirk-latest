@@ -3,9 +3,9 @@ import Hero from '@/app/components/PricingComponents/AdmissionComponents/Hero';
 
 const page = () => {
   return (
-	<>
+	<div>
 	<Hero/>
-	</>
+	</div>
   )
 }
 

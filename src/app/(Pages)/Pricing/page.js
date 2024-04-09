@@ -5,10 +5,10 @@ import PricingSection from '@/app/components/PricingComponents/PricingSection';
 
 const Pricing = () => {
   return (
-    <>
+    <div>
      <Hero/>
      <PricingSection/>
-    </>
+    </div>
   )
 }
 

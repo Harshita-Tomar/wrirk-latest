@@ -12,7 +12,7 @@ import WorkSignup from '@/app/components/HomeComponents/WorkSignup'
 
 const Home = () => {
   return (
-    <>
+    <div>
       <Hero />
       <About />
       <Services />
@@ -20,7 +20,7 @@ const Home = () => {
       <WorkSignup />
       <GetinTouch />
       <Testimonials />
-    </>
+    </div>
   )
 }
 

@@ -9,13 +9,13 @@ import React from 'react'
 
 const Research = () => {
   return (
-    <>
+    <div>
       {/* <Hero /> */}
       <Hero />
       <ResearchCardSection />
       {/*<ResearchForm/>*/}
 
-    </>
+    </div>
   )
 }
 

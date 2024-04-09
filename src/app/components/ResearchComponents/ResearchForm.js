@@ -1,7 +1,7 @@
 import React from "react";
 
-import GeneralForm from '@/app/utils/Researchutils/GeneralForm';
 import SearchTopic from '@/app/utils/Researchutils/SearchTopic';
+import GeneralForm from "@/app/utils/Formutils/GeneralForm";
 
 
 const ResearchForm = () => {
