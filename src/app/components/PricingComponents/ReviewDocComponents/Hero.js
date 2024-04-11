@@ -8,82 +8,111 @@ const Hero = () => {
 	return (
 		<>
 			{/* Heading div */}
-			<div className='flex justify-between items-center w-full 2xl:px-10 xl:px-10 lg:px-10 md:px-6 sm:px-4 px-4 py-4 bg-[#2E8095]'>
-				<div className='2xl:leading-[44px] xl:leading-[44px] lg:leading-[44px] md:leading-[36px] sm:leading-[30px] leading-[30px]'>
-					<h3 className='2xl:text-[42px] xl:text-[42px] lg:text-[42px] md:text-[36px] sm:text-[30px] text-[28px] text-white font-black tracking-wide'>BOOK </h3>
+
+			<div className='flex justify-between items-center w-full 2xl:px-10 xl:px-10 lg:px-10 md:px-6 sm:px-4 px-4 py-6 bg-[#2E8095]'>
+				<div className='flex-grow'>
+					<h3 className='2xl:text-[42px] xl:text-[42px] lg:text-[42px] md:text-[36px] sm:text-[30px] text-[28px] text-white font-black tracking-wide'>REVIEW ON DOCUMENT </h3>
 				</div>
-				<div className='w-full flex items-center justify-end overflow-hidden object-cover'>
-					<Image className="rounded-md 2xl:ps-0 xl:ps-0 lg:ps-0 md:ps-10 sm:ps-10 ps-10" width={150} height={150} src="/Images/book-img.png" alt="image" />
+				<div className='flex-shrink-0 flex items-center justify-end overflow-hidden object-cover'>
+					<Image className="rounded-md 2xl:ps-0 xl:ps-0 lg:ps-0 md:ps-10 sm:ps-10 ps-10" width={180} height={180} src="/Images/reviewhead.png" alt="image" />
 				</div>
 			</div>
 
-			{/* Admission proposal section */}
-
 			<div className='w-full 2xl:px-10 xl:px-10 lg:px-10 md:px-6 sm:px-4 px-4 py-10'>
-				<div className='rounded-[20px] border-[1px] border-[#00000066] shadow-custom2 flex items-center justify-between'>
-					<div className='px-6 py-3 2xl:w-2/3 xl:w-2/3 lg:w-2/3 md:w-full sm:w-full w-full'>					
+				<div className='rounded-[20px] border-[1px] border-[#2E8095]  flex items-center justify-between'>
 
-						<h1 className='text-[18px] font-medium pt-2'>Reference Tool</h1>
+					<div className='2xl:px-20 xl:px-20 lg:px-20 md:px-10 sm:px-6 px-6 py-6 2xl:w-2/3 xl:w-2/3 lg:w-2/3 md:w-full sm:w-full w-full flex'>
 
-						{/* buttons */}
+						<div className='w-1/2 '>
 
-						<div className="flex items-center justify-start xl:w-2/3 3xl:2/3 2xl:w-2/3 lg:w-2/3 md:w-full sm:w-full w-full relative py-2 2xl:text-[14px] xl:text-[14px] lg:text-[14px] md:text-[14px] sm:text-[12px] text-[12px]">
-
-							<button className="cursor-pointer 2xl:px-4 xl:px-4 lg:px-4 md:px-4 sm:px-2 px-2 py-2 border-[1px] text-white bg-[#2E8095] rounded-md text-center text-wrap me-4 w-2/3">Standard/Manual</button>
-
-							<button className="cursor-pointer 2xl:px-4 xl:px-4 lg:px-4 md:px-4 sm:px-2 px-2 py-2 border-[1px] text-cyan-700 border-cyan-700 rounded-md text-center me-4 w-2/3">Mendely</button>
-
-							<button className="cursor-pointer 2xl:px-4 xl:px-4 lg:px-4 md:px-4 sm:px-2 px-2 py-2 border-[1px] text-cyan-700 border-cyan-700 rounded-md text-center w-2/3">Zotero</button>
-						</div>
-
-
-						<div className='flex items-center justify-start py-1 gap-6 w-2/3 2xl:text-[14px] xl:text-[14px] xl:text-[14px] lg:text-[14px] md:text-[14px] sm:text-[12px] text-[12px]'>
-							<div className='w-1/3 '>Revise</div>
-							<div className='w-2/3 '>
-								<form className="max-w-xs mx-auto">
-									<div className="relative flex items-center max-w-[6rem]">
-										<button type="button" id="decrement-button" data-input-counter-decrement="revise-input" className="bg-[#2E8095] hover:bg-[#064454] border border-[#2E8095] rounded-md p-1 h-6 focus:ring-[#2E8095] focus:ring-2 focus:outline-none flex items-center justify-center text-[14px] text-white">
-											<RiSubtractLine />
-										</button>
-										<input type="text" id="revise-input" data-input-counter data-input-counter-min="1" data-input-counter-max="100" aria-describedby="helper-text-explanation" className="bg-transparent h-8 font-medium text-center text-black text-sm block w-full" placeholder="" value="10" required />
-										<button type="button" id="increment-button" data-input-counter-increment="revise-input" className="bg-[#2E8095] hover:bg-[#064454] border border-[#2E8095] rounded-md p-1 h-6 focus:ring-[#2E8095] focus:ring-2 focus:outline-none flex items-center justify-center text-[14px] text-white">
-											<RiAddLine />
-										</button>
-									</div>
-								</form>
+							<div className='flex  gap-2 w-2/3 2xl:text-[14px] xl:text-[14px] lg:text-[14px] md:text-[14px] sm:text-[12px] text-[12px]  grid grid-cols-1'>
+								<div className='w-full '>No. of Words</div>
+								<div className='w-full '>
+									<form className="max-w-xs mx-auto">
+										<div className="relative flex  max-w-[8rem]">
+											<button type="button" id="decrement-button" data-input-counter-decrement="pagecount-input" className="bg-[white]  border border-[gray] rounded-md p-2 h-8 focus:ring-[gray] focus:ring-1 focus:outline-none flex   text-[14px] text-black">
+												<RiSubtractLine />
+											</button>
+											<input type="text" id="pagecount-input" data-input-counter data-input-counter-min="100" data-input-counter-max="1000" aria-describedby="helper-text-explanation" className="bg-transparent h-8 font-medium text-center text-black text-sm block w-full" placeholder="" value="100" required />
+											<button type="button" id="increment-button" data-input-counter-increment="pagecount-input" className="bg-[white]  border border-[gray] rounded-md p-2 h-8 focus:ring-[gray] focus:ring-1 focus:outline-none flex   text-[14px] text-black">
+												<RiAddLine />
+											</button>
+										</div>
+									</form>
+								</div>
 							</div>
-						</div>
-						<div className='flex items-center justify-start py-1 gap-6 w-2/3 2xl:text-[14px] xl:text-[14px] lg:text-[14px] md:text-[14px] sm:text-[12px] text-[12px]'>
-							<div className='w-1/3 '>No. of Pages</div>
-							<div className='w-2/3 '>
-								<form className="max-w-xs mx-auto">
-									<div className="relative flex items-center max-w-[6rem]">
-										<button type="button" id="decrement-button" data-input-counter-decrement="pagecount-input" className="bg-[#2E8095] hover:bg-[#064454] border border-[#2E8095] rounded-md p-1 h-6 focus:ring-[#2E8095] focus:ring-2 focus:outline-none flex items-center justify-center text-[14px] text-white">
-											<RiSubtractLine />
-										</button>
-										<input type="text" id="pagecount-input" data-input-counter data-input-counter-min="1" data-input-counter-max="100" aria-describedby="helper-text-explanation" className="bg-transparent h-8 font-medium text-center text-black text-sm block w-full" placeholder="" value="10" required />
-										<button type="button" id="increment-button" data-input-counter-increment="pagecount-input" className="bg-[#2E8095] hover:bg-[#064454] border border-[#2E8095] rounded-md p-1 h-6 focus:ring-[#2E8095] focus:ring-2 focus:outline-none flex items-center justify-center text-[14px] text-white">
-											<RiAddLine />
-										</button>
-									</div>
-								</form>
+							<div className='w-full mt-3 ml-5'>
+								<ul class="list-disc ">
+									<li>Complete Document  </li>
+									<li>Add Report</li>
+								</ul>
 							</div>
+							
+							<div className='w-full mt-3'>
+								<label htmlFor="word-count" className="flex items-center">
+									<input type="checkbox" id="word-count" className="form-checkbox h-4 w-4 text-[#2E8095]" />
+									<span className="ml-2">Plag Report</span>
+								</label>
+
+								<label htmlFor="word-count" className="flex items-center">
+									<input type="checkbox" id="word-count" className="form-checkbox h-4 w-4 text-[#2E8095]" />
+									<span className="ml-2">Grammarly Scored Report</span>
+								</label>
+
+								<label htmlFor="word-count" className="flex items-center">
+									<input type="checkbox" id="word-count" className="form-checkbox h-4 w-4 text-[#2E8095]" />
+									<span className="ml-2">Both</span>
+								</label>
+							</div>
+
 						</div>
 
+						<div className='w-1/2 '>
+							<h3>
+								Quantity
+							</h3>
+
+							<div className='w-1/2-new'>
+
+								<div className='flex items-center justify-start py-1 gap-6 w-2/3 2xl:text-[14px] xl:text-[14px] lg:text-[14px] md:text-[14px] sm:text-[12px] text-[12px]'>
+									<div className='w-2/3 '>Page Count</div>
+									<div className='w-2/3 '>
+										<form className="max-w-xs mx-auto">
+											<div className="relative flex  max-w-[8rem]">
+												<button type="button" id="decrement-button-new" data-input-counter-decrement="pagecount-input-new" className="bg-[white]  border border-[gray] rounded-md p-2 h-8 focus:ring-[gray] focus:ring-1 focus:outline-none flex   text-[14px] text-black">
+													<RiSubtractLine />
+												</button>
+												<input type="text" id="pagecount-input-new" data-input-counter data-input-counter-min="1" data-input-counter-max="100" aria-describedby="helper-text-explanation" className="bg-transparent h-8 font-medium text-center text-black text-sm block w-full " placeholder="" value="10" required />
+												<button type="button" id="increment-button-new" data-input-counter-increment="pagecount-input-new" className="bg-[white]  border border-[gray] rounded-md p-2 h-8 focus:ring-[gray] focus:ring-1 focus:outline-none flex   text-[14px] text-black">
+													<RiAddLine />
+												</button>
+											</div>
+										</form>
+									</div>
+								</div>
+								
+
+
+
+
+
+							</div>
+
+						</div>
 					</div>
 
+
 					<div className='2xl:flex xl:flex lg:flex md:hidden sm:hidden hidden 2xl:w-1/3 xl:w-1/3 lg:w-1/3 md:w-0 sm:w-0 w-0 flex items-center justify-end overflow-hidden object-cover'>
-						<Image className="rounded-[20px]" width={245} height={245} src="/Images/com-img.png" alt="image" />
+						<Image className="rounded-[20px]" width={600} height={500} src="/Images/com-img.png" alt="image" />
 					</div>
 				</div>
 
 				{/* service and price distribution section */}
-
 				<div className='w-full py-10 grid 2xl:grid-cols-2 xl:grid-cols-2 lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-1 grid-cols-1'>
 					<div className='px-1 py-2'>
 
 						{/* service section */}
-						<div className='rounded-[20px] border-[1px] border-[#00000066] p-4 shadow-custom2 flex items-center justify-center'>
+						<div className='rounded-[20px] border-[1px] border-[#00000066] p-4  flex items-center justify-center'>
 
 							<div className="relative overflow-x-auto py-4">
 								<table className="w-full text-sm text-left rtl:text-right text-black">
@@ -103,21 +132,10 @@ const Hero = () => {
 									<tbody>
 										<tr className="bg-white">
 											<th scope="row" className="2xl:px-10 xl:px-10 lg:px-10 md:px-10 sm:px-4 px-4 py-2 font-medium text-black whitespace-nowrap border-e-[2px] border-[#00000059]">
-												Revise
+												No. of Words
 											</th>
 											<td className="2xl:px-10 xl:px-10 lg:px-10 md:px-10 sm:px-4 px-4 py-2 border-e-[2px] border-[#00000059]">
-												0
-											</td>
-											<td className="2xl:px-10 xl:px-10 lg:px-10 md:px-10 sm:px-4 px-4 py-2">
-												4
-											</td>
-										</tr>
-										<tr className="bg-white">
-											<th scope="row" className="2xl:px-10 xl:px-10 lg:px-10 md:px-10 sm:px-4 px-4 py-2 font-medium text-black whitespace-nowrap border-e-[2px] border-[#00000059]">
-												Tool
-											</th>
-											<td className="2xl:px-10 xl:px-10 lg:px-10 md:px-10 sm:px-4 px-4 py-2 border-e-[2px] border-[#00000059]">
-												Standard/Manual
+												10000
 											</td>
 											<td className="2xl:px-10 xl:px-10 lg:px-10 md:px-10 sm:px-4 px-4 py-2">
 
@@ -125,10 +143,22 @@ const Hero = () => {
 										</tr>
 										<tr className="bg-white">
 											<th scope="row" className="2xl:px-10 xl:px-10 lg:px-10 md:px-10 sm:px-4 px-4 py-2 font-medium text-black whitespace-nowrap border-e-[2px] border-[#00000059]">
-												No. of Pages
+												Review Type
+											</th>
+											<td className="2xl:px-10 xl:px-10 lg:px-10 md:px-10 sm:px-4 px-4 py-2 border-e-[2px] border-[#00000059] line-through">
+												Grammarly scored Report
+
+											</td>
+											<td className="2xl:px-10 xl:px-10 lg:px-10 md:px-10 sm:px-4 px-4 py-2">
+												Both (Plag and Grammarly scored Report)
+											</td>
+										</tr>
+										<tr className="bg-white">
+											<th scope="row" className="2xl:px-10 xl:px-10 lg:px-10 md:px-10 sm:px-4 px-4 py-2 font-medium text-black whitespace-nowrap border-e-[2px] border-[#00000059]">
+												Quantity
 											</th>
 											<td className="2xl:px-10 xl:px-10 lg:px-10 md:px-10 sm:px-4 px-4 py-2 border-e-[2px] border-[#00000059]">
-												5
+												1
 											</td>
 											<td className="2xl:px-10 xl:px-10 lg:px-10 md:px-10 sm:px-4 px-4 py-2">
 
@@ -167,7 +197,7 @@ const Hero = () => {
 											</tr>
 											<tr className="bg-white">
 												<th scope="row" className="px-10 py-2 font-medium text-black whitespace-nowrap border-e-[2px] border-[#00000059]">
-													Reference Tool
+													No. of Words
 												</th>
 												<td className="px-10 py-2">
 													₹5000
@@ -175,7 +205,7 @@ const Hero = () => {
 											</tr>
 											<tr className="bg-white">
 												<th scope="row" className="px-10 py-2 font-medium text-black whitespace-nowrap border-e-[2px] border-[#00000059]">
-													Revise
+													Review Type
 												</th>
 												<td className="px-10 py-2">
 													₹5000
@@ -183,7 +213,7 @@ const Hero = () => {
 											</tr>
 											<tr className="bg-white">
 												<th scope="row" className="px-10 pt-2 pb-6 font-medium text-black whitespace-nowrap border-e-[2px] border-[#00000059]">
-													No. of Pages
+													Quantity
 												</th>
 												<td className="px-10 pt-2 pb-6">
 													₹5000

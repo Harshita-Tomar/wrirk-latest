@@ -16,47 +16,46 @@ const Header = () => {
           </a>
 
           {/* <!-- Dropdown menu --> */}
-          <div id="dropdownHover" className="z-10 hidden bg-[#2E8095] divide-y divide-gray-100 rounded-lg shadow w-52">
-            <ul className="py-2  text-sm " aria-labelledby="dropdownHoverButton">
-              <li>
-                <a href="/Pricing/AdmissionProposal" className="block px-4 py-2 text-white hover:text-black hover:bg-white">Admission Proposal</a>
-              </li>
-              <li>
-                <a href="/Pricing/Book" className="block px-4 py-2 text-white hover:text-black hover:bg-white">Book</a>
-              </li>
-              <li>
-                <a href="/Pricing/Implementation" className="block px-4 py-2 text-white hover:text-black hover:bg-white">Implementation/ Analysis</a>
-              </li>
-              <li>
-                <a href="#" className="block px-4 py-2 text-white hover:text-black hover:bg-white">Master Dissertation</a>
-              </li>
-              <li>
-                <a href="#" className="block px-4 py-2 text-white hover:text-black hover:bg-white">Paper</a>
-              </li>
-              <li>
-                <a href="#" className="block px-4 py-2 text-white hover:text-black hover:bg-white">Publication</a>
-              </li>
-              <li>
-                <a href="#" className="block px-4 py-2 text-white hover:text-black hover:bg-white">Research Proposal/ Synopsis</a>
-              </li>
-              <li>
-                <a href="#" className="block px-4 py-2 text-white hover:text-black hover:bg-white">Review On Document</a>
-              </li>
-              <li>
-                <a href="#" className="block px-4 py-2 text-white hover:text-black hover:bg-white">Thesis</a>
-              </li>
-              <li>
-                <a href="#" className="block px-4 py-2 text-white hover:text-black hover:bg-white">Topic Description</a>
-              </li>
-              <li>
-                <a href="#" className="block px-4 py-2 text-white hover:text-black hover:bg-white">Wrirk Membership</a>
-              </li>
-              <li>
-                <a href="#" className="block px-4 py-2 text-white hover:text-black hover:bg-white">Writing</a>
-              </li>
-            </ul>
-          </div>
-
+            <div id="dropdownHover" className="z-10 hidden bg-[#2E8095] divide-y divide-gray-100 rounded-lg shadow w-52">
+              <ul className="py-2  text-sm " aria-labelledby="dropdownHoverButton">
+                <li>
+                  <a href="/Pricing/AdmissionProposal" className="block px-4 py-2 text-white hover:text-black hover:bg-white">Admission Proposal</a>
+                </li>
+                <li>
+                  <a href="/Pricing/Book" className="block px-4 py-2 text-white hover:text-black hover:bg-white">Book</a>
+                </li>
+                <li>
+                  <a href="/Pricing/Implementation" className="block px-4 py-2 text-white hover:text-black hover:bg-white">Implementation/ Analysis</a>
+                </li>
+                <li>
+                  <a href="/Pricing/MasterDissertation" className="block px-4 py-2 text-white hover:text-black hover:bg-white">Master Dissertation</a>
+                </li>
+                <li>
+                  <a href="#" className="block px-4 py-2 text-white hover:text-black hover:bg-white">Paper</a>
+                </li>
+                <li>
+                  <a href="#" className="block px-4 py-2 text-white hover:text-black hover:bg-white">Publication</a>
+                </li>
+                <li>
+                  <a href="#" className="block px-4 py-2 text-white hover:text-black hover:bg-white">Research Proposal/ Synopsis</a>
+                </li>
+                <li>
+                  <a href="/Pricing/ReviewDoc" className="block px-4 py-2 text-white hover:text-black hover:bg-white">Review On Document</a>
+                </li>
+                <li>
+                  <a href="#" className="block px-4 py-2 text-white hover:text-black hover:bg-white">Thesis</a>
+                </li>
+                <li>
+                  <a href="#" className="block px-4 py-2 text-white hover:text-black hover:bg-white">Topic Description</a>
+                </li>
+                <li>
+                  <a href="#" className="block px-4 py-2 text-white hover:text-black hover:bg-white">Wrirk Membership</a>
+                </li>
+                <li>
+                  <a href="#" className="block px-4 py-2 text-white hover:text-black hover:bg-white">Writing</a>
+                </li>
+              </ul>
+            </div>
           {/* <!--End Dropdown menu --> */}
 
           <a href="/service" className='text-[#000000B2] hover:text-black'>Services</a>
@@ -67,13 +66,13 @@ const Header = () => {
         </div>
 
         {/* <!----for mobile----> */}
-        <div className='2xl:hidden xl:hidden lg:hidden md:flex sm:flex flex items-center'>
-          <button className='text-[#000000B2] hover:text-black focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5' type="button" data-drawer-target="drawer-navigation" data-drawer-show="drawer-navigation" data-drawer-placement="right" aria-controls="drawer-navigation" >
-            <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16m-7 6h7" />
-            </svg>
-          </button>
-        </div>
+          <div className='2xl:hidden xl:hidden lg:hidden md:flex sm:flex flex items-center'>
+            <button className='text-[#000000B2] hover:text-black focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5' type="button" data-drawer-target="drawer-navigation" data-drawer-show="drawer-navigation" data-drawer-placement="right" aria-controls="drawer-navigation" >
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16m-7 6h7" />
+              </svg>
+            </button>
+          </div>
       </div>
 
       {/* <!-- drawer component for mobile --> */}
@@ -118,10 +117,10 @@ const Header = () => {
                   <a href="/Pricing/Book"className="flex items-center text-white w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 hover:bg-gray-100 ">Book</a>
                 </li>
                 <li>
-                  <a href="#"className="flex items-center text-white w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 hover:bg-gray-100 ">Implementation/ Analysis</a>
+                  <a href="/Pricing/Implementatio"className="flex items-center text-white w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 hover:bg-gray-100 ">Implementation/ Analysis</a>
                 </li>
                 <li>
-                  <a href="#"className="flex items-center text-white w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 hover:bg-gray-100 ">Master Dissertation</a>
+                  <a href="/Pricing/MasterDissertation"className="flex items-center text-white w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 hover:bg-gray-100 ">Master Dissertation</a>
                 </li>
                 <li>
                   <a href="#"className="flex items-center text-white w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 hover:bg-gray-100 ">Paper</a>
@@ -147,7 +146,6 @@ const Header = () => {
                 <li>
                   <a href="#"className="flex items-center text-white w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 hover:bg-gray-100 ">Writing</a>
                 </li>
-
 
               </ul>
             </li>

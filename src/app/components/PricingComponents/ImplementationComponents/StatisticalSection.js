@@ -13,83 +13,56 @@ const StatisticalSection = () => {
 
 	return (
 		<>
-			<div className='grid 2xl:grid-cols-3 xl:grid-cols-3 lg:grid-cols-1 sm:grid-cols-1 grid-cols-1 gap-5'>
+			<div className='grid 2xl:grid-cols-3 xl:grid-cols-3 lg:grid-cols-3 sm:grid-cols-1 grid-cols-1 gap-5'>
 
 				<div className='2xl:col-span-2 xl:col-span-2 lg:col-span-2 md:col-span-1 sm:col-span-1 col-span-1'>
 
-					<div className='rounded-lg border-[2px] border-[#196572] shadow-custom3 p-8'>
+					<div className='rounded-lg shadow-custom3 2xl:p-4 xl:p-4 lg:p-4 md:p-4 sm:p-3 p-3'>
 
-						<div className='grid 2xl:grid-cols-5 xl:grid-cols-5 lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-1 grid-cols-1 gap-x-6 gap-y-4'>
+						<div className='2xl:text-[14px] xl:text-[14px] lg:text-[14px] md:text-[14px] sm:text-[12px] text-[12px] grid 2xl:grid-cols-5 xl:grid-cols-5 lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-3 grid-cols-3 2xl:gap-x-6 xl:gap-x-6 lg:gap-x-6 md:gap-x-6 sm:gap-x-3 gap-x-3 gap-y-4'>
 
 							<div className='flex items-center justify-center' >
-								<button className='rounded-sm px-2 hover:text-white hover:bg-[#196572] py-2 border-[1px] border-[#000000] w-full h-[70px] flex items-center justify-center'>Java/PHP</button>
+								<button className='rounded-sm px-1 hover:text-white hover:bg-[#196572] py-1 border-[1px] border-[#000000] w-full h-[50px] flex items-center justify-center'>SPSS<br /> +₹ 10000</button>
 							</div>
 							<div className='flex items-center justify-center' >
-								<button className='rounded-sm px-2 hover:text-white hover:bg-[#196572] py-2 border-[1px] border-[#000000] w-full h-[70px] flex items-center justify-center'>Java/PHP</button>
+								<button className='rounded-sm px-1 hover:text-white hover:bg-[#196572] py-1 border-[1px] border-[#000000] w-full h-[50px] flex items-center justify-center'>RTool<br /> +₹ 10000</button>
 							</div>
 							<div className='flex items-center justify-center' >
-								<button className='rounded-sm px-2 hover:text-white hover:bg-[#196572] py-2 border-[1px] border-[#000000] w-full h-[70px] flex items-center justify-center'>MATLAB<br /> -₹ 5000</button>
+								<button className='rounded-sm px-1 hover:text-white hover:bg-[#196572] py-1 border-[1px] border-[#000000] w-full h-[50px] flex items-center justify-center'>Matlab<br /> +₹ 20000</button>
 							</div>
 							<div className='flex items-center justify-center' >
-								<button className='rounded-sm px-2 hover:text-white hover:bg-[#196572] py-2 border-[1px] border-[#000000] w-full h-[70px] flex items-center justify-center'>Cadence<br /> +₹ 10000</button>
+								<button className='rounded-sm px-1 hover:text-white hover:bg-[#196572] py-1 border-[1px] border-[#000000] w-full h-[50px] flex items-center justify-center'>Ansys<br /> +₹ 10000</button>
 							</div>
 							<div className='flex items-center justify-center' >
-								<button className='rounded-sm px-2 hover:text-white hover:bg-[#196572] py-2 border-[1px] border-[#000000] w-full h-[70px] flex items-center justify-center'>Ansys<br /> -₹ 10000</button>
+								<button className='rounded-sm px-1 hover:text-white hover:bg-[#196572] py-1 border-[1px] border-[#000000] w-full h-[50px] flex items-center justify-center'>Amos<br /> +₹ 20000</button>
 							</div>
 							<div className='flex items-center justify-center' >
-								<button className='rounded-sm px-2 hover:text-white hover:bg-[#196572] py-2 border-[1px] border-[#000000] w-full h-[70px] flex items-center justify-center'>MATLAB<br /> -₹ 5000</button>
+								<button className='rounded-sm px-1 hover:text-white hover:bg-[#196572] py-1 border-[1px] border-[#000000] w-full h-[50px] flex items-center justify-center'>Pls<br /> +₹ 20000</button>
 							</div>
 							<div className='flex items-center justify-center' >
-								<button className='rounded-sm px-2 hover:text-white hover:bg-[#196572] py-2 border-[1px] border-[#000000] w-full h-[70px] flex items-center justify-center'>Java/PHP</button>
+								<button className='rounded-sm hover:text-white hover:bg-[#196572] py-1 border-[1px] border-[#000000] w-full h-[50px] flex items-center justify-center text-[13px]'>Qualtitave Analysis<br /> +₹ 10000</button>
 							</div>
 							<div className='flex items-center justify-center' >
-								<button className='rounded-sm px-2 hover:text-white hover:bg-[#196572] py-2 border-[1px] border-[#000000] w-full h-[70px] flex items-center justify-center'>MATLAB<br /> -₹ 5000</button>
+								<button className='rounded-sm px-1 hover:text-white hover:bg-[#196572] py-1 border-[1px] border-[#000000] w-full h-[50px] flex items-center justify-center'>Content Analysis<br /> +₹ 10000</button>
 							</div>
 							<div className='flex items-center justify-center' >
-								<button className='rounded-sm px-2 hover:text-white hover:bg-[#196572] py-2 border-[1px] border-[#000000] w-full h-[70px] flex items-center justify-center'>Cadence<br /> +₹ 10000</button>
-							</div>
-							<div className='flex items-center justify-center' >
-								<button className='rounded-sm px-2 hover:text-white hover:bg-[#196572] py-2 border-[1px] border-[#000000] w-full h-[70px] flex items-center justify-center'>Ansys<br /> -₹ 10000</button>
-							</div>
-							<div className='flex items-center justify-center' >
-								<button className='rounded-sm px-2 hover:text-white hover:bg-[#196572] py-2 border-[1px] border-[#000000] w-full h-[70px] flex items-center justify-center'>MATLAB<br /> -₹ 5000</button>
-							</div>
-							<div className='flex items-center justify-center' >
-								<button className='rounded-sm px-2 hover:text-white hover:bg-[#196572] py-2 border-[1px] border-[#000000] w-full h-[70px] flex items-center justify-center'>Java/PHP</button>
-							</div>
+								<button className='rounded-sm px-1 hover:text-white hover:bg-[#196572] py-1 border-[1px] border-[#000000] w-full h-[50px] flex items-center justify-center'>Other<br /> +₹ 10000</button>
+							</div>							
 						</div>
 
-						<h3 className='flex items-center justify-start text-[20px] font-bold text-[#00000080] py-6'>Domain</h3>
 
-						<div className='grid 2xl:grid-cols-5 xl:grid-cols-5 lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-1 grid-cols-1 gap-x-6 gap-y-4'>
-
-							<div className='flex items-center justify-center' >
-								<button className='rounded-sm px-2 hover:text-white hover:bg-[#196572] py-2 border-[1px] border-[#000000] w-full h-[70px] flex items-center justify-center'>MATLAB<br /> -₹ 5000</button>
-							</div>
-							<div className='flex items-center justify-center' >
-								<button className='rounded-sm px-2 hover:text-white hover:bg-[#196572] py-2 border-[1px] border-[#000000] w-full h-[70px] flex items-center justify-center'>Java/PHP</button>
-							</div>
-							<div className='flex items-center justify-center' >
-								<button className='rounded-sm px-2 hover:text-white hover:bg-[#196572] py-2 border-[1px] border-[#000000] w-full h-[70px] flex items-center justify-center'>MATLAB<br /> -₹ 5000</button>
-							</div>
-							<div className='flex items-center justify-center' >
-								<button className='rounded-sm px-2 hover:text-white hover:bg-[#196572] py-2 border-[1px] border-[#000000] w-full h-[70px] flex items-center justify-center'>Cadence<br /> +₹ 10000</button>
-							</div>
-
-						</div>
-
-						<div className='py-6'>
+						<div className='pt-6'>
 							{/* Questionnaire */}
-							<div className='flex items-center justify-start py-2 gap-7 2xl:w-2/3 xl:w-2/3 lg:w-2/3 md:w-full sm:w-full w-full 2xl:text-[14px] xl:text-[14px] lg:text-[14px] md:text-[14px] sm:text-[12px] text-[12px]'>
+							<div className='flex items-center justify-start py-1 gap-6 w-2/3 2xl:text-[14px] xl:text-[14px] lg:text-[14px] md:text-[14px] sm:text-[12px] text-[12px]'>
 								<div className='w-1/3 '>Questionnaire</div>
 								<div className='w-2/3 flex 2xl:justify-start xl:justify-start lg:justify-start md:justify-end sm:justify-end justify-end '>
 									<form className="max-w-xs mx-auto">
-										<div className="relative flex items-center max-w-[8rem]">
-											<button type="button" id="decrement-button" data-input-counter-decrement="questionnaire-input" className="bg-[#2E8095] hover:bg-[#064454] border border-[#2E8095] rounded-md p-2 h-8 focus:ring-[#2E8095] focus:ring-2 focus:outline-none flex items-center justify-center text-[14px] text-white">
+										<div className="relative flex items-center max-w-[6rem]">
+											<button type="button" id="decrement-button" data-input-counter-decrement="questionnaire-input" className="bg-[#2E8095] hover:bg-[#064454] border border-[#2E8095] rounded-md p-1 h-6 focus:ring-[#2E8095] focus:ring-2 focus:outline-none flex items-center justify-center text-[14px] text-white">
 												<RiSubtractLine />
 											</button>
 											<input type="text" id="questionnaire-input" data-input-counter data-input-counter-min="1" data-input-counter-max="100" aria-describedby="helper-text-explanation" className="bg-transparent h-8 font-medium text-center text-black text-sm block w-full" placeholder="" value="10" required />
-											<button type="button" id="increment-button" data-input-counter-increment="questionnaire-input" className="bg-[#2E8095] hover:bg-[#064454] border border-[#2E8095] rounded-md p-2 h-8 focus:ring-[#2E8095] focus:ring-2 focus:outline-none flex items-center justify-center text-[14px] text-white">
+											<button type="button" id="increment-button" data-input-counter-increment="questionnaire-input" className="bg-[#2E8095] hover:bg-[#064454] border border-[#2E8095] rounded-md p-1 h-6 focus:ring-[#2E8095] focus:ring-2 focus:outline-none flex items-center justify-center text-[14px] text-white">
 												<RiAddLine />
 											</button>
 										</div>
@@ -98,16 +71,16 @@ const StatisticalSection = () => {
 							</div>
 
 							{/* Objective/Hypothesis */}
-							<div className='flex items-center justify-start py-2 gap-7 2xl:w-2/3 xl:w-2/3 lg:w-2/3 md:w-full sm:w-full w-full 2xl:text-[14px] xl:text-[14px] lg:text-[14px] md:text-[14px] sm:text-[12px] text-[12px]'>
-								<div className='w-1/3'>Objective / Hypothesis</div>
+							<div className='flex items-center justify-start py-1 gap-6 w-2/3 2xl:text-[14px] xl:text-[14px] lg:text-[14px] md:text-[14px] sm:text-[12px] text-[12px]'>
+								<div className='w-1/3 '>Objective/Hypothesis</div>
 								<div className='w-2/3 flex 2xl:justify-start xl:justify-start lg:justify-start md:justify-end sm:justify-end justify-end '>
 									<form className="max-w-xs mx-auto">
-										<div className="relative flex items-center max-w-[8rem]">
-											<button type="button" id="decrement-button" data-input-counter-decrement="objective-input" className="bg-[#2E8095] hover:bg-[#064454] border border-[#2E8095] rounded-md p-2 h-8 focus:ring-[#2E8095] focus:ring-2 focus:outline-none flex items-center justify-center text-[14px] text-white">
+										<div className="relative flex items-center max-w-[6rem]">
+											<button type="button" id="decrement-button" data-input-counter-decrement="objective-input" className="bg-[#2E8095] hover:bg-[#064454] border border-[#2E8095] rounded-md p-1 h-6 focus:ring-[#2E8095] focus:ring-2 focus:outline-none flex items-center justify-center text-[14px] text-white">
 												<RiSubtractLine />
 											</button>
 											<input type="text" id="objective-input" data-input-counter data-input-counter-min="1" data-input-counter-max="100" aria-describedby="helper-text-explanation" className="bg-transparent h-8 font-medium text-center text-black text-sm block w-full" placeholder="" value="10" required />
-											<button type="button" id="increment-button" data-input-counter-increment="objective-input" className="bg-[#2E8095] hover:bg-[#064454] border border-[#2E8095] rounded-md p-2 h-8 focus:ring-[#2E8095] focus:ring-2 focus:outline-none flex items-center justify-center text-[14px] text-white">
+											<button type="button" id="increment-button" data-input-counter-increment="objective-input" className="bg-[#2E8095] hover:bg-[#064454] border border-[#2E8095] rounded-md p-1 h-6 focus:ring-[#2E8095] focus:ring-2 focus:outline-none flex items-center justify-center text-[14px] text-white">
 												<RiAddLine />
 											</button>
 										</div>
@@ -116,16 +89,16 @@ const StatisticalSection = () => {
 							</div>
 
 							{/* Respodent */}
-							<div className='flex items-center justify-start py-2 gap-7 2xl:w-2/3 xl:w-2/3 lg:w-2/3 md:w-full sm:w-full w-full 2xl:text-[14px] xl:text-[14px] lg:text-[14px] md:text-[14px] sm:text-[12px] text-[12px]'>
+							<div className='flex items-center justify-start py-1 gap-6 w-2/3 2xl:text-[14px] xl:text-[14px] lg:text-[14px] md:text-[14px] sm:text-[12px] text-[12px]'>
 								<div className='w-1/3 '>Respodent</div>
 								<div className='w-2/3 flex 2xl:justify-start xl:justify-start lg:justify-start md:justify-end sm:justify-end justify-end '>
 									<form className="max-w-xs mx-auto">
-										<div className="relative flex items-center max-w-[8rem]">
-											<button type="button" id="decrement-button" data-input-counter-decrement="respodent-input" className="bg-[#2E8095] hover:bg-[#064454] border border-[#2E8095] rounded-md p-2 h-8 focus:ring-[#2E8095] focus:ring-2 focus:outline-none flex items-center justify-center text-[14px] text-white">
+										<div className="relative flex items-center max-w-[6rem]">
+											<button type="button" id="decrement-button" data-input-counter-decrement="respodent-input" className="bg-[#2E8095] hover:bg-[#064454] border border-[#2E8095] rounded-md p-1 h-6 focus:ring-[#2E8095] focus:ring-2 focus:outline-none flex items-center justify-center text-[14px] text-white">
 												<RiSubtractLine />
 											</button>
 											<input type="text" id="respodent-input" data-input-counter data-input-counter-min="1" data-input-counter-max="100" aria-describedby="helper-text-explanation" className="bg-transparent h-8 font-medium text-center text-black text-sm block w-full" placeholder="" value="10" required />
-											<button type="button" id="increment-button" data-input-counter-increment="respodent-input" className="bg-[#2E8095] hover:bg-[#064454] border border-[#2E8095] rounded-md p-2 h-8 focus:ring-[#2E8095] focus:ring-2 focus:outline-none flex items-center justify-center text-[14px] text-white">
+											<button type="button" id="increment-button" data-input-counter-increment="respodent-input" className="bg-[#2E8095] hover:bg-[#064454] border border-[#2E8095] rounded-md p-1 h-6 focus:ring-[#2E8095] focus:ring-2 focus:outline-none flex items-center justify-center text-[14px] text-white">
 												<RiAddLine />
 											</button>
 										</div>
@@ -134,22 +107,22 @@ const StatisticalSection = () => {
 							</div>
 
 							{/* check box pilot study */}
-							<div className="flex items-center py-2 2xl:text-[14px] xl:text-[14px] lg:text-[14px] md:text-[14px] sm:text-[12px] text-[12px]">
-								<label for="default-radio-1" className=" pe-[175px] font-medium text-black">Pilot Study</label>
-								<input id="default-radio-1" type="radio" value="" name="default-radio" className="cursor-pointer w-6 h-6 rounded-0 text-[#2E8095] bg-[#2E8095] border-[#2E8095] focus:ring-[#2E8095] focus:ring-1" />
+							<div className="flex items-center justify-start py-2 2xl:text-[14px] xl:text-[14px] lg:text-[14px] md:text-[14px] sm:text-[12px] text-[12px]">
+								<label for="default-checkbox" className="font-medium text-black">Pilot Study</label>
+								<input id="default-checkbox" type="checkbox" value="pilot" name="default-checkbox" className="cursor-pointer w-6 h-6 rounded-0 text-[#2E8095] bg-[#2E8095] border-[#2E8095]" />
 							</div>
 
 							{/* Revise */}
-							<div className='flex items-center justify-start py-2 gap-7 2xl:w-2/3 xl:w-2/3 lg:w-2/3 md:w-full sm:w-full w-full 2xl:text-[14px] xl:text-[14px] lg:text-[14px] md:text-[14px] sm:text-[12px] text-[12px]'>
+							<div className='flex items-center justify-start py-1 gap-6 w-2/3 2xl:text-[14px] xl:text-[14px] lg:text-[14px] md:text-[14px] sm:text-[12px] text-[12px]'>
 								<div className='w-1/3 '>Revise</div>
 								<div className='w-2/3 flex 2xl:justify-start xl:justify-start lg:justify-start md:justify-end sm:justify-end justify-end '>
 									<form className="max-w-xs mx-auto">
-										<div className="relative flex items-center max-w-[8rem]">
-											<button type="button" id="decrement-button" data-input-counter-decrement="revise-input" className="bg-[#2E8095] hover:bg-[#064454] border border-[#2E8095] rounded-md p-2 h-8 focus:ring-[#2E8095] focus:ring-2 focus:outline-none flex items-center justify-center text-[14px] text-white">
+										<div className="relative flex items-center max-w-[6rem]">
+											<button type="button" id="decrement-button" data-input-counter-decrement="revise-input" className="bg-[#2E8095] hover:bg-[#064454] border border-[#2E8095] rounded-md p-1 h-6 focus:ring-[#2E8095] focus:ring-2 focus:outline-none flex items-center justify-center text-[14px] text-white">
 												<RiSubtractLine />
 											</button>
 											<input type="text" id="revise-input" data-input-counter data-input-counter-min="1" data-input-counter-max="100" aria-describedby="helper-text-explanation" className="bg-transparent h-8 font-medium text-center text-black text-sm block w-full" placeholder="" value="10" required />
-											<button type="button" id="increment-button" data-input-counter-increment="revise-input" className="bg-[#2E8095] hover:bg-[#064454] border border-[#2E8095] rounded-md p-2 h-8 focus:ring-[#2E8095] focus:ring-2 focus:outline-none flex items-center justify-center text-[14px] text-white">
+											<button type="button" id="increment-button" data-input-counter-increment="revise-input" className="bg-[#2E8095] hover:bg-[#064454] border border-[#2E8095] rounded-md p-1 h-6 focus:ring-[#2E8095] focus:ring-2 focus:outline-none flex items-center justify-center text-[14px] text-white">
 												<RiAddLine />
 											</button>
 										</div>
@@ -158,16 +131,16 @@ const StatisticalSection = () => {
 							</div>
 
 							{/* complexity */}
-							<div className='flex items-center justify-start py-2 gap-7 2xl:w-2/3 xl:w-2/3 lg:w-2/3 md:w-full sm:w-full w-full 2xl:text-[14px] xl:text-[14px] lg:text-[14px] md:text-[14px] sm:text-[12px] text-[12px]'>
+							<div className='flex items-center justify-start py-1 gap-6 w-2/3 2xl:text-[14px] xl:text-[14px] lg:text-[14px] md:text-[14px] sm:text-[12px] text-[12px]'>
 								<div className='w-1/3 '>Complexity</div>
 								<div className='w-2/3 flex 2xl:justify-start xl:justify-start lg:justify-start md:justify-end sm:justify-end justify-end '>
 									<form className="max-w-xs mx-auto">
-										<div className="relative flex items-center max-w-[8rem]">
-											<button type="button" id="decrement-button" data-input-counter-decrement="complexity-input" className="bg-[#2E8095] hover:bg-[#064454] border border-[#2E8095] rounded-md p-2 h-8 focus:ring-[#2E8095] focus:ring-2 focus:outline-none flex items-center justify-center text-[14px] text-white">
+										<div className="relative flex items-center max-w-[6rem]">
+											<button type="button" id="decrement-button" data-input-counter-decrement="complexity-input" className="bg-[#2E8095] hover:bg-[#064454] border border-[#2E8095] rounded-md p-1 h-6 focus:ring-[#2E8095] focus:ring-2 focus:outline-none flex items-center justify-center text-[14px] text-white">
 												<RiSubtractLine />
 											</button>
 											<input type="text" id="complexity-input" data-input-counter data-input-counter-min="1" data-input-counter-max="100" aria-describedby="helper-text-explanation" className="bg-transparent h-8 font-medium text-center text-black text-sm block w-full" placeholder="" value="10" required />
-											<button type="button" id="increment-button" data-input-counter-increment="complexity-input" className="bg-[#2E8095] hover:bg-[#064454] border border-[#2E8095] rounded-md p-2 h-8 focus:ring-[#2E8095] focus:ring-2 focus:outline-none flex items-center justify-center text-[14px] text-white">
+											<button type="button" id="increment-button" data-input-counter-increment="complexity-input" className="bg-[#2E8095] hover:bg-[#064454] border border-[#2E8095] rounded-md p-1 h-6 focus:ring-[#2E8095] focus:ring-2 focus:outline-none flex items-center justify-center text-[14px] text-white">
 												<RiAddLine />
 											</button>
 										</div>

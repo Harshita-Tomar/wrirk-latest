@@ -1,6 +1,6 @@
 import React from 'react'
-// import ResearchForm from '@/app/utils/Researchutils/GeneralForm';
 import SearchTopic from '@/app/utils/Researchutils/SearchTopic';
+import GeneralForm from '@/app/utils/Formutils/GeneralForm';
 
 const Hero = () => {
     return (
@@ -46,7 +46,7 @@ const Hero = () => {
                     <SearchTopic />
                 </div>
                 <div className="w-full md:w-1/2  p-4">
-                    <ResearchForm />
+                    <GeneralForm />
                 </div>
             </div>
 
