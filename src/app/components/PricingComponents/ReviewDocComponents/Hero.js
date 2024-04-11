@@ -33,7 +33,7 @@ const Hero = () => {
 											<button type="button" id="decrement-button" data-input-counter-decrement="pagecount-input" className="bg-[white]  border border-[gray] rounded-md p-2 h-8 focus:ring-[gray] focus:ring-1 focus:outline-none flex   text-[14px] text-black">
 												<RiSubtractLine />
 											</button>
-											<input type="text" id="pagecount-input" data-input-counter data-input-counter-min="100" data-input-counter-max="1000" aria-describedby="helper-text-explanation" className="bg-transparent h-8 font-medium text-center text-black text-sm block w-full" placeholder="" value="100" required />
+											<input type="text" id="pagecount-input" data-input-counter data-input-counter-min="1000" data-input-counter-max="10000" aria-describedby="helper-text-explanation" className="bg-transparent h-8 font-medium text-center text-black text-sm block w-full" placeholder="" value="1000" required />
 											<button type="button" id="increment-button" data-input-counter-increment="pagecount-input" className="bg-[white]  border border-[gray] rounded-md p-2 h-8 focus:ring-[gray] focus:ring-1 focus:outline-none flex   text-[14px] text-black">
 												<RiAddLine />
 											</button>

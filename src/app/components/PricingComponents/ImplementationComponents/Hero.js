@@ -31,49 +31,49 @@ const Hero = () => {
 			</div>
 
 			<div className='w-full py-4 2xl:px-10 xl:px-10 lg:px-10 md:px-10 sm:px-6 px-4'>
+				
+					<div className="mb-4  ">
+						<ul className="flex flex-wrap 2xl:text-[14px] xl:text-[14px] lg:text-[14px] md:text-[14px] sm:text-[12px] text-[12px] font-bold text-center" id="default-tab" data-tabs-toggle="#default-tab-content" role="tablist">
+							<li className="me-2" role="presentation">
+								<button className="inline-block p-2 border-b-2 border-[#D9D9D9] rounded-t-lg text-[#00000080] hover:text-[#064454] focus:text-[#064454] focus:border-[#064454]" id="implementation-tab" data-tabs-target="#implementation" type="button" role="tab" aria-controls="implementation" aria-selected="false"> Implementation/Coding Tool</button>
+							</li>
+							<li className="me-2" role="presentation">
+								<button className="inline-block p-2 border-b-2 border-[#D9D9D9] rounded-t-lg text-[#00000080] hover:text-[#064454] focus:text-[#064454] focus:border-[#064454]" id="statistical-tab" data-tabs-target="#statistical" type="button" role="tab" aria-controls="statistical" aria-selected="false">Statistical Analysis Tool</button>
+							</li>
+							<li className="me-2" role="presentation">
+								<button className="inline-block p-2 border-b-2 border-[#D9D9D9] rounded-t-lg text-[#00000080] hover:text-[#064454] focus:text-[#064454] focus:border-[#064454]" id="mapping-tab" data-tabs-target="#mapping" type="button" role="tab" aria-controls="mapping" aria-selected="false">Mapping and Designing Tool</button>
+							</li>
+						</ul>
+					</div>
 
-				<div className="mb-4  ">
-					<ul className="flex flex-wrap 2xl:text-[14px] xl:text-[14px] lg:text-[14px] md:text-[14px] sm:text-[12px] text-[12px] font-bold text-center" id="default-tab" data-tabs-toggle="#default-tab-content" role="tablist">
-						<li className="me-2" role="presentation">
-							<button className="inline-block p-2 border-b-2 border-[#D9D9D9] rounded-t-lg text-[#00000080] hover:text-[#064454] focus:text-[#064454] focus:border-[#064454]" id="implementation-tab" data-tabs-target="#implementation" type="button" role="tab" aria-controls="implementation" aria-selected="false"> Implementation/Coding Tool</button>
-						</li>
-						<li className="me-2" role="presentation">
-							<button className="inline-block p-2 border-b-2 border-[#D9D9D9] rounded-t-lg text-[#00000080] hover:text-[#064454] focus:text-[#064454] focus:border-[#064454]" id="statistical-tab" data-tabs-target="#statistical" type="button" role="tab" aria-controls="statistical" aria-selected="false">Statistical Analysis Tool</button>
-						</li>
-						<li className="me-2" role="presentation">
-							<button className="inline-block p-2 border-b-2 border-[#D9D9D9] rounded-t-lg text-[#00000080] hover:text-[#064454] focus:text-[#064454] focus:border-[#064454]" id="mapping-tab" data-tabs-target="#mapping" type="button" role="tab" aria-controls="mapping" aria-selected="false">Mapping and Designing Tool</button>
-						</li>
-					</ul>
-				</div>
+					<div id="default-tab-content">
 
-				<div id="default-tab-content">
+						{/* implementation section */}
+						<div className="hidden p-2 rounded-lg" id="implementation" role="tabpanel" aria-labelledby="implementation-tab">
 
-					{/* implementation section */}
-					<div className="hidden p-2 rounded-lg" id="implementation" role="tabpanel" aria-labelledby="implementation-tab">
+							<ImplementationSection />
 
-						<ImplementationSection />
+						</div>
+
+						{/* statistical section */}
+						<div className="hidden p-2 rounded-lg" id="statistical" role="tabpanel" aria-labelledby="statistical-tab">
+
+							<StatisticalSection />
+
+						</div>
+
+						{/* mapping section */}
+						<div className="hidden p-2 rounded-lg" id="mapping" role="tabpanel" aria-labelledby="mapping-tab">
+
+							<MappingSection />
+
+						</div>
 
 					</div>
 
-					{/* statistical section */}
-					<div className="hidden p-2 rounded-lg" id="statistical" role="tabpanel" aria-labelledby="statistical-tab">
-
-						<StatisticalSection />
-
-					</div>
-
-					{/* mapping section */}
-					<div className="hidden p-2 rounded-lg" id="mapping" role="tabpanel" aria-labelledby="mapping-tab">
-
-						<MappingSection />
-
-					</div>
-
-				</div>
-
+				
 			</div>
-
-			<div className='w-full flex justify-start items-center 2xl:px-10 xl:px-10 lg:px-6 md:px-4 sm:px-0 px-0 pb-20'>
+			<div>
 				<GeneralForm />
 			</div>
 		</>

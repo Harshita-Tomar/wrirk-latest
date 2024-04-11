@@ -26,86 +26,96 @@ const Hero = () => {
 
 					<div className='2xl:col-span-2 xl:col-span-2 lg:col-span-2 md:col-span-1 sm:col-span-1 col-span-1'>
 
-						{/* Research method section */}
-						<div className='rounded-lg shadow-custom3 2xl:p-4 xl:p-4 lg:p-4 md:p-4 sm:p-3 p-3'>
-
-							<h1 className='text-[18px] font-medium'>Research Method</h1>
-
-							{/* buttons */}
-
-							<div className="flex items-center justify-start xl:w-2/3 3xl:w-2/3 2xl:w-2/3 lg:w-3/4 md:w-3/4 sm:w-full w-full  justify-between relative py-2 2xl:text-[14px] xl:text-[14px] lg:text-[14px] md:text-[14px] sm:text-[12px] text-[12px]">
-								<button className="cursor-pointer 2xl:px-4 xl:px-4 lg:px-4 md:px-4 sm:px-2 px-2 py-2 border-[1px] text-white bg-[#2E8095] rounded-md text-center w-2/3 me-4">Not Required Separately</button>
-								<button className="cursor-pointer 2xl:px-4 xl:px-4 lg:px-4 md:px-4 sm:px-2 px-2 py-2 border-[1px] text-cyan-700 border-cyan-700 rounded-md text-center w-2/3">Required Separately</button>
+						<div className='rounded-lg shadow-custom3 p-4'>
+							{/* Research method section */}
+							<div className='flex flex-wrap 2xl:text-[14px] xl:text-[14px] lg:text-[14px] md:text-[14px] sm:text-[12px] text-[12px] font-bold text-center'>
+								<h1 className='inline-block p-2 border-b-2 border-[#D9D9D9] rounded-t-lg text-[#00000080] hover:text-[#064454] focus:text-[#064454] focus:border-[#064454]'>Research Method</h1>
 							</div>
+							<div className="p-0">
 
-						</div>
+								{/* buttons */}
 
-						{/* tool enable/disable option */}
-						<div className=' px-2 py-2 my-4 flex justify-end'>
-
-							{/* buttons */}
-
-							<div className="grid grid-cols-3 2xl:gap-4 xl:gap-4 lg:gap-4 md:gap-3 sm:gap-3 gap-3 xl:w-2/3 3xl:2/3 2xl:w-2/3 lg:w-2/3 md:w-full sm:w-full w-full  justify-between relative px-2 py-2 2xl:text-[14px] xl:text-[14px] lg:text-[14px] md:text-[14px] sm:text-[12px] text-[12px]">
-
-								<button className="cursor-pointer 2xl:px-2 xl:px-2 lg:px-2 md:px-2 sm:px-2 px-2 py-1 border-[1px] text-white bg-[#2E8095] rounded-md text-center text-wrap leading-[16px]">No Tool</button>
-
-								<button className="cursor-pointer 2xl:px-2 xl:px-2 lg:px-2 md:px-2 sm:px-2 px-2 py-1 border-[1px] text-cyan-700 border-cyan-700 rounded-md text-center">Not required separately</button>
-
-								<button className="cursor-pointer 2xl:px-6 xl:px-6 lg:px-6 md:px-6 sm:px-2 px-2 py-1 border-[1px] text-cyan-700 border-cyan-700 rounded-md text-center">Required separately</button>
+								<div className="flex items-center justify-start xl:w-2/3 3xl:w-2/3 2xl:w-2/3 lg:w-3/4 md:w-3/4 sm:w-full w-full  justify-between relative py-2 2xl:text-[14px] xl:text-[14px] lg:text-[14px] md:text-[14px] sm:text-[12px] text-[12px]">
+									<button className="cursor-pointer 2xl:px-4 xl:px-4 lg:px-4 md:px-4 sm:px-2 px-2 py-2 border-[1px] text-white bg-[#2E8095] rounded-md text-center w-2/3 me-4">Not Required Separately</button>
+									<button className="cursor-pointer 2xl:px-4 xl:px-4 lg:px-4 md:px-4 sm:px-2 px-2 py-2 border-[1px] text-cyan-700 border-cyan-700 rounded-md text-center w-2/3">Required Separately</button>
+								</div>
 
 							</div>
 						</div>
 
-						{/* implementation,statistical and mapping section */}
-						<div className='w-full py-2 '>
+						<div className='rounded-lg shadow-custom3 p-4  mt-8 '>
+							{/* tool enable/disable option */}
+							<div className='py-2 flex justify-end'>
 
-							<div className="mb-4 ">
-								<ul className="flex flex-wrap 2xl:text-[14px] xl:text-[14px] lg:text-[14px] md:text-[14px] sm:text-[12px] text-[12px] font-bold text-center" id="default-tab" data-tabs-toggle="#default-tab-content" role="tablist">
-									<li className="me-2" role="presentation">
-										<button className="inline-block p-2 border-b-2 border-[#D9D9D9] rounded-t-lg text-[#00000080] hover:text-[#064454] focus:text-[#064454] focus:border-[#064454]" id="implementation-tab" data-tabs-target="#implementation" type="button" role="tab" aria-controls="implementation" aria-selected="false"> Implementation/Coding Tool</button>
-									</li>
-									<li className="me-2" role="presentation">
-										<button className="inline-block p-2 border-b-2 border-[#D9D9D9] rounded-t-lg text-[#00000080] hover:text-[#064454] focus:text-[#064454] focus:border-[#064454]" id="statistical-tab" data-tabs-target="#statistical" type="button" role="tab" aria-controls="statistical" aria-selected="false">Statistical Analysis Tool</button>
-									</li>
-									<li className="me-2" role="presentation">
-										<button className="inline-block p-2 border-b-2 border-[#D9D9D9] rounded-t-lg text-[#00000080] hover:text-[#064454] focus:text-[#064454] focus:border-[#064454]" id="mapping-tab" data-tabs-target="#mapping" type="button" role="tab" aria-controls="mapping" aria-selected="false">Mapping and Designing Tool</button>
-									</li>
-								</ul>
+								{/* buttons */}
+
+								<div className="grid grid-cols-3 2xl:gap-4 xl:gap-4 lg:gap-4 md:gap-3 sm:gap-3 gap-3 w-full  justify-between relative pt-2 2xl:text-[14px] xl:text-[14px] lg:text-[14px] md:text-[14px] sm:text-[12px] text-[12px]">
+
+									<button className="cursor-pointer 2xl:px-2 xl:px-2 lg:px-2 md:px-2 sm:px-2 px-2 py-1 border-[1px] text-white bg-[#2E8095] rounded-md text-center text-wrap leading-[16px]">No Tool</button>
+
+									<button className="cursor-pointer 2xl:px-2 xl:px-2 lg:px-2 md:px-2 sm:px-2 px-2 py-1 border-[1px] text-cyan-700 border-cyan-700 rounded-md text-center">Not required separately</button>
+
+									<button className="cursor-pointer 2xl:px-6 xl:px-6 lg:px-6 md:px-6 sm:px-2 px-2 py-1 border-[1px] text-cyan-700 border-cyan-700 rounded-md text-center">Required separately</button>
+
+								</div>
 							</div>
 
-							<div id="default-tab-content">
+							{/* implementation,statistical and mapping section */}
+							<div className='w-full py-2 '>
 
-								{/* implementation section */}
-								<div className="hidden rounded-lg" id="implementation" role="tabpanel" aria-labelledby="implementation-tab">
-
-									<MasterImplementation />
-
+								<div className="mb-4 ">
+									<ul className="flex flex-wrap 2xl:text-[14px] xl:text-[14px] lg:text-[14px] md:text-[14px] sm:text-[12px] text-[12px] font-bold text-center" id="default-tab" data-tabs-toggle="#default-tab-content" role="tablist">
+										<li className="me-2" role="presentation">
+											<button className="inline-block p-2 border-b-2 border-[#D9D9D9] rounded-t-lg text-[#00000080] hover:text-[#064454] focus:text-[#064454] focus:border-[#064454]" id="implementation-tab" data-tabs-target="#implementation" type="button" role="tab" aria-controls="implementation" aria-selected="false"> Implementation/Coding Tool</button>
+										</li>
+										<li className="me-2" role="presentation">
+											<button className="inline-block p-2 border-b-2 border-[#D9D9D9] rounded-t-lg text-[#00000080] hover:text-[#064454] focus:text-[#064454] focus:border-[#064454]" id="statistical-tab" data-tabs-target="#statistical" type="button" role="tab" aria-controls="statistical" aria-selected="false">Statistical Analysis Tool</button>
+										</li>
+										<li className="me-2" role="presentation">
+											<button className="inline-block p-2 border-b-2 border-[#D9D9D9] rounded-t-lg text-[#00000080] hover:text-[#064454] focus:text-[#064454] focus:border-[#064454]" id="mapping-tab" data-tabs-target="#mapping" type="button" role="tab" aria-controls="mapping" aria-selected="false">Mapping and Designing Tool</button>
+										</li>
+									</ul>
 								</div>
 
-								{/* statistical section */}
-								<div className="hidden rounded-lg" id="statistical" role="tabpanel" aria-labelledby="statistical-tab">
+								<div id="default-tab-content">
 
-									<MasterStatistical />
+									{/* implementation section */}
+									<div className="hidden rounded-lg" id="implementation" role="tabpanel" aria-labelledby="implementation-tab">
 
-								</div>
+										<MasterImplementation />
 
-								{/* mapping section */}
-								<div className="hidden rounded-lg" id="mapping" role="tabpanel" aria-labelledby="mapping-tab">
+									</div>
 
-									<MasterMapping />
+									{/* statistical section */}
+									<div className="hidden rounded-lg" id="statistical" role="tabpanel" aria-labelledby="statistical-tab">
+
+										<MasterStatistical />
+
+									</div>
+
+									{/* mapping section */}
+									<div className="hidden rounded-lg" id="mapping" role="tabpanel" aria-labelledby="mapping-tab">
+
+										<MasterMapping />
+
+									</div>
 
 								</div>
 
 							</div>
-
 						</div>
 
-						{/* writing tool section */}
-						<div className='rounded-lg shadow-custom3 2xl:p-4 xl:p-4 lg:p-4 md:p-4 sm:p-3 p-3 my-4'>
+						<div className="rounded-lg shadow-custom3 p-4 mt-8">
+							{/* writing tool section */}
+							<div className='flex flex-wrap 2xl:text-[14px] xl:text-[14px] lg:text-[14px] md:text-[14px] sm:text-[12px] text-[12px] font-bold text-center'>
 
-							<h1 className='text-[18px] font-medium'>Writing</h1>
+								<h1 className='inline-block p-2 border-b-2 border-[#D9D9D9] rounded-t-lg text-[#00000080] hover:text-[#064454] focus:text-[#064454] focus:border-[#064454]'>Writing</h1>
 
-							<div className='pt-2'>
+
+
+							</div>
+							<div className="p-0">
+
 								{/* methods */}
 								<div className='flex items-center justify-start py-1 gap-6 w-2/3 2xl:text-[14px] xl:text-[14px] lg:text-[14px] md:text-[14px] sm:text-[12px] text-[12px]'>
 									<div className='w-1/3 '>No. of Pages Required</div>
@@ -125,9 +135,7 @@ const Hero = () => {
 									</div>
 								</div>
 							</div>
-
 						</div>
-
 					</div>
 
 					{/* service table */}
@@ -149,6 +157,8 @@ const Hero = () => {
 				</div>
 
 			</div>
+
+			
 		</>
 	)
 }

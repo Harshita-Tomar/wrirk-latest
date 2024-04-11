@@ -80,19 +80,19 @@ const Hero = () => {
 								<div className='grid 2xl:grid-cols-4 xl:grid-cols-4 lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-2 grid-cols-2 gap-x-2 py-2'>
 
 									<div className="flex items-center py-2">
-										<input defaultChecked id="default-radio-1" type="radio" value="radio-1" name="default-radio" className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 focus:ring-2" />
+										<input defaultChecked id="default-radio-1" type="radio" value="radio-1" name="default-radio" className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300" />
 										<label htmlFor="default-radio-1" className="ms-2 text-sm font-medium text-gray-900">General Inquiry</label>
 									</div>
 									<div className="flex items-center py-2">
-										<input id="default-radio-2" type="radio" value="radio-2" name="default-radio" className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 focus:ring-2" />
+										<input id="default-radio-2" type="radio" value="radio-2" name="default-radio" className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 " />
 										<label htmlFor="default-radio-2" className="ms-2 text-sm font-medium text-gray-900">General Inquiry</label>
 									</div>
 									<div className="flex items-center py-2">
-										<input id="default-radio-3" type="radio" value="radio-3" name="default-radio" className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 focus:ring-2" />
+										<input id="default-radio-3" type="radio" value="radio-3" name="default-radio" className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 " />
 										<label htmlFor="default-radio-3" className="ms-2 text-sm font-medium text-gray-900">General Inquiry</label>
 									</div>
 									<div className="flex items-center py-2">
-										<input id="default-radio-4" type="radio" value="radio-4" name="default-radio" className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 focus:ring-2" />
+										<input id="default-radio-4" type="radio" value="radio-4" name="default-radio" className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300" />
 										<label htmlFor="default-radio-4" className="ms-2 text-sm font-medium text-gray-900">General Inquiry</label>
 									</div>
 								</div>

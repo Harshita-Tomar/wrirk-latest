@@ -15,14 +15,14 @@ const ImplementationSection = () => {
 		<>
 			<div className='grid 2xl:grid-cols-3 xl:grid-cols-3 lg:grid-cols-3 sm:grid-cols-1 grid-cols-1 gap-5'>
 
-				<div className='2xl:col-span-2 xl:col-span-2 lg:col-span-2 md:col-span-1 sm:col-span-1 col-span-1'>
+				<div className='2xl:col-span-2 xl:col-span-2 lg:col-span-2 md:col-span-1 sm:col-span-1 col-span-1 rounded-lg shadow-custom3 p-4'>
 
-					<div className='rounded-lg shadow-custom3 2xl:p-4 xl:p-4 lg:p-4 md:p-4 sm:p-3 p-3'>
+					<div className='p-0'>
 
 						<div className='2xl:text-[14px] xl:text-[14px] lg:text-[14px] md:text-[14px] sm:text-[12px] text-[12px] grid 2xl:grid-cols-5 xl:grid-cols-5 lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-3 grid-cols-3 2xl:gap-x-6 xl:gap-x-6 lg:gap-x-6 md:gap-x-6 sm:gap-x-3 gap-x-3 gap-y-4'>
 
 							<div className='flex items-center justify-center' >
-								<button className='rounded-sm px-1 hover:text-white hover:bg-[#196572] py-1 border-[1px] border-[#000000] w-full h-[50px] flex items-center justify-center'>Python<br/>+₹ 10000</button>
+								<button type='radio' className='rounded-sm px-1 hover:text-white hover:bg-[#196572] py-1 border-[1px] border-[#000000] w-full h-[50px] flex items-center justify-center'>Python</button>
 							</div>
 							<div className='flex items-center justify-center' >
 								<button className='rounded-sm px-1 hover:text-white hover:bg-[#196572] py-1 border-[1px] border-[#000000] w-full h-[50px] flex items-center justify-center'>Matlab<br /> +₹ 20000</button>
@@ -125,7 +125,7 @@ const ImplementationSection = () => {
 					</div>
 
 				</div>
-
+			
 				{/* service table */}
 				<div className='2xl:col-span-1 xl:col-span-1 lg:col-span-1 md:col-span-1 sm:col-span-1 col-span-1'>
 

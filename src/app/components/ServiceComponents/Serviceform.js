@@ -46,17 +46,9 @@ const Serviceform = () => {
     //     </div>
     // )
     return (
-        <div className='mb-8'>
-            <div className='grid grid-cols-1 sm:grid-cols-2'>
-                <div className='2xl:ps-28 xl:ps-28 lg:ps-20 md:ps-0 sm:ps-0 ps-0 py-2'>
-					<GeneralForm />
-				</div>
-
-                <div className='mt-20 ms-28'>
-                    {/* <img src="/Images/service_slider1.png" alt="image" /> */}
-                </div>
-            </div>
-        </div>
+        <div >
+        <GeneralForm />
+    </div>
     )
 }
 

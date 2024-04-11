@@ -1,44 +1,71 @@
 import React from 'react'
-import { IoSearchOutline, IoChevronDownSharp } from 'react-icons/io5';
-import { BsTag } from 'react-icons/bs';
 import Image from 'next/image';
 
 const GeneralForm = () => {
   return (
     <>
-      <div className="p-1">
-        <h3 className="text-center text-[20px] pb-6">Request For Free Research Problem</h3>
-        <div className="bg-[#064454] shadow-md rounded-[20px] p-6">
+      <div className='w-full pt-[30rem] bg-[#D9D9D9] relative h-[500px] mt-[10rem]'>
+				<div className='absolute bottom-[100px] rounded-md shadow-custom3 right-[11.5rem] w-3/4 flex items-center justify center mx-auto bg-white z-1'>
+					<div className='grid grid-cols-3 w-full'>
+						<div className='p-6 col-span-2'>
+						<h3 className="text-start text-[20px] pb-6 font-bold text-[#064454]">Request For Free Research Problem</h3>
+							<form>
+								<div className="mb-2 p-1">
+									<label htmlFor="name" className="block text-sm font-medium leading-6 text-gray-900">Name</label>
+									<div className="mt-1 pb-1 border-b-[1px] border-[##8D8D8D]">
+										<input type="text" id="name" name="name" className="form-input block w-full focus:outline-none" placeholder="Name" required />
+									</div>
+								</div>
 
-        
-          <form action="#" method="POST" className='2xl:p-10 xl:p-10 lg:p-10 md:p-3 sm:p-2 p-2'>
-            <div className="mb-4">
-              <input type="text" id="name" name="name" placeholder="Name" className="mt-1 block w-full h-12 rounded-md border-gray-300 shadow-sm  focus:ring focus:ring-blue-200 focus:ring-opacity-50 pl-4 focus:outline-none" />
-            </div>
-            <div className="flex flex-wrap -mx-3 mb-4">
-              <div className="w-full md:w-1/2 px-3 mb-4 md:mb-0">
-                <input type="email" id="email" name="email" placeholder="Email" className="mt-1 block w-full h-12 rounded-md border-gray-300 shadow-sm  focus:ring focus:ring-blue-200 focus:ring-opacity-50 pl-4 focus:outline-none" />
-              </div>
-              <div className="w-full md:w-1/2 px-3">
-                <input type="number" id="number" name="number" placeholder="Number" className="mt-1 block w-full h-12 rounded-md border-gray-300 shadow-sm  focus:ring focus:ring-blue-200 focus:ring-opacity-50 pl-4 focus:outline-none" />
-              </div>
-            </div>
-            <div className="mb-4">
-              <input type="text" id="area" name="area" placeholder="Area" className="mt-1 block w-full h-12 rounded-md border-gray-300 shadow-sm  focus:ring focus:ring-blue-200 focus:ring-opacity-50 pl-4 focus:outline-none" />
-            </div>
-            <div className="mb-4">
-              <input type="text" id="domain" name="domain" placeholder="Domain" className="mt-1 block w-full h-12 rounded-md border-gray-300 shadow-sm  focus:ring focus:ring-blue-200 focus:ring-opacity-50 pl-4 focus:outline-none" />
-            </div>
-            <div className="mb-4">
-              <input type="text" id="message" name="message" placeholder="Message" className="mt-1 block w-full h-24 rounded-md border-gray-300 shadow-sm  focus:ring focus:ring-blue-200 focus:ring-opacity-50 pl-4 focus:outline-none" />
-            </div>
-            <div className="mt-6 flex justify-center">
-              <button type="submit" className="w-40 px-4 py-2 bg-white text-[#064454] rounded-full hover:bg-[#6a8f98] hover:text-white focus:outline-none focus:bg-blue-600">Submit</button>
-            </div>
-          </form>
-        </div>
+								<div className='grid 2xl:grid-cols-2 xl:grid-cols-2 lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-1 grid-cols-1 gap-x-7'>
+									<div className="mb-2 p-1">
+										<label htmlFor="email" className="block text-sm font-medium leading-6 text-gray-900">Email </label>
+										<div className="mt-1 pb-1 border-b-[1px] border-[##8D8D8D]">
+											<input type="email" id="email" name="email" className="form-input block w-full focus:outline-none" placeholder="email@gmail.com" required />
+										</div>
+									</div>
+									<div className="mb-2 p-1">
+										<label htmlFor="contactnumber" className="block text-sm font-medium leading-6 text-gray-900">Phone Number </label>
+										<div className="mt-1 pb-1 border-b-[1px] border-[##8D8D8D]">
+											<input type="tel" id="contactnumber" name="contactnumber" className=" focus:outline-none form-input block w-full" placeholder="+1 012 3456 789 " required />
+										</div>
+									</div>
+								</div>
 
-      </div>
+								<div className="mb-2 p-1">
+									<label htmlFor="area" className="block text-sm font-medium leading-6 text-gray-900">Area</label>
+									<div className="mt-1 pb-1 border-b-[1px] border-[##8D8D8D]">
+										<input type="text" id="area" name="area" className="form-input block w-full focus:outline-none" placeholder="Area" required />
+									</div>
+								</div>
+
+								<div className="mb-2 p-1">
+									<label htmlFor="domain" className="block text-sm font-medium leading-6 text-gray-900">Domain</label>
+									<div className="mt-1 pb-1 border-b-[1px] border-[##8D8D8D]">
+										<input type="text" id="domain" name="domain" className="form-input block w-full focus:outline-none" placeholder="Domain" required />
+									</div>
+								</div>
+
+								<div className="mb-2 p-1">
+									<label htmlFor="textarea" className="block text-sm font-medium leading-6 text-gray-900">Message</label>
+									<div className="mt-1 pb-1 border-b-[1px] border-[##8D8D8D]">
+										<textarea id="research_description" name="research_description" className="form-textarea block w-full" rows="1" placeholder="Write your message..."></textarea>
+									</div>
+								</div>
+								<div className="mb-2 p-1 flex items-center justify-end">
+									<button className='px-6 py-2 rounded-lg bg-[#064454] text-white font-medium '>Send Message</button>
+								</div>
+							</form>
+						</div>
+						<div className=' flex items-center justify-center items-center overflow-hidden object-cover bg-[#064454] rounded-r-md'>
+							<Image className="rounded-md 2xl:ps-0 xl:ps-0 lg:ps-0 md:ps-10 sm:ps-10 ps-10" width={300} height={300} src="/Images/form-img.png" alt="image" />
+						</div>
+					</div>
+				</div>
+				<div className='absolute right-[140px] bottom-[60px] flex overflow-hidden object-cover justify-end'>
+					<Image className="rounded-0" width={200} height={200} src="/Images/send-img.png" alt="image" objectFit="cover" />
+				</div>
+			</div>
     </>
   )
 }

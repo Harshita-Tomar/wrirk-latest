@@ -10,7 +10,7 @@ const Header = () => {
           <a href="/" className='text-[#000000B2] hover:text-black'>Home</a>
           <a href="/research" className='text-[#000000B2] hover:text-black'>Research</a>
 
-          <a href="/Pricing" id="dropdownHoverButton" data-dropdown-toggle="dropdownHover" data-dropdown-trigger="hover" className="text-[#000000B2] hover:text-black focus:outline-none font-medium rounded-lg px-5 py-2.5 text-center inline-flex items-center" type="button">Pricing <svg className="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+          <a href="/Pricing" id="dropdownHoverButton" data-dropdown-toggle="dropdownHover" data-dropdown-trigger="hover" className="text-[#000000B2] hover:text-black focus:outline-none font-medium rounded-lg text-center inline-flex items-center" type="button">Pricing <svg className="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
             <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m1 1 4 4 4-4" />
           </svg>
           </a>
@@ -37,7 +37,7 @@ const Header = () => {
                   <a href="#" className="block px-4 py-2 text-white hover:text-black hover:bg-white">Publication</a>
                 </li>
                 <li>
-                  <a href="#" className="block px-4 py-2 text-white hover:text-black hover:bg-white">Research Proposal/ Synopsis</a>
+                  <a href="/Pricing/Synopsis" className="block px-4 py-2 text-white hover:text-black hover:bg-white">Research Proposal/ Synopsis</a>
                 </li>
                 <li>
                   <a href="/Pricing/ReviewDoc" className="block px-4 py-2 text-white hover:text-black hover:bg-white">Review On Document</a>
@@ -129,10 +129,10 @@ const Header = () => {
                   <a href="#"className="flex items-center text-white w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 hover:bg-gray-100 ">Publication</a>
                 </li>
                 <li>
-                  <a href="#"className="flex items-center text-white w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 hover:bg-gray-100 ">Research Proposal/ Synopsis</a>
+                  <a href="/Pricing/Synopsis"className="flex items-center text-white w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 hover:bg-gray-100 ">Research Proposal/ Synopsis</a>
                 </li>
                 <li>
-                  <a href="#"className="flex items-center text-white w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 hover:bg-gray-100 ">Review On Document</a>
+                  <a href="/Pricing/ReviewDoc"className="flex items-center text-white w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 hover:bg-gray-100 ">Review On Document</a>
                 </li>
                 <li>
                   <a href="#"className="flex items-center text-white w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 hover:bg-gray-100 ">Thesis</a>

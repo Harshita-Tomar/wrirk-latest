@@ -45,12 +45,12 @@ const Hero = () => {
                 <div className="w-full  md:w-1/2  p-4">
                     <SearchTopic />
                 </div>
-                <div className="w-full md:w-1/2  p-4">
-                    <GeneralForm />
-                </div>
+
             </div>
 
-
+            <div >
+                <GeneralForm />
+            </div>
         </>
     )
 }
