@@ -47,7 +47,7 @@ const Hero = () => {
 									<li>Add Report</li>
 								</ul>
 							</div>
-							
+
 							<div className='w-full mt-3'>
 								<label htmlFor="word-count" className="flex items-center">
 									<input type="checkbox" id="word-count" className="form-checkbox h-4 w-4 text-[#2E8095]" />
@@ -90,7 +90,7 @@ const Hero = () => {
 										</form>
 									</div>
 								</div>
-								
+
 
 
 

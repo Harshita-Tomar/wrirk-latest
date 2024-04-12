@@ -35,9 +35,9 @@ const Hero = () => {
 						<div className='rounded-lg shadow-custom3 p-4'>
 						
 							<div className="p-0">
-								<ul className="flex flex-wrap 2xl:text-[14px] xl:text-[14px] lg:text-[14px] md:text-[14px] sm:text-[12px] text-[12px] font-bold text-center" id="default-tab" data-tabs-toggle="#default-tab-content" role="tablist">
+								<ul className="flex flex-wrap 2xl:text-[16px] xl:text-[16px] lg:text-[16px] md:text-[14px] sm:text-[12px] text-[12px] font-bold text-center" id="default-tab" data-tabs-toggle="#default-tab-content" role="tablist">
 									<li className="me-2" role="presentation">
-										<button className="inline-block p-2 border-b-2 border-[#D9D9D9] rounded-t-lg text-[#00000080] hover:text-[#064454] focus:text-[#064454] focus:border-[#064454]" id="admission-tab" data-tabs-target="#admission" type="button" role="tab" aria-controls="admission" aria-selected="false">Admission Proposal</button>
+										<button className="inline-block p-1 border-b-2 border-[#064454] rounded-t-lg text-sky-950" id="admission-tab" data-tabs-target="#admission" type="button" role="tab" aria-controls="admission" aria-selected="false">ADMISSION PROPOSAL</button>									
 									</li>
 								</ul>
 							</div>
@@ -77,7 +77,7 @@ const Hero = () => {
 					{/* service table */}
 					<div className='2xl:col-span-1 xl:col-span-1 lg:col-span-1 md:col-span-1 sm:col-span-1 col-span-1'>
 
-						<div className='rounded-lg border-[1px] border-[#000000]'>
+						<div className='rounded-lg border-[1px] border-cyan-700'>
 							<div className="w-full relative overflow-x-auto  pt-4 pb-2">
 								<table className="w-full text-sm text-left rtl:text-right text-black text-wrap">
 									<thead className="text-[14px] text-black uppercase">
@@ -109,7 +109,7 @@ const Hero = () => {
 											<th scope="row" className="px-1 py-2 font-medium text-black whitespace-nowrap border-e-[2px] border-[#00000059]">
 												PPT required
 											</th>
-											<td className="px-1 py-2 border-e-[2px] border-[#00000059]">
+											<td className="px-1 py-2 border-e-[2px] border-[#00000059] line-through">
 												No
 											</td>
 											<td className="px-1 py-2">
@@ -120,7 +120,7 @@ const Hero = () => {
 											<th scope="row" className="px-1 py-2 font-medium text-black whitespace-nowrap border-e-[2px] border-[#00000059]">
 												Review
 											</th>
-											<td className="px-1 py-2 border-e-[2px] border-[#00000059]">
+											<td className="px-1 py-2 border-e-[2px] border-[#00000059] line-through">
 												2
 											</td>
 											<td className="px-1 py-2">

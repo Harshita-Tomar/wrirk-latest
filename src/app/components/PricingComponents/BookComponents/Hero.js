@@ -22,7 +22,7 @@ const Hero = () => {
 				<div className='w-full flex items-center justify-end overflow-hidden object-cover'>
 					<Image className="rounded-md 2xl:ps-0 xl:ps-0 lg:ps-0 md:ps-10 sm:ps-10 ps-10" width={150} height={150} src="/Images/book-img.png" alt="image" />
 				</div>
-			</div>		
+			</div>
 
 			{/* Book section */}
 			<div className='w-full py-6 2xl:px-10 xl:px-10 lg:px-10 md:px-10 sm:px-6 px-4'>
@@ -33,9 +33,9 @@ const Hero = () => {
 						<div className='rounded-lg shadow-custom3 p-4'>
 
 							<div className="p-0">
-								<ul className="flex flex-wrap 2xl:text-[14px] xl:text-[14px] lg:text-[14px] md:text-[14px] sm:text-[12px] text-[12px] font-bold text-center" id="default-tab" data-tabs-toggle="#default-tab-content" role="tablist">
+								<ul className="flex flex-wrap 2xl:text-[16px] xl:text-[16px] lg:text-[16px] md:text-[14px] sm:text-[12px] text-[12px] font-bold text-center " id="default-tab" data-tabs-toggle="#default-tab-content" role="tablist">
 									<li className="me-2" role="presentation">
-										<button className="inline-block p-2 border-b-2 border-[#D9D9D9] rounded-t-lg text-[#00000080] hover:text-[#064454] focus:text-[#064454] focus:border-[#064454]" id="writing-tab" data-tabs-target="#writing" type="button" role="tab" aria-controls="writing" aria-selected="false">Writing</button>
+										<button className="inline-block p-1 border-b-2 border-[#064454] rounded-t-lg text-sky-950" id="writing-tab" data-tabs-target="#writing" type="button" role="tab" aria-controls="writing" aria-selected="false">WRITING</button>
 									</li>
 								</ul>
 							</div>
@@ -45,14 +45,31 @@ const Hero = () => {
 
 									{/* buttons */}
 
-									<div className="flex items-center justify-start xl:w-2/3 3xl:2/3 2xl:w-2/3 lg:w-2/3 md:w-full sm:w-full w-full relative py-4 2xl:text-[14px] xl:text-[14px] lg:text-[14px] md:text-[14px] sm:text-[12px] text-[12px]">
+									<div className=" 2xl:text-[14px] xl:text-[14px] lg:text-[14px] md:text-[14px] sm:text-[12px] text-[12px] pt-2">
+										<p className='text-[14px] text-black font-medium'>Reference Tool</p>
+										<ul className='flex items-center justify-start xl:w-3/4 3xl:3/4 2xl:w-3/4 lg:w-3/4 md:w-full sm:w-full w-full relative py-4 '>
+											<li>
+												<input defaultChecked type="radio" id="Manual" name="Tool" value="Standard/Manual" className="hidden peer" required />
+												<label htmlFor="Manual" className="cursor-pointer 2xl:px-4 xl:px-4 lg:px-4 md:px-4 sm:px-2 px-2 py-2 border-[1px] text-cyan-700 border-cyan-700 peer-checked:border-[#2E8095] peer-checked:text-white peer-checked:bg-[#2E8095] rounded-md text-center text-wrap me-4 ">
+													<span className="text-center">Standard/Manual</span>
+												</label>
+											</li>
 
-										<button className="cursor-pointer 2xl:px-4 xl:px-4 lg:px-4 md:px-4 sm:px-2 px-2 py-2 border-[1px] text-white bg-[#2E8095] rounded-md text-center text-wrap me-4 w-2/3">Standard/Manual</button>
+											<li>
+												<input type="radio" id="Mendely" name="Tool" value="Mendely" className="hidden peer" required />
+												<label htmlFor="Mendely" className="cursor-pointer 2xl:px-4 xl:px-4 lg:px-4 md:px-4 sm:px-2 px-2 py-2 border-[1px] text-cyan-700 border-cyan-700 peer-checked:border-[#2E8095] peer-checked:text-white peer-checked:bg-[#2E8095] rounded-md text-center text-wrap me-4 ">
+													<span className="text-center">Mendely</span>
+												</label>
+											</li>
 
-										<button className="cursor-pointer 2xl:px-4 xl:px-4 lg:px-4 md:px-4 sm:px-2 px-2 py-2 border-[1px] text-cyan-700 border-cyan-700 rounded-md text-center me-4 w-2/3">Mendely</button>
-
-										<button className="cursor-pointer 2xl:px-4 xl:px-4 lg:px-4 md:px-4 sm:px-2 px-2 py-2 border-[1px] text-cyan-700 border-cyan-700 rounded-md text-center w-2/3">Zotero</button>
-									</div>									
+											<li>
+												<input type="radio" id="Zotero" name="Tool" value="Zotero" className="hidden peer" required />
+												<label htmlFor="Zotero" className="cursor-pointer 2xl:px-4 xl:px-4 lg:px-4 md:px-4 sm:px-2 px-2 py-2 border-[1px] text-cyan-700 border-cyan-700 peer-checked:border-[#2E8095] peer-checked:text-white peer-checked:bg-[#2E8095] rounded-md text-center text-wrap me-4 ">
+													<span className="text-center">Zotero</span>
+												</label>
+											</li>
+										</ul>
+									</div>
 
 								</div>
 
@@ -64,7 +81,7 @@ const Hero = () => {
 					{/* service table */}
 					<div className='2xl:col-span-1 xl:col-span-1 lg:col-span-1 md:col-span-1 sm:col-span-1 col-span-1'>
 
-						<div className='rounded-lg border-[1px] border-[#000000]'>
+						<div className='rounded-lg border-[1px] border-cyan-700'>
 							<div className="w-full relative overflow-x-auto  pt-4 pb-2">
 								<table className="w-full text-sm text-left rtl:text-right text-black text-wrap">
 									<thead className="text-[14px] text-black uppercase">
@@ -91,7 +108,7 @@ const Hero = () => {
 											<td className="px-1 py-2">
 
 											</td>
-										</tr>										
+										</tr>
 										<tr className="bg-white text-center">
 											<th scope="row" className="px-1 py-2 font-medium text-black whitespace-nowrap border-e-[2px] border-[#00000059]">
 												Review
@@ -100,18 +117,18 @@ const Hero = () => {
 												2
 											</td>
 											<td className="px-1 py-2">
-												
+
 											</td>
-										</tr>										
+										</tr>
 										<tr className="bg-white text-center">
 											<th scope="row" className="px-1 py-2 font-medium text-black whitespace-nowrap border-e-[2px] border-[#00000059]">
 												Reference Tool
 											</th>
-											<td className="px-1 py-2 border-e-[2px] border-[#00000059]">
+											<td className="px-1 py-2 border-e-[2px] border-[#00000059] line-through">
 												Standard/Manual
 											</td>
 											<td className="px-1 py-2">
-
+												Zotero
 											</td>
 										</tr>
 									</tbody>
@@ -148,7 +165,7 @@ const Hero = () => {
 											<td className="px-10 py-2">
 												₹10000
 											</td>
-										</tr>									
+										</tr>
 										<tr className="bg-white">
 											<th scope="row" className="px-10 py-2 font-medium text-black whitespace-nowrap border-e-[2px] border-[#00000059]">
 												Reference Tool
@@ -156,7 +173,7 @@ const Hero = () => {
 											<td className="px-10 py-2">
 												₹5000
 											</td>
-										</tr>										
+										</tr>
 										<tr className="bg-white">
 											<th scope="row" className="px-10 pt-2 pb-6 font-medium text-black whitespace-nowrap border-e-[2px] border-[#00000059]">
 												Review
