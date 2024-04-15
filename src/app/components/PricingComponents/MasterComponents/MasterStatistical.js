@@ -1,9 +1,15 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { RiAddLine } from "react-icons/ri";
 import { RiSubtractLine } from "react-icons/ri";
 import { IoIosArrowDown } from "react-icons/io";
 
 const MasterStatistical = () => {
+	const [additionalCheck, setAdditionalCheck] = useState(false)
+
+	const handleAditional = () => {
+		// e.preventDefault();
+		setAdditionalCheck(!additionalCheck)
+	}
 	return (
 		<>
 
@@ -174,14 +180,14 @@ const MasterStatistical = () => {
 						<div className='flex items-center justify-start'>
 							<label className="inline-flex items-center cursor-pointer">
 								<span className="text-sm font-medium text-gray-900 pe-10">Additional Field</span>
-								<input type="checkbox" value="" className="sr-only peer" />
+								<input type="checkbox" value={additionalCheck} className="sr-only peer" onChange={handleAditional} />
 								<div className="relative w-11 h-6 bg-gray-800 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-[#2E8095]"></div>
 							</label>
 						</div>
 
 						<div className='flex items-center justify-start 2xl:py-0 xl:py-0 lg:py-0 md:py-3 sm:py-3 py-3'>
 							<form className="w-full">
-								<select id="countries" className="border border-[#2E8095] text-white bg-[#2E8095] text-sm rounded-lg focus:bg-[#2E8095] focus:border-[#2E8095] block w-full p-1">
+								<select id="countries" className="border border-[#2E8095] text-white bg-[#2E8095] text-sm rounded-lg focus:bg-[#2E8095] focus:border-[#2E8095] block w-full p-1" disabled={!additionalCheck}>
 									<option selected>Select a Field</option>
 									<option value="all">All(Except Finance and Law)</option>
 									<option value="finance">Finance only(datasheet)</option>							

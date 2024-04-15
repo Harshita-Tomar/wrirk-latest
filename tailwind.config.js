@@ -1,3 +1,4 @@
+// import flowbite from "flowbite-react/tailwind";
 /** @type {import('tailwindcss').Config} */
 const defaultTheme = require('tailwindcss/defaultTheme')
 module.exports = {
@@ -5,6 +6,7 @@ module.exports = {
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+    // flowbite.content(),
   ],
   theme: {
     screens: {
@@ -35,6 +37,8 @@ module.exports = {
       'custom3': '0px 0px 11px 0px #00000040',
     },
   },
-  plugins: [],
+  plugins: [
+    //  flowbite.plugin(),
+  ],
 };
 

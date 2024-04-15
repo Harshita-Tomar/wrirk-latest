@@ -1,8 +1,10 @@
+import { Suspense } from "react";
 import StoreProvider from "./Store/StoreProvider";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import "./globals.css";
 import '@fontsource/poppins'; 
+import Loading from "./loading";
 
 export const metadata = {
   title: "Wrirk",
@@ -13,14 +15,16 @@ export default function RootLayout({ children }) {
   return (
     <StoreProvider>
       <html lang="en">
-        {/* <head>
+        <head>
           <title>{metadata.title}</title>
           <meta name="description" content={metadata.description} />
-          <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
-        </head> */}
+          {/* <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" /> */}
+        </head>
         <body className="font-poppins 2xl:container 2xl:mx-auto xl:mx-auto lg:mx-0 md:mx-0 sm:mx-0 mx-0">
           <Header />
-          {children}
+            <Suspense fallback={<Loading />} >
+              {children}
+            </Suspense>
           <Footer />
           <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
           </body>

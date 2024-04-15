@@ -1,7 +1,5 @@
 "use client"
 import React, { useState } from 'react'
-import { RiAddLine } from "react-icons/ri";
-import { RiSubtractLine } from "react-icons/ri";
 import { IoIosArrowDown } from "react-icons/io";
 import Image from 'next/image';
 import GeneralForm from '@/app/utils/Formutils/GeneralForm';
@@ -41,8 +39,18 @@ const Hero = () => {
 							</div>
 							<div id="default-tab-content">
 
-								<div className="hidden p-0" id="writing" role="tabpanel" aria-labelledby="writing-tab">
+								<div className="p-0" id="writing" role="tabpanel" aria-labelledby="writing-tab">
 
+									<div className=" 2xl:text-[14px] xl:text-[14px] lg:text-[14px] md:text-[14px] sm:text-[12px] text-[12px] pt-4 ">
+										<p className='text-[14px] text-black font-medium me-6'>Pages</p>
+
+										<form className="py-2 w-1/4 flex items-center ">
+											{/*<label htmlFor="number-input" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Select a number:</label>*/}
+											<input type="number" id="number-input" aria-describedby="helper-text-explanation" className="bg-white border border-gray-400 text-gray-900 text-sm rounded-md focus:outline-none block w-full py-1 ps-3 pe-1 me-2" placeholder="1" required />
+											<span>x1000</span>
+										</form>
+
+									</div>
 									{/* buttons */}
 
 									<div className=" 2xl:text-[14px] xl:text-[14px] lg:text-[14px] md:text-[14px] sm:text-[12px] text-[12px] pt-2">
@@ -82,66 +90,59 @@ const Hero = () => {
 					<div className='2xl:col-span-1 xl:col-span-1 lg:col-span-1 md:col-span-1 sm:col-span-1 col-span-1'>
 
 						<div className='rounded-lg border-[1px] border-cyan-700'>
-							<div className="w-full relative overflow-x-auto  pt-4 pb-2">
+
+						
 								<table className="w-full text-sm text-left rtl:text-right text-black text-wrap">
 									<thead className="text-[14px] text-black uppercase">
-										<tr className='text-center'>
-											<th scope="col" className=" px-1 py-3 border-e-[2px] border-[#00000059]">
+										<tr className='text-start'>
+											<th scope="col" className="  px-10 py-2">
 												Services
 											</th>
-											<th scope="col" className=" px-1 py-3 border-e-[2px] border-[#00000059]">
+											<th scope="col" className="  px-10 py-2">
 												Basic
 											</th>
-											<th scope="col" className=" px-1 py-3">
-												Required
-											</th>
+										
 										</tr>
 									</thead>
-									<tbody className='2xl:text-[14px] xl:text-[14px] lg:text[14px] md:text-[12px] sm:text-[12px] text-[12px]'>
+									<tbody className='text-[12px]'>
 										<tr className="bg-white text-center">
-											<th scope="row" className="px-1 py-2 font-medium text-black whitespace-nowrap border-e-[2px] border-[#00000059]">
+											<th scope="row" className=" px-10 py-2 font-medium text-black whitespace-nowrap border-e-[2px] border-[#00000059]">
 												Page count
 											</th>
-											<td className="px-1 py-2 border-e-[2px] border-[#00000059]">
+											<td className=" px-10 py-2">
 												1000
 											</td>
-											<td className="px-1 py-2">
-
-											</td>
+										
 										</tr>
 										<tr className="bg-white text-center">
-											<th scope="row" className="px-1 py-2 font-medium text-black whitespace-nowrap border-e-[2px] border-[#00000059]">
+											<th scope="row" className="px-10 py-2 font-medium text-black whitespace-nowrap border-e-[2px] border-[#00000059]">
 												Review
 											</th>
-											<td className="px-1 py-2 border-e-[2px] border-[#00000059]">
+											<td className="px-10 py-2">
 												2
 											</td>
-											<td className="px-1 py-2">
-
-											</td>
+										
 										</tr>
 										<tr className="bg-white text-center">
-											<th scope="row" className="px-1 py-2 font-medium text-black whitespace-nowrap border-e-[2px] border-[#00000059]">
+											<th scope="row" className="px-10 py-2 font-medium text-black whitespace-nowrap border-e-[2px] border-[#00000059]">
 												Reference Tool
 											</th>
-											<td className="px-1 py-2 border-e-[2px] border-[#00000059] line-through">
+											<td className="px-10 py-2">
 												Standard/Manual
 											</td>
-											<td className="px-1 py-2">
-												Zotero
-											</td>
+										
 										</tr>
 									</tbody>
 								</table>
 								<div className=' flex items-center justify-end pt-2 px-3'>
 									<button type='button' onClick={onClickhandle} className='py-1 font-bold text-[#064454] flex items-center px-2 justify-end'> Check Price Distribution <IoIosArrowDown className='mx-2' /> </button>
 								</div>
-							</div>
+					
 
 							<div className={` ${priceTable ? 'block' : 'hidden'} relative overflow-x-auto rounded-[18px]`}>
-								<h3 className='py-2 px-10 text-[20px] font-bold'>Price Distribution</h3>
+								<h3 className='py-2 px-10 text-[16px] uppercase font-bold'>Price Distribution</h3>
 								<table className="w-full text-sm text-left rtl:text-right text-black">
-									<tbody>
+									<tbody className='text-[12px]'>
 										<tr className="bg-white">
 											<th scope="row" className="px-10 py-2 font-medium text-black whitespace-nowrap border-e-[2px] border-[#00000059]">
 												Base Price
@@ -196,9 +197,11 @@ const Hero = () => {
 							</div>
 
 						</div>
+
 						<div className='flex justify-end items-center pb-4 mt-4' >
 							<button type='submit' className='text-white bg-[#064454] 2xl:text-[14px] xl:text-[14px] lg:text-[14px] md:text-[12px] sm:text-[12px] text-[12px] px-8 py-2 rounded-lg font-medium'>Download Quotation</button>
 						</div>
+						
 					</div>
 				</div>
 

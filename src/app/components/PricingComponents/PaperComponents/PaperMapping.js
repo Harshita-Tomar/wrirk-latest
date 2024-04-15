@@ -3,10 +3,9 @@ import { RiAddLine } from "react-icons/ri";
 import { RiSubtractLine } from "react-icons/ri";
 import { IoIosArrowDown } from "react-icons/io";
 
-const MasterMapping = () => {
+const PaperMapping = () => {
 	return (
-		<>
-
+		<div>
 			<div className='p-0'>
 
 				<div className='2xl:text-[14px] xl:text-[14px] lg:text-[14px] md:text-[14px] sm:text-[12px] text-[12px]'>
@@ -64,9 +63,8 @@ const MasterMapping = () => {
 				</div>
 
 			</div>
-
-		</>
+		</div>
 	)
 }
 
-export default MasterMapping
+export default PaperMapping

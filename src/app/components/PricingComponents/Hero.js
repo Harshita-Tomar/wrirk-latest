@@ -17,6 +17,7 @@ const Hero = () => {
     }
     return (
         <>
+        
             <div className='w-full text-center pt-16 pb-10 px-4'>
                 <h4 className='font-semibold tracking-wide text-[#2E8095] text-[18px]'>PRICING</h4>
                 <h1 className='font-bold tracking-wide text-[#170F49] 2xl:text-[50px] xl:text-[50px] lg:text-[50px] md:text-[36px] sm:text-[36px] text-[36px] px-6 py-2'>Pricing Plans</h1>

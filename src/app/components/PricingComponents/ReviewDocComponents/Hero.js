@@ -1,46 +1,89 @@
-import React from 'react'
+"use client"
+import React, { useState } from 'react'
 import Image from 'next/image';
 import { RiAddLine } from "react-icons/ri";
 import { RiSubtractLine } from "react-icons/ri";
+import { IoIosArrowDown } from "react-icons/io";
 import GeneralForm from '@/app/utils/Formutils/GeneralForm';
 
+
+
 const Hero = () => {
+	const [priceTable, setPriceTable] = useState(false)
+	const onClickhandle = (e) => {
+		e.preventDefault();
+		setPriceTable(!priceTable);
+	}
 	return (
 		<>
 			{/* Heading div */}
 
-			<div className='flex justify-between items-center w-full 2xl:px-10 xl:px-10 lg:px-10 md:px-6 sm:px-4 px-4 py-6 bg-[#2E8095]'>
-				<div className='flex-grow'>
-					<h3 className='2xl:text-[42px] xl:text-[42px] lg:text-[42px] md:text-[36px] sm:text-[30px] text-[28px] text-white font-black tracking-wide'>REVIEW ON DOCUMENT </h3>
+			<div className='flex justify-between items-center w-full px-4 py-4 bg-[#2E8095] 2xl:px-10 xl:px-10 lg:px-10 md:px-6 sm:px-4'>
+				<div className='leading-[30px] sm:leading-[30px] md:leading-[36px] lg:leading-[44px] xl:leading-[44px] 2xl:leading-[44px]'>
+					<h3 className='text-[19px] sm:text-[41px]  md:text-[31px] lg:text-[38px] xl:text-[38px] 2xl:text-[38px] text-white font-black tracking-wide'>REVIEW ON DOCUMENT </h3>
 				</div>
-				<div className='flex-shrink-0 flex items-center justify-end overflow-hidden object-cover'>
-					<Image className="rounded-md 2xl:ps-0 xl:ps-0 lg:ps-0 md:ps-10 sm:ps-10 ps-10" width={180} height={180} src="/Images/reviewhead.png" alt="image" />
+				<div className='w-full flex items-center justify-end overflow-hidden object-cover'>
+					<img className="rounded-md  sm:pr-10 md:pr-10 lg:pr-0 xl:pr-0 2xl:pr-0" width={135} height={135} src="/Images/reviewhead.png" alt="image" />
 				</div>
 			</div>
 
-			<div className='w-full 2xl:px-10 xl:px-10 lg:px-10 md:px-6 sm:px-4 px-4 py-10'>
-				<div className='rounded-[20px] border-[1px] border-[#2E8095]  flex items-center justify-between'>
 
-					<div className='2xl:px-20 xl:px-20 lg:px-20 md:px-10 sm:px-6 px-6 py-6 2xl:w-2/3 xl:w-2/3 lg:w-2/3 md:w-full sm:w-full w-full flex'>
+			<div className='w-full py-6 2xl:px-10 xl:px-10 lg:px-10 md:px-10 sm:px-6 px-4'>
 
-						<div className='w-1/2 '>
+				<div className='grid 2xl:grid-cols-3 xl:grid-cols-3 lg:grid-cols-3 sm:grid-cols-1 grid-cols-1 gap-5'>
 
-							<div className='flex  gap-2 w-2/3 2xl:text-[14px] xl:text-[14px] lg:text-[14px] md:text-[14px] sm:text-[12px] text-[12px]  grid grid-cols-1'>
-								<div className='w-full '>No. of Words</div>
-								<div className='w-full '>
+					<div className='2xl:col-span-2 xl:col-span-2 lg:col-span-2 md:col-span-1 sm:col-span-1 col-span-1'>
+						<div className='rounded-lg shadow-custom3 p-4'>
+
+							<div className="p-0">
+								<ul className="flex flex-wrap 2xl:text-[16px] xl:text-[16px] lg:text-[16px] md:text-[14px] sm:text-[12px] text-[12px] font-bold text-center " id="default-tab" data-tabs-toggle="#default-tab-content" role="tablist">
+									<li className="me-2" role="presentation">
+										<button className="inline-block p-1 border-b-2 border-[#064454] rounded-t-lg text-sky-950" id="writing-tab" data-tabs-target="#writing" type="button" role="tab" aria-controls="writing" aria-selected="false">REVIEW ON DOCUMENT</button>
+									</li>
+								</ul>
+							</div>
+
+							{/* no of page code  */}
+
+							<div className='flex items-center justify-start py-1 gap-6 w-2/3 2xl:text-[14px] xl:text-[14px] lg:text-[14px] md:text-[14px] sm:text-[12px] text-[12px] mt-3'>
+
+								<div className='w-1/3 text-black font-medium text-sm'>No. of Words</div>
+								<div className='w-2/3 '>
 									<form className="max-w-xs mx-auto">
-										<div className="relative flex  max-w-[8rem]">
-											<button type="button" id="decrement-button" data-input-counter-decrement="pagecount-input" className="bg-[white]  border border-[gray] rounded-md p-2 h-8 focus:ring-[gray] focus:ring-1 focus:outline-none flex   text-[14px] text-black">
+										<div className="relative flex items-center max-w-[6rem]">
+											<button type="button" id="decrement-words" data-input-counter-decrement="pagecount-input-words" className="bg-[#2E8095] hover:bg-[#064454] border border-[#2E8095] rounded-md p-1 h-6 focus:ring-[#2E8095] focus:ring-2 focus:outline-none flex items-center justify-center text-[14px] text-white">
 												<RiSubtractLine />
 											</button>
-											<input type="text" id="pagecount-input" data-input-counter data-input-counter-min="1000" data-input-counter-max="10000" aria-describedby="helper-text-explanation" className="bg-transparent h-8 font-medium text-center text-black text-sm block w-full" placeholder="" value="1000" required />
-											<button type="button" id="increment-button" data-input-counter-increment="pagecount-input" className="bg-[white]  border border-[gray] rounded-md p-2 h-8 focus:ring-[gray] focus:ring-1 focus:outline-none flex   text-[14px] text-black">
+											<input type="text" id="pagecount-input-words" data-input-counter data-input-counter-min="1" data-input-counter-max="100" aria-describedby="helper-text-explanation" className="bg-transparent h-8 font-medium text-center text-black text-sm block w-full" placeholder="" value="15" required />
+											<button type="button" id="increment-words" data-input-counter-increment="pagecount-input-words" className="bg-[#2E8095] hover:bg-[#064454] border border-[#2E8095] rounded-md p-1 h-6 focus:ring-[#2E8095] focus:ring-2 focus:outline-none flex items-center justify-center text-[14px] text-white">
 												<RiAddLine />
 											</button>
 										</div>
 									</form>
 								</div>
 							</div>
+
+							{/* no of roll  */}
+
+							<div className='flex items-center justify-start py-1 gap-6 w-2/3 2xl:text-[14px] xl:text-[14px] lg:text-[14px] md:text-[14px] sm:text-[12px] text-[12px]'>
+
+
+								<div className='w-1/3 text-black font-medium text-sm'>Quantity</div>
+								<div className='w-2/3 '>
+									<form className="max-w-xs mx-auto">
+										<div className="relative flex items-center max-w-[6rem]">
+											<button type="button" id="decrement-quantity" data-input-counter-decrement="pagecount-input-quantity" className="bg-[#2E8095] hover:bg-[#064454] border border-[#2E8095] rounded-md p-1 h-6 focus:ring-[#2E8095] focus:ring-2 focus:outline-none flex items-center justify-center text-[14px] text-white">
+												<RiSubtractLine />
+											</button>
+											<input type="text" id="pagecount-input-quantity" data-input-counter data-input-counter-min="1" data-input-counter-max="100" aria-describedby="helper-text-explanation" className="bg-transparent h-8 font-medium text-center text-black text-sm block w-full" placeholder="" value="10" required />
+											<button type="button" id="increment-quantity" data-input-counter-increment="pagecount-input-quantity" className="bg-[#2E8095] hover:bg-[#064454] border border-[#2E8095] rounded-md p-1 h-6 focus:ring-[#2E8095] focus:ring-2 focus:outline-none flex items-center justify-center text-[14px] text-white">
+												<RiAddLine />
+											</button>
+										</div>
+									</form>
+								</div>
+							</div>
+
 							<div className='w-full mt-3 ml-5'>
 								<ul class="list-disc ">
 									<li>Complete Document  </li>
@@ -48,203 +91,177 @@ const Hero = () => {
 								</ul>
 							</div>
 
-							<div className='w-full mt-3'>
-								<label htmlFor="word-count" className="flex items-center">
-									<input type="checkbox" id="word-count" className="form-checkbox h-4 w-4 text-[#2E8095]" />
-									<span className="ml-2">Plag Report</span>
-								</label>
+							{/* Plag Repot */}
+							<div class="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-4 lg:grid-cols-4 ">
 
-								<label htmlFor="word-count" className="flex items-center">
-									<input type="checkbox" id="word-count" className="form-checkbox h-4 w-4 text-[#2E8095]" />
-									<span className="ml-2">Grammarly Scored Report</span>
-								</label>
-
-								<label htmlFor="word-count" className="flex items-center">
-									<input type="checkbox" id="word-count" className="form-checkbox h-4 w-4 text-[#2E8095]" />
-									<span className="ml-2">Both</span>
-								</label>
-							</div>
-
-						</div>
-
-						<div className='w-1/2 '>
-							<h3>
-								Quantity
-							</h3>
-
-							<div className='w-1/2-new'>
-
-								<div className='flex items-center justify-start py-1 gap-6 w-2/3 2xl:text-[14px] xl:text-[14px] lg:text-[14px] md:text-[14px] sm:text-[12px] text-[12px]'>
-									<div className='w-2/3 '>Page Count</div>
-									<div className='w-2/3 '>
-										<form className="max-w-xs mx-auto">
-											<div className="relative flex  max-w-[8rem]">
-												<button type="button" id="decrement-button-new" data-input-counter-decrement="pagecount-input-new" className="bg-[white]  border border-[gray] rounded-md p-2 h-8 focus:ring-[gray] focus:ring-1 focus:outline-none flex   text-[14px] text-black">
-													<RiSubtractLine />
-												</button>
-												<input type="text" id="pagecount-input-new" data-input-counter data-input-counter-min="1" data-input-counter-max="100" aria-describedby="helper-text-explanation" className="bg-transparent h-8 font-medium text-center text-black text-sm block w-full " placeholder="" value="10" required />
-												<button type="button" id="increment-button-new" data-input-counter-increment="pagecount-input-new" className="bg-[white]  border border-[gray] rounded-md p-2 h-8 focus:ring-[gray] focus:ring-1 focus:outline-none flex   text-[14px] text-black">
-													<RiAddLine />
-												</button>
-											</div>
-										</form>
-									</div>
+								<div class=" w-24">
+									<label htmlFor="Plag_repot" className="pe-4 text-black font-medium text-sm w-[65px]">Plag Repot</label>
 								</div>
 
-
-
-
-
+								<div class=" justify-items-start">
+									<input id="Plag_repot" type="checkbox" value="" name="Plag_repot" className="cursor-pointer w-6 h-6 rounded-0 text-[#2E8095] bg-[#2E8095] border-[#2E8095] focus:ring-[#2E8095] focus:ring-1 " />
+								</div>
 
 							</div>
+
+							{/* Grammarly */}
+							<div class="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-4 lg:grid-cols-4 ">
+
+								<div class=" ">
+									<label htmlFor="Grammarly" className="pe-4 text-black font-medium text-sm w-[65px]">Grammarly Scored Report</label>
+								</div>
+
+								<div class=" justify-items-start">
+									<input id="Grammarly" type="checkbox" value="" name="Grammarly" className="cursor-pointer w-6 h-6 rounded-0 text-[#2E8095] bg-[#2E8095] border-[#2E8095] focus:ring-[#2E8095] focus:ring-1 " />
+								</div>
+
+							</div>
+
+							{/* both  */}
+							<div class="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-4 lg:grid-cols-4 ">
+
+								<div class=" w-24">
+									<label htmlFor="Both" className="pe-4 text-black font-medium text-sm w-[65px]">Both</label>
+								</div>
+
+								<div class=" justify-items-start">
+									<input id="Both" type="checkbox" value="" name="Both" className="cursor-pointer w-6 h-6 rounded-0 text-[#2E8095] bg-[#2E8095] border-[#2E8095] focus:ring-[#2E8095] focus:ring-1 " />
+								</div>
+
+							</div>
+
 
 						</div>
 					</div>
 
+					{/* service table */}
+					<div className='2xl:col-span-1 xl:col-span-1 lg:col-span-1 md:col-span-1 sm:col-span-1 col-span-1'>
 
-					<div className='2xl:flex xl:flex lg:flex md:hidden sm:hidden hidden 2xl:w-1/3 xl:w-1/3 lg:w-1/3 md:w-0 sm:w-0 w-0 flex items-center justify-end overflow-hidden object-cover'>
-						<Image className="rounded-[20px]" width={600} height={500} src="/Images/com-img.png" alt="image" />
-					</div>
-				</div>
-
-				{/* service and price distribution section */}
-				<div className='w-full py-10 grid 2xl:grid-cols-2 xl:grid-cols-2 lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-1 grid-cols-1'>
-					<div className='px-1 py-2'>
-
-						{/* service section */}
-						<div className='rounded-[20px] border-[1px] border-[#00000066] p-4  flex items-center justify-center'>
-
-							<div className="relative overflow-x-auto py-4">
-								<table className="w-full text-sm text-left rtl:text-right text-black">
+						<div className='rounded-lg border-[1px] border-[#000000]'>
+							<div className="w-full relative overflow-x-auto  pt-4 pb-2">
+								<table className="w-full text-sm text-left rtl:text-right text-black text-wrap">
 									<thead className="text-[14px] text-black uppercase">
-										<tr>
-											<th scope="col" className="2xl:px-10 xl:px-10 lg:px-10 md:px-10 sm:px-4 px-4 py-3 border-e-[2px] border-[#00000059]">
+										<tr className='text-center'>
+											<th scope="col" className=" px-1 py-3 border-e-[2px] border-[#00000059]">
 												Services
 											</th>
-											<th scope="col" className="2xl:px-10 xl:px-10 lg:px-10 md:px-10 sm:px-4 px-4 py-3 border-e-[2px] border-[#00000059]">
+											<th scope="col" className=" px-1 py-3 border-e-[2px] border-[#00000059]">
 												Basic
 											</th>
-											<th scope="col" className="2xl:px-10 xl:px-10 lg:px-10 md:px-10 sm:px-4 px-4 py-3">
+											<th scope="col" className=" px-1 py-3">
 												Required
 											</th>
 										</tr>
 									</thead>
-									<tbody>
-										<tr className="bg-white">
-											<th scope="row" className="2xl:px-10 xl:px-10 lg:px-10 md:px-10 sm:px-4 px-4 py-2 font-medium text-black whitespace-nowrap border-e-[2px] border-[#00000059]">
+									<tbody className='2xl:text-[14px] xl:text-[14px] lg:text[14px] md:text-[12px] sm:text-[12px] text-[12px]'>
+										<tr className="bg-white text-center">
+											<th scope="row" className="px-1 py-2 font-medium text-black whitespace-nowrap border-e-[2px] border-[#00000059]">
 												No. of Words
 											</th>
-											<td className="2xl:px-10 xl:px-10 lg:px-10 md:px-10 sm:px-4 px-4 py-2 border-e-[2px] border-[#00000059]">
-												10000
+											<td className="px-1 py-2 border-e-[2px] border-[#00000059]">
+												1000
 											</td>
-											<td className="2xl:px-10 xl:px-10 lg:px-10 md:px-10 sm:px-4 px-4 py-2">
+											<td className="px-1 py-2">
 
 											</td>
 										</tr>
-										<tr className="bg-white">
-											<th scope="row" className="2xl:px-10 xl:px-10 lg:px-10 md:px-10 sm:px-4 px-4 py-2 font-medium text-black whitespace-nowrap border-e-[2px] border-[#00000059]">
+										<tr className="bg-white text-center">
+											<th scope="row" className="px-1 py-2 font-medium text-black whitespace-nowrap border-e-[2px] border-[#00000059]">
 												Review Type
 											</th>
-											<td className="2xl:px-10 xl:px-10 lg:px-10 md:px-10 sm:px-4 px-4 py-2 border-e-[2px] border-[#00000059] line-through">
+											<td className="px-1 py-2 border-e-[2px] border-[#00000059] line-through">
 												Grammarly scored Report
-
 											</td>
-											<td className="2xl:px-10 xl:px-10 lg:px-10 md:px-10 sm:px-4 px-4 py-2">
+											<td className="px-1 py-2">
 												Both (Plag and Grammarly scored Report)
 											</td>
 										</tr>
-										<tr className="bg-white">
-											<th scope="row" className="2xl:px-10 xl:px-10 lg:px-10 md:px-10 sm:px-4 px-4 py-2 font-medium text-black whitespace-nowrap border-e-[2px] border-[#00000059]">
+										<tr className="bg-white text-center">
+											<th scope="row" className="px-1 py-2 font-medium text-black whitespace-nowrap border-e-[2px] border-[#00000059]">
 												Quantity
 											</th>
-											<td className="2xl:px-10 xl:px-10 lg:px-10 md:px-10 sm:px-4 px-4 py-2 border-e-[2px] border-[#00000059]">
+											<td className="px-1 py-2 border-e-[2px] border-[#00000059]">
 												1
 											</td>
-											<td className="2xl:px-10 xl:px-10 lg:px-10 md:px-10 sm:px-4 px-4 py-2">
+											<td className="px-1 py-2">
 
+											</td>
+										</tr>
+
+									</tbody>
+								</table>
+								<div className=' flex items-center justify-end pt-2 px-3'>
+									<button type='button' onClick={onClickhandle} className='py-1 font-bold text-[#064454] flex items-center px-2 justify-end'> Check Price Distribution <IoIosArrowDown className='mx-2' /> </button>
+								</div>
+							</div>
+
+							<div className={` ${priceTable ? 'block' : 'hidden'}  relative overflow-x-auto rounded-[18px]`}>
+								<h3 className='py-2 px-10 text-[20px] font-bold'>Price Distribution</h3>
+								<table className="w-full text-sm text-left rtl:text-right text-black">
+									<tbody>
+										<tr className="bg-white">
+											<th scope="row" className="px-10 py-2 font-medium text-black whitespace-nowrap border-e-[2px] border-[#00000059]">
+												Base Price
+											</th>
+											<td className="px-10 py-2">
+												₹20000
+											</td>
+										</tr>
+										<tr className="bg-white">
+											<th scope="row" className="px-10 py-2 font-medium text-black whitespace-nowrap border-e-[2px] border-[#00000059]">
+												Add-ons
+											</th>
+											<td className="px-10 py-2">
+												₹20000
+											</td>
+										</tr>
+										<tr className="bg-white">
+											<th scope="row" className="px-10 py-2 font-medium text-black whitespace-nowrap border-e-[2px] border-[#00000059]">
+												No. of Words
+											</th>
+											<td className="px-10 py-2">
+												₹5000
+											</td>
+										</tr>
+										<tr className="bg-white">
+											<th scope="row" className="px-10 py-2 font-medium text-black whitespace-nowrap border-e-[2px] border-[#00000059]">
+												Review Type
+											</th>
+											<td className="px-10 py-2">
+												₹5000
+											</td>
+										</tr>
+										<tr className="bg-white">
+											<th scope="row" className="px-10 pt-2 pb-6 font-medium text-black whitespace-nowrap border-e-[2px] border-[#00000059]">
+												Quantity
+											</th>
+											<td className="px-10 pt-2 pb-6">
+												₹5000
 											</td>
 										</tr>
 									</tbody>
 								</table>
 							</div>
 
-						</div>
-
-						{/* price distribution */}
-
-						<div className=' py-4 mb-4 mt-8 flex items-center 2xl:justify-between xl:justify-between lg:justify-between md:justify-center sm:justify-center justify-center'>
-							<div className='rounded-[20px] border-[1px] border-[#2E8095]'>
-
-								<div className="relative overflow-x-auto rounded-[18px]">
-									<h3 className='py-8 px-10 text-[20px] font-bold'>Price Distribution</h3>
-									<table className="w-full text-sm text-left rtl:text-right text-black">
-										<tbody>
-											<tr className="bg-white">
-												<th scope="row" className="px-10 py-2 font-medium text-black whitespace-nowrap border-e-[2px] border-[#00000059]">
-													Base Price
-												</th>
-												<td className="px-10 py-2">
-													₹20000
-												</td>
-											</tr>
-											<tr className="bg-white">
-												<th scope="row" className="px-10 py-2 font-medium text-black whitespace-nowrap border-e-[2px] border-[#00000059]">
-													Add-ons
-												</th>
-												<td className="px-10 py-2">
-													₹20000
-												</td>
-											</tr>
-											<tr className="bg-white">
-												<th scope="row" className="px-10 py-2 font-medium text-black whitespace-nowrap border-e-[2px] border-[#00000059]">
-													No. of Words
-												</th>
-												<td className="px-10 py-2">
-													₹5000
-												</td>
-											</tr>
-											<tr className="bg-white">
-												<th scope="row" className="px-10 py-2 font-medium text-black whitespace-nowrap border-e-[2px] border-[#00000059]">
-													Review Type
-												</th>
-												<td className="px-10 py-2">
-													₹5000
-												</td>
-											</tr>
-											<tr className="bg-white">
-												<th scope="row" className="px-10 pt-2 pb-6 font-medium text-black whitespace-nowrap border-e-[2px] border-[#00000059]">
-													Quantity
-												</th>
-												<td className="px-10 pt-2 pb-6">
-													₹5000
-												</td>
-											</tr>
-
-											<tr className="bg-[#2E8095] text-white text-[16px] font-bold">
-												<th scope="row" className="px-10 py-4 font-medium  whitespace-nowrap]">
-													Total
-												</th>
-												<td className="px-10 py-4">
-													₹45000
-												</td>
-											</tr>
-										</tbody>
-									</table>
+							<div className="bg-[#2E8095] text-white text-[16px] font-bold grid grid-cols-2 rounded-b-lg">
+								<div scope="row" className="px-10 py-4 font-medium  whitespace-nowrap flex items-center justify-center">
+									Total
 								</div>
-
+								<div className="px-10 py-4 flex items-center justify-center">
+									₹75000
+								</div>
 							</div>
-						</div>
 
-						<div className='flex 2xl:justify-start xl:justify-start lg:justify-start md:justify-center sm:justify-center justify-center items-center pb-4 2xl:ps-4 xl:ps-4 lg:ps-4 md:ps-0 sm:ps-0 ps-0' >
-							<button type='submit' className='text-white bg-[#064454] 2xl:text-[20px] xl:text-[20px] lg:text-[20px] md:text-[14px] sm:text-[14px] text-[14px] px-8 py-2 rounded-lg font-medium'>Download Quotation</button>
 						</div>
-					</div>
-
-					<div className='2xl:ps-20 xl:ps-20 lg:ps-20 md:ps-0 sm:ps-0 ps-0 py-2'>
-						<GeneralForm />
+						<div className='flex justify-end items-center pb-4 mt-4' >
+							<button type='submit' className='text-white bg-[#064454] 2xl:text-[14px] xl:text-[14px] lg:text-[14px] md:text-[12px] sm:text-[12px] text-[12px] px-8 py-2 rounded-lg font-medium'>Download Quotation</button>
+						</div>
 					</div>
 				</div>
+			</div>
 
+			<div>
+				<GeneralForm />
 			</div>
 		</>
 	)

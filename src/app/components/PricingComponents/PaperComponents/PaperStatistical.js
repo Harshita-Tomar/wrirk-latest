@@ -1,21 +1,18 @@
-
-import React, { useState } from 'react'
+import React from 'react'
 import { RiAddLine } from "react-icons/ri";
 import { RiSubtractLine } from "react-icons/ri";
 import { IoIosArrowDown } from "react-icons/io";
 
-const StatisticalSection = () => {
 
+const PaperStatistical = () => {
 	const [additionalCheck, setAdditionalCheck] = useState(false)
 
 	const handleAditional = () => {
 		// e.preventDefault();
 		setAdditionalCheck(!additionalCheck)
 	}
-
 	return (
-		<>
-
+		<div>
 			<div className=' p-0'>
 
 				<div className='2xl:text-[14px] xl:text-[14px] lg:text-[14px] md:text-[14px] sm:text-[12px] text-[12px]'>
@@ -103,7 +100,7 @@ const StatisticalSection = () => {
 
 					{/* Objective/Hypothesis */}
 					<div className='flex items-center justify-start py-1 gap-6 w-2/3 2xl:text-[14px] xl:text-[14px] lg:text-[14px] md:text-[14px] sm:text-[12px] text-[12px]'>
-						<div className='w-1/3 '>Objective/ Hypothesis</div>
+						<div className='w-1/3 '>Objective/Hypothesis</div>
 						<div className='w-2/3 flex 2xl:justify-start xl:justify-start lg:justify-start md:justify-end sm:justify-end justify-end '>
 							<form className="max-w-xs mx-auto">
 								<div className="relative flex items-center max-w-[6rem]">
@@ -128,7 +125,7 @@ const StatisticalSection = () => {
 									<button type="button" id="decrement-button" data-input-counter-decrement="respodent-input" className="bg-[#2E8095] hover:bg-[#064454] border border-[#2E8095] rounded-md p-1 h-6 focus:ring-[#2E8095] focus:ring-2 focus:outline-none flex items-center justify-center text-[14px] text-white">
 										<RiSubtractLine />
 									</button>
-									<input type="text" id="respodent-input" data-input-counter data-input-counter-min="1" data-input-counter-max="2500" aria-describedby="helper-text-explanation" className="bg-transparent h-8 font-medium text-center text-black text-sm block w-full" placeholder="" value="500" required />
+									<input type="text" id="respodent-input" data-input-counter data-input-counter-min="1" data-input-counter-max="100" aria-describedby="helper-text-explanation" className="bg-transparent h-8 font-medium text-center text-black text-sm block w-full" placeholder="" value="500" required />
 									<button type="button" id="increment-button" data-input-counter-increment="respodent-input" className="bg-[#2E8095] hover:bg-[#064454] border border-[#2E8095] rounded-md p-1 h-6 focus:ring-[#2E8095] focus:ring-2 focus:outline-none flex items-center justify-center text-[14px] text-white">
 										<RiAddLine />
 									</button>
@@ -175,12 +172,10 @@ const StatisticalSection = () => {
 
 					{/* check box pilot study */}
 					<div className="flex items-center justify-start py-2 2xl:text-[14px] xl:text-[14px] lg:text-[14px] md:text-[14px] sm:text-[12px] text-[12px] gap-x-10">
-						<label htmlFor="default-checkbox" className="font-medium text-black">No Pilot Study</label>
+						<label for="default-checkbox" className="font-medium text-black">No Pilot Study</label>
 						<input id="default-checkbox" type="checkbox" value="pilot" name="default-checkbox" className="cursor-pointer w-6 h-6 rounded-0 text-[#2E8095] bg-[#2E8095] border-[#2E8095]" />
 					</div>
 
-
-					{/* addtional field section */}
 					<div className='grid 2xl:grid-cols-2 xl:grid-cols-2 lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-1 grid-cols-1 2xl:w-2/3 xl:w-2/3 lg:w-2/3 md:w-2/3 sm:full w-full'>
 						<div className='flex items-center justify-start'>
 							<label className="inline-flex items-center cursor-pointer">
@@ -205,9 +200,8 @@ const StatisticalSection = () => {
 				</div>
 
 			</div>
-
-		</>
+		</div>
 	)
 }
 
-export default StatisticalSection
+export default PaperStatistical
