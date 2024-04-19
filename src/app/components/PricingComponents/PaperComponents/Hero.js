@@ -15,15 +15,7 @@ const Hero = () => {
 	return (
 		<div>
 
-			{/* Heading div */}
-			<div className='flex justify-between items-center w-full 2xl:px-10 xl:px-10 lg:px-10 md:px-6 sm:px-4 px-4 py-4 bg-[#2E8095]'>
-				<div className='2xl:leading-[44px] xl:leading-[44px] lg:leading-[44px] md:leading-[36px] sm:leading-[30px] leading-[30px]'>
-					<h3 className='2xl:text-[42px] xl:text-[42px] lg:text-[42px] md:text-[36px] sm:text-[30px] text-[28px] text-white font-black uppercase tracking-wide'>PAPER </h3>
-				</div>
-				<div className='w-full flex items-center justify-end overflow-hidden object-cover'>
-					<Image className="rounded-md 2xl:ps-0 xl:ps-0 lg:ps-0 md:ps-10 sm:ps-10 ps-10" width={100} height={100} src="/Images/paper-img.png" alt="image" />
-				</div>
-			</div>
+			
 
 			<div className='w-full py-6 2xl:px-10 xl:px-10 lg:px-10 md:px-10 sm:px-6 px-4'>
 
@@ -170,7 +162,7 @@ const Hero = () => {
 										<div className='flex items-center justify-start py-1 gap-6 w-full text-[12px]'>
 											<form className="w-full flex">
 												<label htmlFor="field" class="w-1/3 ">Reference Tool</label>
-												<select id="field" className="border border-[#2E8095] text-white bg-[#2E8095] text-[12px] rounded-lg focus:bg-[#2E8095] focus:border-[#2E8095] focus:outline-none block w-2/3 p-1" >
+												<select id="field" className="border border-[#2E8095] text-[#2E8095] text-[12px] rounded-lg focus:border-[#2E8095] focus:outline-none block w-2/3 p-1" >
 													<option selected>Standard/Manual</option>
 													<option value="mendeley">Mendeley</option>
 													<option value="zotero">Zotero</option>
@@ -181,7 +173,7 @@ const Hero = () => {
 										<div className='flex items-center justify-start py-1 gap-6 w-full text-[12px]'>
 											<form className="w-full flex">
 												<label htmlFor="field" class="w-1/3 ">Writing Tool</label>
-												<select id="field" className="border border-[#2E8095] text-white bg-[#2E8095] text-[12px] rounded-lg focus:bg-[#2E8095] focus:border-[#2E8095] focus:outline-none block w-2/3 p-1" >
+												<select id="field" className="border border-[#2E8095] text-[#2E8095] text-[12px] rounded-lg focus:border-[#2E8095] focus:outline-none block w-2/3 p-1" >
 													<option selected>Word</option>
 													<option value="Latex">Latex</option>
 												</select>
@@ -254,7 +246,7 @@ const Hero = () => {
 										<div className='flex items-center justify-start py-1 gap-6 w-full text-[12px]'>
 											<form className="w-full flex">
 												<label htmlFor="field" class="w-1/3 ">Reference Tool</label>
-												<select id="field" className="border border-[#2E8095] text-white bg-[#2E8095] text-[12px] rounded-lg focus:bg-[#2E8095] focus:border-[#2E8095] focus:outline-none block w-2/3 p-1" >
+												<select id="field" className="border border-[#2E8095] text-[#2E8095] text-[12px] rounded-lg focus:border-[#2E8095] focus:outline-none block w-2/3 p-1" >
 													<option selected>Standard/Manual</option>
 													<option value="mendeley">Mendeley</option>
 													<option value="zotero">Zotero</option>
@@ -265,7 +257,7 @@ const Hero = () => {
 										<div className='flex items-center justify-start py-1 gap-6 w-full text-[12px]'>
 											<form className="w-full flex">
 												<label htmlFor="field" class="w-1/3 ">Writing Tool</label>
-												<select id="field" className="border border-[#2E8095] text-white bg-[#2E8095] text-[12px] rounded-lg focus:bg-[#2E8095] focus:border-[#2E8095] focus:outline-none block w-2/3 p-1" >
+												<select id="field" className="border border-[#2E8095] text-[#2E8095] text-[12px] rounded-lg focus:border-[#2E8095] focus:outline-none block w-2/3 p-1" >
 													<option selected>Word</option>
 													<option value="Latex">Latex</option>
 												</select>
@@ -375,7 +367,7 @@ const Hero = () => {
 										<div className='flex items-center justify-start py-1 gap-6 w-full text-[12px]'>
 											<form className="w-full flex">
 												<label htmlFor="field" class="w-1/3 ">Reference Tool</label>
-												<select id="field" className="border border-[#2E8095] text-white bg-[#2E8095] text-[12px] rounded-lg focus:bg-[#2E8095] focus:border-[#2E8095] focus:outline-none block w-2/3 p-1" >
+												<select id="field" className="border border-[#2E8095] text-[#2E8095] text-[12px] rounded-lg focus:border-[#2E8095] focus:outline-none block w-2/3 p-1" >
 													<option selected>Standard/Manual</option>
 													<option value="mendeley">Mendeley</option>
 													<option value="zotero">Zotero</option>
@@ -386,7 +378,7 @@ const Hero = () => {
 										<div className='flex items-center justify-start py-1 gap-6 w-full text-[12px]'>
 											<form className="w-full flex">
 												<label htmlFor="field" class="w-1/3 ">Writing Tool</label>
-												<select id="field" className="border border-[#2E8095] text-white bg-[#2E8095] text-[12px] rounded-lg focus:bg-[#2E8095] focus:border-[#2E8095] focus:outline-none block w-2/3 p-1" >
+												<select id="field" className="border border-[#2E8095] text-[#2E8095] text-[12px] rounded-lg focus:border-[#2E8095] focus:outline-none block w-2/3 p-1" >
 													<option selected>Word</option>
 													<option value="Latex">Latex</option>
 												</select>
@@ -457,7 +449,7 @@ const Hero = () => {
 										<div className='flex items-center justify-start py-1 gap-6 w-full text-[12px]'>
 											<form className="w-full flex">
 												<label htmlFor="field" class="w-1/3 ">Reference Tool</label>
-												<select id="field" className="border border-[#2E8095] text-white bg-[#2E8095] text-[12px] rounded-lg focus:bg-[#2E8095] focus:border-[#2E8095] focus:outline-none block w-2/3 p-1" >
+												<select id="field" className="border border-[#2E8095] text-[#2E8095] text-[12px] rounded-lg focus:border-[#2E8095] focus:outline-none block w-2/3 p-1" >
 													<option selected>Standard/Manual</option>
 													<option value="mendeley">Mendeley</option>
 													<option value="zotero">Zotero</option>
@@ -468,7 +460,7 @@ const Hero = () => {
 										<div className='flex items-center justify-start py-1 gap-6 w-full text-[12px]'>
 											<form className="w-full flex">
 												<label htmlFor="field" class="w-1/3 ">Writing Tool</label>
-												<select id="field" className="border border-[#2E8095] text-white bg-[#2E8095] text-[12px] rounded-lg focus:bg-[#2E8095] focus:border-[#2E8095] focus:outline-none block w-2/3 p-1" >
+												<select id="field" className="border border-[#2E8095] text-[#2E8095] text-[12px] rounded-lg focus:border-[#2E8095] focus:outline-none block w-2/3 p-1" >
 													<option selected>Word</option>
 													<option value="Latex">Latex</option>
 												</select>
@@ -600,7 +592,7 @@ const Hero = () => {
 										<div className='flex items-center justify-start py-1 gap-6 w-full text-[12px]'>
 											<form className="w-full flex">
 												<label htmlFor="field" class="w-1/3 ">Reference Tool</label>
-												<select id="field" className="border border-[#2E8095] text-white bg-[#2E8095] text-[12px] rounded-lg focus:bg-[#2E8095] focus:border-[#2E8095] focus:outline-none block w-2/3 p-1" >
+												<select id="field" className="border border-[#2E8095] text-[#2E8095] text-[12px] rounded-lg focus:border-[#2E8095] focus:outline-none block w-2/3 p-1" >
 													<option selected>Standard/Manual</option>
 													<option value="mendeley">Mendeley</option>
 													<option value="zotero">Zotero</option>
@@ -611,7 +603,7 @@ const Hero = () => {
 										<div className='flex items-center justify-start py-1 gap-6 w-full text-[12px]'>
 											<form className="w-full flex">
 												<label htmlFor="field" class="w-1/3 ">Writing Tool</label>
-												<select id="field" className="border border-[#2E8095] text-white bg-[#2E8095] text-[12px] rounded-lg focus:bg-[#2E8095] focus:border-[#2E8095] focus:outline-none block w-2/3 p-1" >
+												<select id="field" className="border border-[#2E8095] text-[#2E8095] text-[12px] rounded-lg focus:border-[#2E8095] focus:outline-none block w-2/3 p-1" >
 													<option selected>Word</option>
 													<option value="Latex">Latex</option>
 												</select>
@@ -745,7 +737,7 @@ const Hero = () => {
 										<div className='flex items-center justify-start py-1 gap-6 w-full text-[12px]'>
 											<form className="w-full flex">
 												<label htmlFor="field" class="w-1/3 ">Reference Tool</label>
-												<select id="field" className="border border-[#2E8095] text-white bg-[#2E8095] text-[12px] rounded-lg focus:bg-[#2E8095] focus:border-[#2E8095] focus:outline-none block w-2/3 p-1" >
+												<select id="field" className="border border-[#2E8095] text-[#2E8095] text-[12px] rounded-lg focus:border-[#2E8095] focus:outline-none block w-2/3 p-1" >
 													<option selected>Standard/Manual</option>
 													<option value="mendeley">Mendeley</option>
 													<option value="zotero">Zotero</option>
@@ -756,7 +748,7 @@ const Hero = () => {
 										<div className='flex items-center justify-start py-1 gap-6 w-full text-[12px]'>
 											<form className="w-full flex">
 												<label htmlFor="field" class="w-1/3 ">Writing Tool</label>
-												<select id="field" className="border border-[#2E8095] text-white bg-[#2E8095] text-[12px] rounded-lg focus:bg-[#2E8095] focus:border-[#2E8095] focus:outline-none block w-2/3 p-1" >
+												<select id="field" className="border border-[#2E8095] text-[#2E8095] text-[12px] rounded-lg focus:border-[#2E8095] focus:outline-none block w-2/3 p-1" >
 													<option selected>Word</option>
 													<option value="Latex">Latex</option>
 												</select>
@@ -810,7 +802,7 @@ const Hero = () => {
 
 							{/* Research,{online/peer/UGC},writing */}
 							<div className=" 2xl:text-[14px] xl:text-[14px] lg:text-[14px] md:text-[14px] sm:text-[12px] text-[12px] pt-2 border-t-[2px] border-t-gray-300 mt-3">
-								
+
 								{/* tool enable/disable option */}
 								<div className='py-2 flex justify-end'>
 
@@ -841,51 +833,10 @@ const Hero = () => {
 								<div className='grid 2xl:grid-cols-2 xl:grid-cols-2 lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-1 grid-cols-1 gap-3 py-3'>
 
 									<div>
-										<ul className='pe-4 text-[12px] list-disc list-inside'>
-											<li>UGC/Online conference/Journal</li>
-											<li>Not responsible for any kind of acceptance/ publication</li>
-										</ul>
+
 									</div>
 
 									<div>
-
-										<div className='flex items-center justify-start py-1 gap-6 w-full text-[12px]'>
-											<form className="w-full flex">
-												<label htmlFor="field" class="w-1/3 ">Reference Tool</label>
-												<select id="field" className="border border-[#2E8095] text-white bg-[#2E8095] text-[12px] rounded-lg focus:bg-[#2E8095] focus:border-[#2E8095] focus:outline-none block w-2/3 p-1" >
-													<option selected>Standard/Manual</option>
-													<option value="mendeley">Mendeley</option>
-													<option value="zotero">Zotero</option>
-												</select>
-											</form>
-										</div>
-
-										<div className='flex items-center justify-start py-1 gap-6 w-full text-[12px]'>
-											<form className="w-full flex">
-												<label htmlFor="field" class="w-1/3 ">Writing Tool</label>
-												<select id="field" className="border border-[#2E8095] text-white bg-[#2E8095] text-[12px] rounded-lg focus:bg-[#2E8095] focus:border-[#2E8095] focus:outline-none block w-2/3 p-1" >
-													<option selected>Word</option>
-													<option value="Latex">Latex</option>
-												</select>
-											</form>
-										</div>
-
-										<div className='flex items-center justify-start py-1 w-full text-[12px]'>
-											<div className='w-1/3 '>No. of Words</div>
-											<div className='w-2/3 flex justify-start '>
-												<form className="p-0">
-													<div className="relative flex items-center max-w-[6rem]">
-														<button type="button" id="decrement-button" data-input-counter-decrement="methods-input" className="bg-[#2E8095] hover:bg-[#064454] border border-[#2E8095] rounded-md p-1 h-5 w-5 focus:outline-none flex items-center justify-center text-[14px] text-white">
-															<RiSubtractLine />
-														</button>
-														<input type="text" id="methods-input" data-input-counter data-input-counter-min="1" data-input-counter-max="10000" aria-describedby="helper-text-explanation" className="bg-transparent h-5 font-medium text-center text-black block w-full" placeholder="" value="5000" required />
-														<button type="button" id="increment-button" data-input-counter-increment="methods-input" className="bg-[#2E8095] hover:bg-[#064454] border border-[#2E8095] rounded-md p-1 h-5 w-5 focus:outline-none flex items-center justify-center text-[14px] text-white">
-															<RiAddLine />
-														</button>
-													</div>
-												</form>
-											</div>
-										</div>
 
 										<div className='flex items-center justify-start py-1 w-full text-[12px]'>
 											<div className='w-1/3 '>Review</div>
@@ -904,16 +855,12 @@ const Hero = () => {
 											</div>
 										</div>
 
-										<div className="flex items-center justify-start text-[12px] w-full py-1">
-											<label htmlFor="default-checkbox" className="font-medium text-black w-1/3">PPT</label>
-											<input id="default-checkbox" type="checkbox" value="PPT" name="default-checkbox" className="cursor-pointer w-5 h-5 rounded-lg text-[#2E8095] bg-[#2E8095] border-[#2E8095]" />
-										</div>
-
 									</div>
 
 								</div>
 
 							</div>
+
 							<div className=" 2xl:text-[14px] xl:text-[14px] lg:text-[14px] md:text-[14px] sm:text-[12px] text-[12px] pt-2 border-t-[2px] border-t-gray-300 mt-3">
 								<p className='text-[16px] font-bold text-[#2E8095] pt-2'>Paper Writing</p>
 
@@ -931,7 +878,7 @@ const Hero = () => {
 										<div className='flex items-center justify-start py-1 gap-6 w-full text-[12px]'>
 											<form className="w-full flex">
 												<label htmlFor="field" class="w-1/3 ">Reference Tool</label>
-												<select id="field" className="border border-[#2E8095] text-white bg-[#2E8095] text-[12px] rounded-lg focus:bg-[#2E8095] focus:border-[#2E8095] focus:outline-none block w-2/3 p-1" >
+												<select id="field" className="border border-[#2E8095] text-[#2E8095] text-[12px] rounded-lg focus:border-[#2E8095] focus:outline-none block w-2/3 p-1" >
 													<option selected>Standard/Manual</option>
 													<option value="mendeley">Mendeley</option>
 													<option value="zotero">Zotero</option>
@@ -942,7 +889,7 @@ const Hero = () => {
 										<div className='flex items-center justify-start py-1 gap-6 w-full text-[12px]'>
 											<form className="w-full flex">
 												<label htmlFor="field" class="w-1/3 ">Writing Tool</label>
-												<select id="field" className="border border-[#2E8095] text-white bg-[#2E8095] text-[12px] rounded-lg focus:bg-[#2E8095] focus:border-[#2E8095] focus:outline-none block w-2/3 p-1" >
+												<select id="field" className="border border-[#2E8095] text-[#2E8095] text-[12px] rounded-lg focus:border-[#2E8095] focus:outline-none block w-2/3 p-1" >
 													<option selected>Word</option>
 													<option value="Latex">Latex</option>
 												</select>
@@ -994,6 +941,310 @@ const Hero = () => {
 
 							</div>
 
+							{/* Research,{online/peer/UGC},acceptance(paid) */}
+							<div className=" 2xl:text-[14px] xl:text-[14px] lg:text-[14px] md:text-[14px] sm:text-[12px] text-[12px] pt-2 border-t-[2px] border-t-gray-300 mt-3">
+
+								{/* tool enable/disable option */}
+								<div className='py-2 flex justify-end'>
+
+									{/* buttons */}
+									<ul className="grid grid-cols-3 2xl:gap-4 xl:gap-4 lg:gap-4 md:gap-3 sm:gap-3 gap-3 w-full relative pt-2 text-[10px]">
+										<li className='relative flex'>
+											<input defaultChecked type="radio" id="tft" name="thesis" value="tft" className="hidden peer" required />
+											<label htmlFor="tft" className="cursor-pointer 2xl:px-2 xl:px-2 lg:px-2 md:px-2 sm:px-2 px-2 py-1 border-[1px] text-cyan-700 border-cyan-700 peer-checked:border-[#2E8095] peer-checked:text-white peer-checked:bg-[#2E8095] rounded-md items-center flex justify-center text-wrap w-full leading-[16px]">
+												<span className="text-center ">Taken from thesis</span>
+											</label>
+										</li>
+										<li className='relative flex'>
+											<input type="radio" id="client" name="thesis" value="client" className="hidden peer" required />
+											<label htmlFor="client" className="cursor-pointer 2xl:px-2 xl:px-2 lg:px-2 md:px-2 sm:px-2 px-2 py-1 border-[1px] text-cyan-700 border-cyan-700 peer-checked:border-[#2E8095] peer-checked:text-white peer-checked:bg-[#2E8095] rounded-md items-center flex justify-center text-wrap w-full leading-[16px]">
+												<span className="text-center">Provided by client or not send separately</span>
+											</label>
+										</li>
+										<li className='relative flex'>
+											<input type="radio" id="reqsep" name="thesis" value="reqsep" className="hidden peer" required />
+											<label htmlFor="reqsep" className="cursor-pointer 2xl:px-2 xl:px-2 lg:px-2 md:px-2 sm:px-2 px-2 py-1 border-[1px] text-cyan-700 border-cyan-700 peer-checked:border-[#2E8095] peer-checked:text-white peer-checked:bg-[#2E8095] rounded-md items-center flex justify-center text-wrap w-full leading-[16px]">
+												<span className="text-center">Required separately</span>
+											</label>
+										</li>
+									</ul>
+								</div>
+								<p className='text-[16px] font-bold text-[#2E8095] pt-2'>Research Method</p>
+								<h6 className='text-red-600 font-bold'>Research,(online/peer/UGC),acceptance(paid)</h6>
+								<div className='grid 2xl:grid-cols-2 xl:grid-cols-2 lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-1 grid-cols-1 gap-3 py-3'>
+
+									<div>
+
+									</div>
+
+									<div>
+
+										<div className='flex items-center justify-start py-1 w-full text-[12px]'>
+											<div className='w-1/3 '>Review</div>
+											<div className='w-2/3 flex justify-start '>
+												<form className="p-0">
+													<div className="relative flex items-center max-w-[6rem]">
+														<button type="button" id="decrement-button" data-input-counter-decrement="methods-input" className="bg-[#2E8095] hover:bg-[#064454] border border-[#2E8095] rounded-md p-1 h-5 w-5  focus:outline-none flex items-center justify-center text-[14px] text-white">
+															<RiSubtractLine />
+														</button>
+														<input type="text" id="methods-input" data-input-counter data-input-counter-min="2" data-input-counter-max="100" aria-describedby="helper-text-explanation" className="bg-transparent h-5 font-medium text-center text-black block w-full" placeholder="" value="2" required />
+														<button type="button" id="increment-button" data-input-counter-increment="methods-input" className="bg-[#2E8095] hover:bg-[#064454] border border-[#2E8095] rounded-md p-1 h-5 w-5  focus:outline-none flex items-center justify-center text-[14px] text-white">
+															<RiAddLine />
+														</button>
+													</div>
+												</form>
+											</div>
+										</div>
+
+									</div>
+
+								</div>
+
+							</div>
+
+							<div className=" 2xl:text-[14px] xl:text-[14px] lg:text-[14px] md:text-[14px] sm:text-[12px] text-[12px] pt-2 border-t-[2px] border-t-gray-300 mt-3">
+								<p className='text-[16px] font-bold text-[#2E8095] pt-2'>Paper Writing</p>
+
+								<div className='grid 2xl:grid-cols-2 xl:grid-cols-2 lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-1 grid-cols-1 gap-3 py-3'>
+
+									<div>
+										<ul className='pe-4 text-[12px] list-disc list-inside'>
+											<li>UGC/Online conference/Journal</li>
+											<li>Must be paid & non- Indexed SCI/Scopus/PubMed</li>
+											<li>Unlimited review on journal comment till acceptance</li>
+											<li>Paid only (must be paid by client/author after acceptance)</li>
+										</ul>
+									</div>
+
+									<div>
+
+										<div className='flex items-center justify-start py-1 gap-6 w-full text-[12px]'>
+											<form className="w-full flex">
+												<label htmlFor="field" class="w-1/3 ">Reference Tool</label>
+												<select id="field" className="border border-[#2E8095] text-[#2E8095] text-[12px] rounded-lg focus:border-[#2E8095] focus:outline-none block w-2/3 p-1" >
+													<option selected>Standard/Manual</option>
+													<option value="mendeley">Mendeley</option>
+													<option value="zotero">Zotero</option>
+												</select>
+											</form>
+										</div>
+
+										<div className='flex items-center justify-start py-1 gap-6 w-full text-[12px]'>
+											<form className="w-full flex">
+												<label htmlFor="field" class="w-1/3 ">Writing Tool</label>
+												<select id="field" className="border border-[#2E8095] text-[#2E8095] text-[12px] rounded-lg focus:border-[#2E8095] focus:outline-none block w-2/3 p-1" >
+													<option selected>Word</option>
+													<option value="Latex">Latex</option>
+												</select>
+											</form>
+										</div>
+
+										<div className='flex items-center justify-start py-1 w-full text-[12px]'>
+											<div className='w-1/3 '>No. of Words</div>
+											<div className='w-2/3 flex justify-start '>
+												<form className="p-0">
+													<div className="relative flex items-center max-w-[6rem]">
+														<button type="button" id="decrement-button" data-input-counter-decrement="methods-input" className="bg-[#2E8095] hover:bg-[#064454] border border-[#2E8095] rounded-md p-1 h-5 w-5 focus:outline-none flex items-center justify-center text-[14px] text-white">
+															<RiSubtractLine />
+														</button>
+														<input type="text" id="methods-input" data-input-counter data-input-counter-min="1" data-input-counter-max="10000" aria-describedby="helper-text-explanation" className="bg-transparent h-5 font-medium text-center text-black block w-full" placeholder="" value="5000" required />
+														<button type="button" id="increment-button" data-input-counter-increment="methods-input" className="bg-[#2E8095] hover:bg-[#064454] border border-[#2E8095] rounded-md p-1 h-5 w-5 focus:outline-none flex items-center justify-center text-[14px] text-white">
+															<RiAddLine />
+														</button>
+													</div>
+												</form>
+											</div>
+										</div>
+
+										<div className='flex items-center justify-start py-1 w-full text-[12px]'>
+											<div className='w-1/3 '>Review</div>
+											<div className='w-2/3 flex justify-start '>
+												<form className="p-0">
+													<div className="relative flex items-center max-w-[6rem]">
+														<button type="button" id="decrement-button" data-input-counter-decrement="methods-input" className="bg-[#2E8095] hover:bg-[#064454] border border-[#2E8095] rounded-md p-1 h-5 w-5  focus:outline-none flex items-center justify-center text-[14px] text-white">
+															<RiSubtractLine />
+														</button>
+														<input type="text" id="methods-input" data-input-counter data-input-counter-min="2" data-input-counter-max="100" aria-describedby="helper-text-explanation" className="bg-transparent h-5 font-medium text-center text-black block w-full" placeholder="" value="2" required />
+														<button type="button" id="increment-button" data-input-counter-increment="methods-input" className="bg-[#2E8095] hover:bg-[#064454] border border-[#2E8095] rounded-md p-1 h-5 w-5  focus:outline-none flex items-center justify-center text-[14px] text-white">
+															<RiAddLine />
+														</button>
+													</div>
+												</form>
+											</div>
+										</div>
+
+										<div className="flex items-center justify-start text-[12px] w-full py-1">
+											<label htmlFor="default-checkbox" className="font-medium text-black w-1/3">PPT</label>
+											<input id="default-checkbox" type="checkbox" value="PPT" name="default-checkbox" className="cursor-pointer w-5 h-5 rounded-lg text-[#2E8095] bg-[#2E8095] border-[#2E8095]" />
+										</div>
+
+									</div>
+
+								</div>
+
+							</div>
+
+							{/* Research,UGC,acceptance(non-paid) */}
+							<div className=" 2xl:text-[14px] xl:text-[14px] lg:text-[14px] md:text-[14px] sm:text-[12px] text-[12px] pt-2 border-t-[2px] border-t-gray-300 mt-3">
+
+								{/* tool enable/disable option */}
+								<div className='py-2 flex justify-end'>
+
+									{/* buttons */}
+									<ul className="grid grid-cols-3 2xl:gap-4 xl:gap-4 lg:gap-4 md:gap-3 sm:gap-3 gap-3 w-full relative pt-2 text-[10px]">
+										<li className='relative flex'>
+											<input defaultChecked type="radio" id="tft2" name="thesis2" value="tft2" className="hidden peer" required />
+											<label htmlFor="tft2" className="cursor-pointer 2xl:px-2 xl:px-2 lg:px-2 md:px-2 sm:px-2 px-2 py-1 border-[1px] text-cyan-700 border-cyan-700 peer-checked:border-[#2E8095] peer-checked:text-white peer-checked:bg-[#2E8095] rounded-md items-center flex justify-center text-wrap w-full leading-[16px]">
+												<span className="text-center ">Taken from thesis</span>
+											</label>
+										</li>
+										<li className='relative flex'>
+											<input type="radio" id="client2" name="thesis2" value="client2" className="hidden peer" required />
+											<label htmlFor="client2" className="cursor-pointer 2xl:px-2 xl:px-2 lg:px-2 md:px-2 sm:px-2 px-2 py-1 border-[1px] text-cyan-700 border-cyan-700 peer-checked:border-[#2E8095] peer-checked:text-white peer-checked:bg-[#2E8095] rounded-md items-center flex justify-center text-wrap w-full leading-[16px]">
+												<span className="text-center">Provided by client or not send separately</span>
+											</label>
+										</li>
+										<li className='relative flex'>
+											<input type="radio" id="reqsep2" name="thesis2" value="reqsep2" className="hidden peer" required />
+											<label htmlFor="reqsep2" className="cursor-pointer 2xl:px-2 xl:px-2 lg:px-2 md:px-2 sm:px-2 px-2 py-1 border-[1px] text-cyan-700 border-cyan-700 peer-checked:border-[#2E8095] peer-checked:text-white peer-checked:bg-[#2E8095] rounded-md items-center flex justify-center text-wrap w-full leading-[16px]">
+												<span className="text-center">Required separately</span>
+											</label>
+										</li>
+									</ul>
+								</div>
+								<p className='text-[16px] font-bold text-[#2E8095] pt-2'>Research Method</p>
+								<h6 className='text-red-600 font-bold'>Research,UGC,acceptance(non-paid)</h6>
+								<div className='grid 2xl:grid-cols-2 xl:grid-cols-2 lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-1 grid-cols-1 gap-3 py-3'>
+
+									<div>
+
+									</div>
+
+									<div>
+
+										<div className='flex items-center justify-start py-1 w-full text-[12px]'>
+											<div className='w-1/3 '>Review</div>
+											<div className='w-2/3 flex justify-start '>
+												<form className="p-0">
+													<div className="relative flex items-center max-w-[6rem]">
+														<button type="button" id="decrement-button" data-input-counter-decrement="methods-input" className="bg-[#2E8095] hover:bg-[#064454] border border-[#2E8095] rounded-md p-1 h-5 w-5  focus:outline-none flex items-center justify-center text-[14px] text-white">
+															<RiSubtractLine />
+														</button>
+														<input type="text" id="methods-input" data-input-counter data-input-counter-min="2" data-input-counter-max="100" aria-describedby="helper-text-explanation" className="bg-transparent h-5 font-medium text-center text-black block w-full" placeholder="" value="2" required />
+														<button type="button" id="increment-button" data-input-counter-increment="methods-input" className="bg-[#2E8095] hover:bg-[#064454] border border-[#2E8095] rounded-md p-1 h-5 w-5  focus:outline-none flex items-center justify-center text-[14px] text-white">
+															<RiAddLine />
+														</button>
+													</div>
+												</form>
+											</div>
+										</div>
+
+									</div>
+
+								</div>
+
+							</div>
+
+							<div className=" 2xl:text-[14px] xl:text-[14px] lg:text-[14px] md:text-[14px] sm:text-[12px] text-[12px] pt-2 border-t-[2px] border-t-gray-300 mt-3">
+								<p className='text-[16px] font-bold text-[#2E8095] pt-2'>Paper Writing</p>
+
+								<div className='grid 2xl:grid-cols-2 xl:grid-cols-2 lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-1 grid-cols-1 gap-3 py-3'>
+
+									<div>
+										<ul className='pe-4 text-[12px] list-disc list-inside'>
+											<li>UGC/Online conference/Journal</li>
+											<li>Must be paid & non- Indexed SCI/Scopus/PubMed</li>
+											<li>Unlimited review on journal comment till acceptance</li>
+											<li>Paid only (must be paid by client/author after acceptance)</li>
+										</ul>
+									</div>
+
+									<div>
+
+										<div className='flex items-center justify-start py-1 gap-6 w-full text-[12px]'>
+											<form className="w-full flex">
+												<label htmlFor="field" class="w-1/3 ">Reference Tool</label>
+												<select id="field" className="border border-[#2E8095] text-[#2E8095] text-[12px] rounded-lg focus:border-[#2E8095] focus:outline-none block w-2/3 p-1" >
+													<option selected>Standard/Manual</option>
+													<option value="mendeley">Mendeley</option>
+													<option value="zotero">Zotero</option>
+												</select>
+											</form>
+										</div>
+
+										<div className='flex items-center justify-start py-1 gap-6 w-full text-[12px]'>
+											<form className="w-full flex">
+												<label htmlFor="field" class="w-1/3 ">Writing Tool</label>
+												<select id="field" className="border border-[#2E8095] text-[#2E8095] text-[12px] rounded-lg focus:border-[#2E8095] focus:outline-none block w-2/3 p-1" >
+													<option selected>Word</option>
+													<option value="Latex">Latex</option>
+												</select>
+											</form>
+										</div>
+
+										<div className='flex items-center justify-start py-1 w-full text-[12px]'>
+											<div className='w-1/3 '>No. of Words</div>
+											<div className='w-2/3 flex justify-start '>
+												<form className="p-0">
+													<div className="relative flex items-center max-w-[6rem]">
+														<button type="button" id="decrement-button" data-input-counter-decrement="methods-input" className="bg-[#2E8095] hover:bg-[#064454] border border-[#2E8095] rounded-md p-1 h-5 w-5 focus:outline-none flex items-center justify-center text-[14px] text-white">
+															<RiSubtractLine />
+														</button>
+														<input type="text" id="methods-input" data-input-counter data-input-counter-min="1" data-input-counter-max="10000" aria-describedby="helper-text-explanation" className="bg-transparent h-5 font-medium text-center text-black block w-full" placeholder="" value="5000" required />
+														<button type="button" id="increment-button" data-input-counter-increment="methods-input" className="bg-[#2E8095] hover:bg-[#064454] border border-[#2E8095] rounded-md p-1 h-5 w-5 focus:outline-none flex items-center justify-center text-[14px] text-white">
+															<RiAddLine />
+														</button>
+													</div>
+												</form>
+											</div>
+										</div>
+
+										<div className='flex items-center justify-start py-1 w-full text-[12px]'>
+											<div className='w-1/3 '>Review</div>
+											<div className='w-2/3 flex justify-start '>
+												<form className="p-0">
+													<div className="relative flex items-center max-w-[6rem]">
+														<button type="button" id="decrement-button" data-input-counter-decrement="methods-input" className="bg-[#2E8095] hover:bg-[#064454] border border-[#2E8095] rounded-md p-1 h-5 w-5  focus:outline-none flex items-center justify-center text-[14px] text-white">
+															<RiSubtractLine />
+														</button>
+														<input type="text" id="methods-input" data-input-counter data-input-counter-min="2" data-input-counter-max="100" aria-describedby="helper-text-explanation" className="bg-transparent h-5 font-medium text-center text-black block w-full" placeholder="" value="2" required />
+														<button type="button" id="increment-button" data-input-counter-increment="methods-input" className="bg-[#2E8095] hover:bg-[#064454] border border-[#2E8095] rounded-md p-1 h-5 w-5  focus:outline-none flex items-center justify-center text-[14px] text-white">
+															<RiAddLine />
+														</button>
+													</div>
+												</form>
+											</div>
+										</div>
+
+										<div className="flex items-center justify-start text-[12px] w-full py-1">
+											<label htmlFor="default-checkbox" className="font-medium text-black w-1/3">PPT</label>
+											<input id="default-checkbox" type="checkbox" value="PPT" name="default-checkbox" className="cursor-pointer w-5 h-5 rounded-lg text-[#2E8095] bg-[#2E8095] border-[#2E8095]" />
+										</div>
+
+									</div>
+
+								</div>
+
+							</div>
+
+							{/* Research,(scopus,sci),writing */}
+							<div className=" 2xl:text-[14px] xl:text-[14px] lg:text-[14px] md:text-[14px] sm:text-[12px] text-[12px] pt-2 border-t-[2px] border-t-gray-300 mt-3">
+								<h6 className='text-red-600 font-bold'>SAME FOR-</h6>
+								<h6 className='text-red-600 font-bold'>Research,(scopus,sci),writing</h6>
+							</div>
+
+							{/* Research,(scopus,sci),acceptance(paid) */}
+							<div className=" 2xl:text-[14px] xl:text-[14px] lg:text-[14px] md:text-[14px] sm:text-[12px] text-[12px] pt-2 border-t-[2px] border-t-gray-300 mt-3">
+								<h6 className='text-red-600 font-bold'>SAME FOR-</h6>
+								<h6 className='text-red-600 font-bold'>Research,(scopus,sci),acceptance(paid)</h6>
+							</div>
+
+							{/* Research,(scopus,sci),acceptance(non-paid) */}
+							<div className=" 2xl:text-[14px] xl:text-[14px] lg:text-[14px] md:text-[14px] sm:text-[12px] text-[12px] pt-2 border-t-[2px] border-t-gray-300 mt-3">
+								<h6 className='text-red-600 font-bold'>SAME FOR-</h6>
+								<h6 className='text-red-600 font-bold'>Research,(scopus,sci),acceptance(non-paid)</h6>
+							</div>
+
 						</div>
 
 					</div>
@@ -1001,7 +1252,7 @@ const Hero = () => {
 					{/* service table */}
 					<div className='2xl:col-span-1 xl:col-span-1 lg:col-span-1 md:col-span-1 sm:col-span-1 col-span-1'>
 
-						<div className='rounded-lg border-[1px] border-cyan-700'>
+						<div className='rounded-lg border-[1px] border-cyan-700 sticky block top-[20px]'>
 
 
 							<table className="w-full text-sm text-left rtl:text-right text-black text-wrap">

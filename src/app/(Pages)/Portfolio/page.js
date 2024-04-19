@@ -1,12 +1,15 @@
 import Hero from '@/app/components/PortfolioComponents/Hero'
 import PortCardSection from '@/app/components/PortfolioComponents/PortCardSection'
-import React from 'react'
+import Loading from '@/app/loading'
+import React, { Suspense } from 'react'
 
 const page = () => {
   return (
     <div>
-      <Hero/>
-      <PortCardSection/>
+      <Suspense fallback = {<Loading />} >
+        <Hero/>
+        <PortCardSection/>
+      </Suspense>
     </div>
   )
 }

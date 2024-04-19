@@ -1,10 +1,10 @@
-import React from 'react'
+import React, { Suspense } from 'react'
 // import dynamic from 'next/dynamic';
-import Loader from '../../../loading';
+import Loading from '../../../loading';
 import Image from 'next/image';
 import Hero from '@/app/components/PricingComponents/AdmissionComponents/Hero';
 
-// const Hero = dynamic(() => import('@/app/components/PricingComponents/AdmissionComponents/Hero'), { ssr: false, loading: () => <Loader /> });
+// const Hero = dynamic(() => import('@/app/components/PricingComponents/AdmissionComponents/Hero'), { ssr: false, loading: () => <Loading /> });
 
 const page = () => {
 
@@ -20,9 +20,9 @@ const page = () => {
 				</div>
 			</div>
 
-			{/* <Suspense fallback={<Loader />}> */}
+			<Suspense fallback={<Loading />}>
 				<Hero />
-			{/* </Suspense> */}
+			</Suspense>
 		</div>
 	)
 }

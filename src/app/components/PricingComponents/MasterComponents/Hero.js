@@ -1,6 +1,7 @@
 "use client"
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import Image from 'next/image';
+import { initFlowbite } from 'flowbite'
 import MasterImplementation from './MasterImplementation';
 import MasterMapping from './MasterMapping';
 import MasterStatistical from './MasterStatistical';
@@ -16,18 +17,13 @@ const Hero = () => {
 		e.preventDefault();
 		setPriceTable(!priceTable);
 	}
+	useEffect(() => {
+		initFlowbite();
+	}, [])
 	return (
 		<>
-			{/* Heading div */}
-			<div className='flex justify-between items-center w-full 2xl:px-10 xl:px-10 lg:px-10 md:px-6 sm:px-4 px-4 py-4 bg-[#2E8095]'>
-				<div className='2xl:leading-[44px] xl:leading-[44px] lg:leading-[44px] md:leading-[36px] sm:leading-[30px] leading-[30px]'>
-					<h3 className='2xl:leading-[44px] xl:leading-[44px] lg:leading-[44px] md:leading-[36px] sm:leading-[30px] leading-[30px] 2xl:text-[42px] xl:text-[42px] lg:text-[42px] md:text-[36px] sm:text-[30px] text-[28px] text-white font-black tracking-wide'>MASTER DISSERTATION </h3>
-				</div>
-				<div className='w-full flex items-center justify-end overflow-hidden object-cover'>
-					<Image className="rounded-md 2xl:ps-0 xl:ps-0 lg:ps-0 md:ps-10 sm:ps-10 ps-10" width={150} height={150} src="/Images/master-img.png" alt="image" />
-				</div>
-			</div>
 			
+
 			<div className='w-full py-6 2xl:px-10 xl:px-10 lg:px-10 md:px-10 sm:px-6 px-4'>
 
 				<div className='grid 2xl:grid-cols-3 xl:grid-cols-3 lg:grid-cols-3 sm:grid-cols-1 grid-cols-1 gap-5'>
@@ -101,7 +97,7 @@ const Hero = () => {
 							<div className='w-full py-2 '>
 
 								<div className="mb-4 ">
-									<ul className="flex flex-wrap 2xl:text-[14px] xl:text-[14px] lg:text-[14px] md:text-[14px] sm:text-[12px] text-[12px] font-bold text-center" id="default-tab" data-tabs-toggle="#default-tab-content" role="tablist">
+									<ul className="overflow-x-auto flex 2xl:text-[14px] xl:text-[14px] lg:text-[14px] md:text-[14px] sm:text-[12px] text-[12px] font-bold text-center" id="default-tab" data-tabs-toggle="#default-tab-content" role="tablist">
 
 										<li className="me-2" role="presentation">
 											<button className="inline-block p-2 border-b-2 border-[#D9D9D9] rounded-t-lg text-sky-950 hover:text-[#064454] uppercase focus:text-[#064454] focus:border-[#064454]" id="implementation-tab" data-tabs-target="#implementation" type="button" role="tab" aria-controls="implementation" aria-selected="false"> Implementation/Coding Tool</button>
@@ -142,6 +138,7 @@ const Hero = () => {
 
 							</div>
 						</div>
+
 						<div className='rounded-lg shadow-custom3 p-4 mt-8'>
 
 							<div className="p-0">
@@ -157,7 +154,7 @@ const Hero = () => {
 
 									{/* methods */}
 									<div className='flex items-center justify-start py-1 gap-6 w-2/3 2xl:text-[14px] xl:text-[14px] lg:text-[14px] md:text-[14px] sm:text-[12px] text-[12px]'>
-										<div className='w-1/3 '>No. of Pages Required</div>
+										<div className='w-1/3 '>No. of Pages</div>
 										<div className='w-2/3 flex 2xl:justify-start xl:justify-start lg:justify-start md:justify-end sm:justify-end justify-end '>
 											<form className="max-w-xs mx-auto">
 												<div className="relative flex items-center max-w-[6rem]">
@@ -170,13 +167,13 @@ const Hero = () => {
 													</button>
 												</div>
 											</form>
-											<span className='flex items-center justify-center px-2'>x 350 </span>
+											<span className='flex items-center justify-center px-2'>x&nbsp;350 </span>
 										</div>
 									</div>
 
 									<div className="flex items-center py-2 2xl:text-[14px] xl:text-[14px] lg:text-[14px] md:text-[14px] sm:text-[12px] text-[12px]">
 										<label for="default-checkbox" className=" pe-4 font-medium text-black"> PPT Required</label>
-										<input id="default-checkbox" type="checkbox" value="" name="default-checkbox" className="cursor-pointer w-6 h-6 rounded-0 text-[#2E8095] bg-[#2E8095] border-[#2E8095] focus:ring-[#2E8095] focus:ring-1" />
+										<input id="default-checkbox" type="checkbox" value="" name="default-checkbox" className="cursor-pointer w-5 h-5 rounded-0 text-[#2E8095] bg-[#2E8095] border-[#2E8095] focus:ring-[#2E8095] focus:ring-1" />
 									</div>
 
 								</div>
@@ -189,7 +186,7 @@ const Hero = () => {
 
 					{/* service table */}
 					<div className='2xl:col-span-1 xl:col-span-1 lg:col-span-1 md:col-span-1 sm:col-span-1 col-span-1'>
-						<div className='rounded-lg border-[1px] border-cyan-700 '>
+						<div className='rounded-lg border-[1px] border-cyan-700 sticky block top-[20px]'>
 
 							{/*<div className="w-full relative py-2 2xl:text-[14px] xl:text-[14px] lg:text[14px] md:text-[12px] sm:text-[12px] text-[12px]">
 

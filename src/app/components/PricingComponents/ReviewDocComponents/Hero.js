@@ -16,16 +16,7 @@ const Hero = () => {
 	}
 	return (
 		<>
-			{/* Heading div */}
-
-			<div className='flex justify-between items-center w-full px-4 py-4 bg-[#2E8095] 2xl:px-10 xl:px-10 lg:px-10 md:px-6 sm:px-4'>
-				<div className='leading-[30px] sm:leading-[30px] md:leading-[36px] lg:leading-[44px] xl:leading-[44px] 2xl:leading-[44px]'>
-					<h3 className='text-[19px] sm:text-[41px]  md:text-[31px] lg:text-[38px] xl:text-[38px] 2xl:text-[38px] text-white font-black tracking-wide'>REVIEW ON DOCUMENT </h3>
-				</div>
-				<div className='w-full flex items-center justify-end overflow-hidden object-cover'>
-					<img className="rounded-md  sm:pr-10 md:pr-10 lg:pr-0 xl:pr-0 2xl:pr-0" width={135} height={135} src="/Images/reviewhead.png" alt="image" />
-				</div>
-			</div>
+			
 
 
 			<div className='w-full py-6 2xl:px-10 xl:px-10 lg:px-10 md:px-10 sm:px-6 px-4'>
@@ -84,7 +75,7 @@ const Hero = () => {
 								</div>
 							</div>
 
-							<div className='w-full mt-3 ml-5'>
+							<div className='w-full p-4'>
 								<ul class="list-disc ">
 									<li>Complete Document  </li>
 									<li>Add Report</li>
@@ -133,72 +124,71 @@ const Hero = () => {
 
 						</div>
 					</div>
-
+	
 					{/* service table */}
 					<div className='2xl:col-span-1 xl:col-span-1 lg:col-span-1 md:col-span-1 sm:col-span-1 col-span-1'>
 
-						<div className='rounded-lg border-[1px] border-[#000000]'>
-							<div className="w-full relative overflow-x-auto  pt-4 pb-2">
-								<table className="w-full text-sm text-left rtl:text-right text-black text-wrap">
-									<thead className="text-[14px] text-black uppercase">
-										<tr className='text-center'>
-											<th scope="col" className=" px-1 py-3 border-e-[2px] border-[#00000059]">
-												Services
-											</th>
-											<th scope="col" className=" px-1 py-3 border-e-[2px] border-[#00000059]">
-												Basic
-											</th>
-											<th scope="col" className=" px-1 py-3">
-												Required
-											</th>
-										</tr>
-									</thead>
-									<tbody className='2xl:text-[14px] xl:text-[14px] lg:text[14px] md:text-[12px] sm:text-[12px] text-[12px]'>
-										<tr className="bg-white text-center">
-											<th scope="row" className="px-1 py-2 font-medium text-black whitespace-nowrap border-e-[2px] border-[#00000059]">
-												No. of Words
-											</th>
-											<td className="px-1 py-2 border-e-[2px] border-[#00000059]">
-												1000
-											</td>
-											<td className="px-1 py-2">
+						<div className='rounded-lg border-[1px] border-cyan-700 sticky block top-[20px]'>
 
-											</td>
-										</tr>
-										<tr className="bg-white text-center">
-											<th scope="row" className="px-1 py-2 font-medium text-black whitespace-nowrap border-e-[2px] border-[#00000059]">
-												Review Type
-											</th>
-											<td className="px-1 py-2 border-e-[2px] border-[#00000059] line-through">
-												Grammarly scored Report
-											</td>
-											<td className="px-1 py-2">
-												Both (Plag and Grammarly scored Report)
-											</td>
-										</tr>
-										<tr className="bg-white text-center">
-											<th scope="row" className="px-1 py-2 font-medium text-black whitespace-nowrap border-e-[2px] border-[#00000059]">
-												Quantity
-											</th>
-											<td className="px-1 py-2 border-e-[2px] border-[#00000059]">
-												1
-											</td>
-											<td className="px-1 py-2">
 
-											</td>
-										</tr>
+							<table className="w-full text-sm text-left rtl:text-right text-black text-wrap">
+								<thead className="text-[14px] text-black uppercase">
+									<tr className='text-start'>
+										<th scope="col" className="  px-10 py-2">
+											Services
+										</th>
+										<th scope="col" className="  px-10 py-2">
+											Basic
+										</th>
 
-									</tbody>
-								</table>
-								<div className=' flex items-center justify-end pt-2 px-3'>
-									<button type='button' onClick={onClickhandle} className='py-1 font-bold text-[#064454] flex items-center px-2 justify-end'> Check Price Distribution <IoIosArrowDown className='mx-2' /> </button>
-								</div>
+									</tr>
+								</thead>
+								<tbody className='text-[12px]'>
+									<tr className="bg-white text-center">
+										<th scope="row" className=" px-10 py-2 font-medium text-black whitespace-nowrap border-e-[2px] border-[#00000059]">
+											No. of Words
+										</th>
+										<td className=" px-10 py-2">
+											5000
+										</td>
+
+									</tr>
+									<tr className="bg-white text-center">
+										<th scope="row" className="px-10 py-2 font-medium text-black whitespace-nowrap border-e-[2px] border-[#00000059]">
+											Reference Tool
+										</th>
+										<td className="px-10 py-2">
+											Standard/Manual
+										</td>
+									</tr>
+									<tr className="bg-white text-center">
+										<th scope="row" className="px-10 py-2 font-medium text-black whitespace-nowrap border-e-[2px] border-[#00000059]">
+											Writing Tool
+										</th>
+										<td className="px-10 py-2">
+											Word
+										</td>
+									</tr>
+									<tr className="bg-white text-center">
+										<th scope="row" className="px-10 py-2 font-medium text-black whitespace-nowrap border-e-[2px] border-[#00000059]">
+											Questionnaire
+										</th>
+										<td className="px-10 py-2">
+											50
+										</td>
+
+									</tr>
+								</tbody>
+							</table>
+							<div className=' flex items-center justify-end pt-2 px-3'>
+								<button type='button' onClick={onClickhandle} className='py-1 font-bold text-[#064454] flex items-center px-2 justify-end'> Check Price Distribution <IoIosArrowDown className='mx-2' /> </button>
 							</div>
 
-							<div className={` ${priceTable ? 'block' : 'hidden'}  relative overflow-x-auto rounded-[18px]`}>
-								<h3 className='py-2 px-10 text-[20px] font-bold'>Price Distribution</h3>
+
+							<div className={` ${priceTable ? 'block' : 'hidden'} relative overflow-x-auto rounded-[18px]`}>
+								<h3 className='py-2 px-10 text-[16px] font-bold'>Price Distribution</h3>
 								<table className="w-full text-sm text-left rtl:text-right text-black">
-									<tbody>
+									<tbody className='text-[12px]'>
 										<tr className="bg-white">
 											<th scope="row" className="px-10 py-2 font-medium text-black whitespace-nowrap border-e-[2px] border-[#00000059]">
 												Base Price
@@ -217,15 +207,15 @@ const Hero = () => {
 										</tr>
 										<tr className="bg-white">
 											<th scope="row" className="px-10 py-2 font-medium text-black whitespace-nowrap border-e-[2px] border-[#00000059]">
-												No. of Words
+												Page count
 											</th>
 											<td className="px-10 py-2">
-												₹5000
+												₹10000
 											</td>
 										</tr>
 										<tr className="bg-white">
 											<th scope="row" className="px-10 py-2 font-medium text-black whitespace-nowrap border-e-[2px] border-[#00000059]">
-												Review Type
+												Reference Tool
 											</th>
 											<td className="px-10 py-2">
 												₹5000
@@ -233,7 +223,7 @@ const Hero = () => {
 										</tr>
 										<tr className="bg-white">
 											<th scope="row" className="px-10 pt-2 pb-6 font-medium text-black whitespace-nowrap border-e-[2px] border-[#00000059]">
-												Quantity
+												Review
 											</th>
 											<td className="px-10 pt-2 pb-6">
 												₹5000
@@ -252,9 +242,6 @@ const Hero = () => {
 								</div>
 							</div>
 
-						</div>
-						<div className='flex justify-end items-center pb-4 mt-4' >
-							<button type='submit' className='text-white bg-[#064454] 2xl:text-[14px] xl:text-[14px] lg:text-[14px] md:text-[12px] sm:text-[12px] text-[12px] px-8 py-2 rounded-lg font-medium'>Download Quotation</button>
 						</div>
 					</div>
 				</div>

@@ -6,7 +6,7 @@ const WorkCards = () => {
         <>
             <div className='shadow-custom border-[2px] rounded-lg relative bg-white'>
             <div className='rounded-full 2xl:px-8 xl:px-8 lg:px-8 md:px-6 sm:px-6 px-6 2xl:p-6 xl:p-6 lg:p-6 md:p-4 sm:p-4 py-4 2xl:text-[36px] xl:text-[36px] lg:text-[36px] md:text-[28px] sm:text-[24px] text-[24px] bg-[#196572A6] absolute 2xl:right-[-60px] xl:right-[-60px] lg:right-[-60px] md:right-[-45px] sm:right-[-45px] right-[-45px] 2xl:top-[-65px] xl:top-[-65px] lg:top-[-65px] md:top-[-45px] sm:top-[-45px] top-[-45px] z-[-1] text-white font-bold italic'>01</div>
-                <div className='w-full flex overflow-hidden object-cover justify-center items-center'>
+                <div className='w-full flex overflow-hidden object-cover justify-center items-center  rounded-t-lg'>
                 <Image width={350} height={250} src="/Images/work1img.png" alt="image" objectFit="cover" layout="responsive" />
                 </div>
                 <div className='px-2  py-2'>

@@ -6,20 +6,23 @@ import Hero from '@/app/components/HomeComponents/Hero'
 import ProductHead from '@/app/components/HomeComponents/ProductHead'
 import Services from '@/app/components/HomeComponents/Services'
 import Testimonials from '@/app/components/HomeComponents/Testimonials'
-import React from 'react'
+import React, { Suspense } from 'react'
 import WorkSignup from '@/app/components/HomeComponents/WorkSignup'
+import Loading from '@/app/loading'
 
 
 const Home = () => {
   return (
     <div>
-      <Hero />
-      <About />
-      <Services />
-      <ProductHead />
-      <WorkSignup />
-      <GetinTouch />
-      <Testimonials />
+      <Suspense fallback = {<Loading />} >
+        <Hero />
+        <About />
+        <Services />
+        <ProductHead />
+        <WorkSignup />
+        <GetinTouch />
+        <Testimonials />
+      </Suspense>
     </div>
   )
 }

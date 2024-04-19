@@ -16,17 +16,6 @@ const Hero = () => {
 	return (
 		<>
 
-			{/* Heading div */}
-			{/* <div className='flex justify-between items-center w-full 2xl:px-10 xl:px-10 lg:px-10 md:px-6 sm:px-4 px-4 py-4 bg-[#2E8095]'>
-				<div className='2xl:leading-[44px] xl:leading-[44px] lg:leading-[44px] md:leading-[36px] sm:leading-[30px] leading-[30px]'>
-					<h3 className='2xl:text-[30px] xl:text-[30px] lg:text-[30px] md:text-[26px] sm:text-[22px] text-[22px] text-white font-black tracking-wide m-0'>ADMISSION </h3>
-					<h3 className='2xl:text-[42px] xl:text-[42px] lg:text-[42px] md:text-[36px] sm:text-[30px] text-[28px] text-white font-black tracking-wide'>PROPOSAL </h3>
-				</div>
-				<div className='w-full flex items-center justify-end overflow-hidden object-cover'>
-					<Image className="rounded-md 2xl:ps-0 xl:ps-0 lg:ps-0 md:ps-10 sm:ps-10 ps-10" width={150} height={150} src="/Images/admission-img.png" alt="image" />
-				</div>
-			</div> */}
-
 			<div className='w-full py-6 2xl:px-10 xl:px-10 lg:px-10 md:px-10 sm:px-6 px-4'>
 
 				<div className='grid 2xl:grid-cols-3 xl:grid-cols-3 lg:grid-cols-3 sm:grid-cols-1 grid-cols-1 gap-5'>
@@ -64,7 +53,7 @@ const Hero = () => {
 
 									<div className="flex items-center py-2 2xl:text-[14px] xl:text-[14px] lg:text-[14px] md:text-[14px] sm:text-[12px] text-[12px]">
 										<label for="default-checkbox" className=" pe-4 font-medium text-black"> PPT Required</label>
-										<input id="default-checkbox" type="checkbox" value="" name="default-checkbox" className="cursor-pointer w-6 h-6 rounded-0 text-[#2E8095] bg-[#2E8095] border-[#2E8095] focus:ring-[#2E8095] focus:ring-1" />
+										<input id="default-checkbox" type="checkbox" value="" name="default-checkbox" className="cursor-pointer w-5 h-5 rounded-0 text-[#2E8095] bg-[#2E8095] border-[#2E8095] focus:ring-[#2E8095] focus:ring-1" />
 									</div>
 
 								</div>
@@ -77,7 +66,7 @@ const Hero = () => {
 					{/* service table */}
 					<div className='2xl:col-span-1 xl:col-span-1 lg:col-span-1 md:col-span-1 sm:col-span-1 col-span-1'>
 
-						<div className='rounded-lg border-[1px] border-cyan-700'>
+						<div className='rounded-lg border-[1px] border-cyan-700 sticky block top-[20px]'>
 							<div className="w-full relative overflow-x-auto  pt-4 pb-2">
 								<table className="w-full text-sm text-left rtl:text-right text-black text-wrap">
 									<thead className="text-[14px] text-black uppercase">

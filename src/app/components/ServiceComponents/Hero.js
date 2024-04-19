@@ -12,7 +12,7 @@ const Hero = () => {
         </div>
 
         <div className='p-4 absolute top-0 sm:relative sm:p-6 md:p-8'>
-          <h1 className='font-[#434343] text-white font-poppins leading-10 font-bold text-2xl  xs:text-2xl sm:text-[#434343] sm:text-[20px]  md:text-[25px]  lg:text-[32px]  lg:leading-[47.84px] xl:text-[32px]  xl:leading-[47.84px]'>Commited To <br />Facilitating your <br /> Academic Success</h1>
+          <h1 className='text-white font-poppins leading-10 font-bold text-2xl  xs:text-2xl sm:text-[#434343] sm:text-[20px]  md:text-[25px]  lg:text-[32px]  lg:leading-[47.84px] xl:text-[32px]  xl:leading-[47.84px]'>Commited To <br />Facilitating your <br /> Academic Success</h1>
           <h3 className='mt-3 font-roboto leading-6 text-white text-base font-normal  xs:text-base sm:text-[#000000] sm:leading-[21px]  sm:text-[12px] md:leading-[24px] md:text-[13px]  lg:leading-[28px]  lg:text-[14px] xl:text-[14px] '>
             Lead generation strategy refers to the marketing process of involving and capturing interest
             in a product or service in order to establish sales strategies and, as a result, solicit new
@@ -22,25 +22,25 @@ const Hero = () => {
         </div>
           
           {/* for only mobile */}
-        <div className='block absolute left-0 bottom-1 right-0  px-8 py-4 bg-[ #0000005E] opacity-50 rounded-r-full sm:hidden'>
+        <div className='block absolute left-0 bottom-1 right-0  px-8 py-4 bg-gray-800 opacity-50 rounded-full sm:hidden'>
           <div className='flex justify-between'>
             <div>
-              <h3 className='text-center text-white font-bold text-lg opacity-75'>99%</h3>
+              <h3 className='text-center text-white font-bold text-lg'>99%</h3>
               <h4 className='text-white font-bold text-[9px] xs:text-xs '>Clint Retention</h4>
             </div>
 
             <div>
-              <h3 className='text-center text-white font-bold text-lg opacity-75'>7</h3>
+              <h3 className='text-center text-white font-bold text-lg'>7</h3>
               <h4 className='text-white font-bold text-[9px] xs:text-xs'>Year Of Service</h4>
             </div>
 
             <div>
-              <h3 className='text-center text-white font-bold text-lg opacity-75'>30+</h3>
+              <h3 className='text-center text-white font-bold text-lg'>30+</h3>
               <h4 className='text-white font-bold text-[9px] xs:text-xs'>Team Of Professionals</h4>
             </div>
 
             <div>
-              <h3 className='text-center text-white font-bold text-lg opacity-75'>221+</h3>
+              <h3 className='text-center text-white font-bold text-lg'>221+</h3>
               <h4 className='text-white font-bold text-[9px] xs:text-xs'>Satisfied Clients</h4>
             </div>
 
@@ -56,7 +56,6 @@ const Hero = () => {
           </div>
         </div>
       </div>
-
       <div className='hidden absolute left-0 px-8 py-4  bg-[#D5E1F285]  rounded-r-full sm:block sm:right-[18%] sm:top-[80%] sm:py-5 md:right-[23%] md:top-[74%] md:py-9 lg:top-[75%] lg:py-9 xl:top-[73%] xl:py-9'>
         <div className='flex justify-between'>
           <div>
@@ -82,7 +81,6 @@ const Hero = () => {
         </div>
       </div>
     </div>
-
   )
 }
 

@@ -1,19 +1,22 @@
 
 // import Hero from '@/app/components/ResearchComponents/Hero'
 import ResearchCardSection from '@/app/components/ResearchComponents/ResearchCardSection'
-//import ResearchForm from '@/app/components/ResearchComponents/ResearchForm'
+import ResearchForm from '@/app/components/ResearchComponents/ResearchForm'
 import Hero from '@/app/components/ResearchComponents/Hero'
 
 
-import React from 'react'
+import React, { Suspense } from 'react'
+import Loading from '@/app/loading'
 
 const Research = () => {
   return (
     <div>
       {/* <Hero /> */}
-      <Hero />
-      <ResearchCardSection />
-      {/*<ResearchForm/>*/}
+      <Suspense fallback = {<Loading />} >
+        <Hero />
+        <ResearchCardSection />
+      </Suspense>
+      <ResearchForm/>
 
     </div>
   )

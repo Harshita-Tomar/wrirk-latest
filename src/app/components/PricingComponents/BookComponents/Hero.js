@@ -12,15 +12,7 @@ const Hero = () => {
 	}
 	return (
 		<>
-			{/* Heading div */}
-			<div className='flex justify-between items-center w-full 2xl:px-10 xl:px-10 lg:px-10 md:px-6 sm:px-4 px-4 py-4 bg-[#2E8095]'>
-				<div className='2xl:leading-[44px] xl:leading-[44px] lg:leading-[44px] md:leading-[36px] sm:leading-[30px] leading-[30px]'>
-					<h3 className='2xl:text-[42px] xl:text-[42px] lg:text-[42px] md:text-[36px] sm:text-[30px] text-[28px] text-white font-black tracking-wide'>BOOK </h3>
-				</div>
-				<div className='w-full flex items-center justify-end overflow-hidden object-cover'>
-					<Image className="rounded-md 2xl:ps-0 xl:ps-0 lg:ps-0 md:ps-10 sm:ps-10 ps-10" width={150} height={150} src="/Images/book-img.png" alt="image" />
-				</div>
-			</div>
+			
 
 			{/* Book section */}
 			<div className='w-full py-6 2xl:px-10 xl:px-10 lg:px-10 md:px-10 sm:px-6 px-4'>
@@ -44,10 +36,9 @@ const Hero = () => {
 									<div className=" 2xl:text-[14px] xl:text-[14px] lg:text-[14px] md:text-[14px] sm:text-[12px] text-[12px] pt-4 ">
 										<p className='text-[14px] text-black font-medium me-6'>Pages</p>
 
-										<form className="py-2 w-1/4 flex items-center ">
-											{/*<label htmlFor="number-input" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Select a number:</label>*/}
+										<form className="py-2 2xl:w-1/4 xl:w-1/4 lg:w-1/4 md:w-3/4 sm:w-3/4 w-3/4  flex items-center ">										
 											<input type="number" id="number-input" aria-describedby="helper-text-explanation" className="bg-white border border-gray-400 text-gray-900 text-sm rounded-md focus:outline-none block w-full py-1 ps-3 pe-1 me-2" placeholder="1" required />
-											<span>x1000</span>
+											<span>x&nbsp;1000</span>
 										</form>
 
 									</div>
@@ -58,21 +49,21 @@ const Hero = () => {
 										<ul className='flex items-center justify-start xl:w-3/4 3xl:3/4 2xl:w-3/4 lg:w-3/4 md:w-full sm:w-full w-full relative py-4 '>
 											<li>
 												<input defaultChecked type="radio" id="Manual" name="Tool" value="Standard/Manual" className="hidden peer" required />
-												<label htmlFor="Manual" className="cursor-pointer 2xl:px-4 xl:px-4 lg:px-4 md:px-4 sm:px-2 px-2 py-2 border-[1px] text-cyan-700 border-cyan-700 peer-checked:border-[#2E8095] peer-checked:text-white peer-checked:bg-[#2E8095] rounded-md text-center text-wrap me-4 ">
+												<label htmlFor="Manual" className="cursor-pointer 2xl:px-4 xl:px-4 lg:px-4 md:px-4 sm:px-2 px-2 py-1 border-[1px] text-cyan-700 border-cyan-700 peer-checked:border-[#2E8095] peer-checked:text-white peer-checked:bg-[#2E8095] rounded-md text-center text-wrap me-4 ">
 													<span className="text-center">Standard/Manual</span>
 												</label>
 											</li>
 
 											<li>
 												<input type="radio" id="Mendely" name="Tool" value="Mendely" className="hidden peer" required />
-												<label htmlFor="Mendely" className="cursor-pointer 2xl:px-4 xl:px-4 lg:px-4 md:px-4 sm:px-2 px-2 py-2 border-[1px] text-cyan-700 border-cyan-700 peer-checked:border-[#2E8095] peer-checked:text-white peer-checked:bg-[#2E8095] rounded-md text-center text-wrap me-4 ">
+												<label htmlFor="Mendely" className="cursor-pointer 2xl:px-4 xl:px-4 lg:px-4 md:px-4 sm:px-2 px-2 py-1 border-[1px] text-cyan-700 border-cyan-700 peer-checked:border-[#2E8095] peer-checked:text-white peer-checked:bg-[#2E8095] rounded-md text-center text-wrap me-4 ">
 													<span className="text-center">Mendely</span>
 												</label>
 											</li>
 
 											<li>
 												<input type="radio" id="Zotero" name="Tool" value="Zotero" className="hidden peer" required />
-												<label htmlFor="Zotero" className="cursor-pointer 2xl:px-4 xl:px-4 lg:px-4 md:px-4 sm:px-2 px-2 py-2 border-[1px] text-cyan-700 border-cyan-700 peer-checked:border-[#2E8095] peer-checked:text-white peer-checked:bg-[#2E8095] rounded-md text-center text-wrap me-4 ">
+												<label htmlFor="Zotero" className="cursor-pointer 2xl:px-4 xl:px-4 lg:px-4 md:px-4 sm:px-2 px-2 py-1 border-[1px] text-cyan-700 border-cyan-700 peer-checked:border-[#2E8095] peer-checked:text-white peer-checked:bg-[#2E8095] rounded-md text-center text-wrap me-4 ">
 													<span className="text-center">Zotero</span>
 												</label>
 											</li>
@@ -89,7 +80,7 @@ const Hero = () => {
 					{/* service table */}
 					<div className='2xl:col-span-1 xl:col-span-1 lg:col-span-1 md:col-span-1 sm:col-span-1 col-span-1'>
 
-						<div className='rounded-lg border-[1px] border-cyan-700'>
+						<div className='rounded-lg border-[1px] border-cyan-700 sticky block top-[20px]'>
 
 						
 								<table className="w-full text-sm text-left rtl:text-right text-black text-wrap">
@@ -144,7 +135,7 @@ const Hero = () => {
 								<table className="w-full text-sm text-left rtl:text-right text-black">
 									<tbody className='text-[12px]'>
 										<tr className="bg-white">
-											<th scope="row" className="px-10 py-2 font-medium text-black whitespace-nowrap border-e-[2px] border-[#00000059]">
+											<th scope="row" className="ps-10 py-2 font-medium text-black whitespace-nowrap border-e-[2px] border-[#00000059]">
 												Base Price
 											</th>
 											<td className="px-10 py-2">
@@ -152,7 +143,7 @@ const Hero = () => {
 											</td>
 										</tr>
 										<tr className="bg-white">
-											<th scope="row" className="px-10 py-2 font-medium text-black whitespace-nowrap border-e-[2px] border-[#00000059]">
+											<th scope="row" className="ps-10 py-2 font-medium text-black whitespace-nowrap border-e-[2px] border-[#00000059]">
 												Add-ons
 											</th>
 											<td className="px-10 py-2">
@@ -160,7 +151,7 @@ const Hero = () => {
 											</td>
 										</tr>
 										<tr className="bg-white">
-											<th scope="row" className="px-10 py-2 font-medium text-black whitespace-nowrap border-e-[2px] border-[#00000059]">
+											<th scope="row" className="ps-10 py-2 font-medium text-black whitespace-nowrap border-e-[2px] border-[#00000059]">
 												Page count
 											</th>
 											<td className="px-10 py-2">
@@ -168,7 +159,7 @@ const Hero = () => {
 											</td>
 										</tr>
 										<tr className="bg-white">
-											<th scope="row" className="px-10 py-2 font-medium text-black whitespace-nowrap border-e-[2px] border-[#00000059]">
+											<th scope="row" className="ps-10 py-2 font-medium text-black whitespace-nowrap border-e-[2px] border-[#00000059]">
 												Reference Tool
 											</th>
 											<td className="px-10 py-2">
@@ -176,7 +167,7 @@ const Hero = () => {
 											</td>
 										</tr>
 										<tr className="bg-white">
-											<th scope="row" className="px-10 pt-2 pb-6 font-medium text-black whitespace-nowrap border-e-[2px] border-[#00000059]">
+											<th scope="row" className="ps-10 pt-2 pb-6 font-medium text-black whitespace-nowrap border-e-[2px] border-[#00000059]">
 												Review
 											</th>
 											<td className="px-10 pt-2 pb-6">

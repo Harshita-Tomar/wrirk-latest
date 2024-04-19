@@ -8,8 +8,8 @@ const GetinTouch = () => {
       <div className='w-full 2xl:px-40 xl:px-40 lg:px-40 md:px-10 sm:px-6 px-4 py-14'>
         <div className='2xl:px-20 xl:px-20 lg:px-20 md:px-8 sm:px-4 px-4 2xl:py-10 xl:py-10 lg:py-10 md:py-6 sm:py-4 py-4 bg-[#064454A1] rounded-[60px]'>
 
-          <h1 className=' flex items-center justify-center text-white text-[36px] tracking-[2px] font-black leading-[50px]'>Get in Touch</h1>
-          <p className='flex items-center justify-center text-white text-[14px] 2xl:tracking-[6px] xl:tracking-[6px] lg:tracking-[6px] md:tracking-[2px] sm:tracking-[1px] tracking-[0px]'>We'd love to hear from you </p>
+          <h1 className=' flex items-center justify-center text-white 2xl:text-[36px] xl:text-[36px] lg:text-[36px] md:text-[32px] sm:text-[28px] text-[28px] tracking-[2px] font-black leading-[50px]'>Get in Touch</h1>
+          <p className='flex items-center justify-center text-white text-[14px] 2xl:tracking-[6px] xl:tracking-[6px] lg:tracking-[6px] md:tracking-[3px] sm:tracking-[3px] tracking-[3px]'>We'd love to hear from you </p>
 
           <div className='grid grid-cols-2 items-center justify-between gap-x-10 2xl:gap-y-4 xl:gap-y-4 lg:gap-y-4 md:gap-y-2 sm:gap-y-1 gap-y-1 2xl:py-5 xl:py-5 lg:py-5 md:py-3 sm:py-3 py-2 2xl:px-32 px-0'>
 

@@ -9,7 +9,7 @@ const WorkSignup = () => {
 
                 <div className=' grid items-center justify-center w-full relative pb-8 bg-white'>
                     <h2 className='2xl:text-[36px] xl:text-[36px] lg:text-[36px] md:text-[28px] sm:text-[26px] text-[26px] font-extrabold items-center justify-center flex'>Work Signup Process</h2>
-                    <p className='font-medium items-center justify-center flex text-[12px] p-0 text-center'>Lorem ipsum dolor sit amet consectetur. Velit ut bibendum placerat duis eget blandit.</p>
+                    <p className='font-medium items-center justify-center flex text-[12px] 2xl:px-0 xl:px-0 lg:px-0 md:px-2 sm:px-4 px-4 2xl:pt-2 xl:pt-2 lg:pt-2 md:pt-4 sm:pt-4 pt-4 text-center'>Lorem ipsum dolor sit amet consectetur. Velit ut bibendum placerat duis eget blandit.</p>
                 </div>
                 
 
@@ -31,7 +31,7 @@ const WorkSignup = () => {
                                     </div>
                                 </div>
                             </div>
-                            <div className=' w-full flex overflow-hidden object-cover justify-end items-center 2xl:order-2 xl:order-2 lg:order-2 md:order-1 sm:order-1 order-1'>
+                            <div className=' w-full flex  rounded-t-lg overflow-hidden object-cover justify-end items-center 2xl:order-2 xl:order-2 lg:order-2 md:order-1 sm:order-1 order-1'>
                                 <Image width={570} height={200} objectFit="cover" layout="responsive" src="/Images/work1img.png" alt="image" />
                             </div>
                         </div>

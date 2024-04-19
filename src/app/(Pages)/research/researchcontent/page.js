@@ -1,10 +1,13 @@
 import Hero from '@/app/components/ResearchComponents/ResearchCardComponents/Hero'
-import React from 'react'
+import Loading from '@/app/loading'
+import React, { Suspense } from 'react'
 
 const page = () => {
   return (
     <div>
-      <Hero />
+      <Suspense fallback = {<Loading />} >
+        <Hero />
+      </Suspense>
     </div>
   )
 }
