@@ -48,8 +48,8 @@ const ResearchCardSection = () => {
           <h1 className='font-extrabold 2xl:text-[136px] xl:text-[136px] lg:text-[130px] md:text-[100px] sm:text-[60px] text-[50px] 2xl:leading-[136.2px] xl:leading-[136.2px] lg:leading-[136.2px] md:leading-[90.93px] sm:leading-[65.93px] leading-[52.2px] pb-1 text-white tracking-wide opacity-35'>Research</h1>
         </div>
 
-        <div className='w-full grid 2xl:px-6 xl:px-6 lg:px-6 md:px-4 sm:px-2 px-0'>
-          <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 2xl:grid-cols-3 gap-x-2 sm:gap-x-2 md:gap-x-6 lg:gap-x-12 xl:gap-x-12 2xl:gap-x-12 gap-y-7 sm:gap-y-8 md:gap-y-10 lg:gap-y-14 xl:gap-y-14 2xl:gap-y-14 justify-center items-center py-10 sm:py-10 md:py-20 lg:py-20 xl:py-20 2xl:py-20'>
+        <div className='w-full grid 2xl:px-6 xl:px-6 lg:px-6 md:px-6 sm:px-6 px-0'>
+          <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 2xl:grid-cols-3 gap-x-2 sm:gap-x-8 md:gap-x-6 lg:gap-x-12 xl:gap-x-12 2xl:gap-x-12 gap-y-10 sm:gap-y-10 md:gap-y-10 lg:gap-y-14 xl:gap-y-14 2xl:gap-y-14 justify-center items-center py-10 sm:py-10 md:py-20 lg:py-20 xl:py-20 2xl:py-20'>
 
 
 

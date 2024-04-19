@@ -9,7 +9,7 @@ const PaperImplementationTab = () => {
 			<div className='w-full py-2 '>
 
 			<div className="mb-4 ">
-                    <ul className="overflow-x-auto flex 2xl:text-[14px] xl:text-[14px] lg:text-[14px] md:text-[14px] sm:text-[12px] text-[12px] font-bold text-center" id="default-tab" data-tabs-toggle="#default-tab-content" role="tablist">
+                    <ul className="whitespace-nowrap overflow-x-auto flex 2xl:text-[14px] xl:text-[14px] lg:text-[14px] md:text-[14px] sm:text-[12px] text-[12px] font-bold text-center" id="default-tab" data-tabs-toggle="#default-tab-content" role="tablist">
 
                         <li className="me-2" role="presentation">
                             <button className="inline-block p-2 border-b-2 border-[#D9D9D9] rounded-t-lg text-sky-950 hover:text-[#064454] uppercase focus:text-[#064454] focus:border-[#064454]" id="implementation-tab" data-tabs-target="#implementation" type="button" role="tab" aria-controls="implementation" aria-selected="false"> Implementation/Coding Tool</button>

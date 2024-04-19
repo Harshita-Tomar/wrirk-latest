@@ -42,7 +42,6 @@ const Hero = () => {
 					<div className='2xl:col-span-1 xl:col-span-1 lg:col-span-1 md:col-span-1 sm:col-span-1 col-span-1'>
 						<div className='rounded-lg border-[1px] border-cyan-700 sticky block top-[20px]'>
 
-
 							<table className="w-full text-sm text-left rtl:text-right text-black text-wrap">
 								<thead className="text-[14px] text-black uppercase">
 									<tr className='text-center'>
@@ -52,7 +51,6 @@ const Hero = () => {
 										<th scope="col" className="px-10 py-2">
 											Basic
 										</th>
-
 									</tr>
 								</thead>
 								<tbody className='text-[12px]'>

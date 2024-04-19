@@ -49,26 +49,28 @@ const Hero = () => {
 
             {/* second div  */}
             <div className="hidden sm:block bg-gray-200">
-                <div className="flex justify-center items-center md:justify-end">
-                    <div className="bg-cyan-800 rounded-bl-full text-white lg:p-4 md:p-4  max-w-md relative md:w-[30rem] md:h-[30rem] ">
+                <div className="flex items-center justify-end">
+                    
+                    <div className="bg-cyan-800 rounded-bl-full text-white lg:p-4 md:p-4 relative md:w-[36rem] md:h-[25rem] ">
 
-                        <div className=" text-white p-1 relative z-[1] w-full flex overflow-hidden object-cover md:mt-4 md:mr-4 md:p-4">
+                        <div className=" text-white right-[10px] absolute z-[1] w-full flex overflow-hidden object-cover p-1 justify-end">
                             <Image className="rounded-0" width={400} height={400} src="/Images/findresearch.png" alt="image" />
+
+                            {/* use animation button  */}
                             <div class="flex flex-col mt-[17rem]">
-                                <div class="bg-blue-500 text-white p-4 mb-1">Top </div>
-                                <div class="bg-green-500 text-white p-4">Div</div>
+                                <div class="bg-white p-4 mb-1 rounded">
+                                <FaArrowRight className="text-[22px] font-thin text-sky-950" />
+                                     </div>
+                                <div class="bg-sky-950 text-white p-4 rounded">
+                                <FaArrowLeft className="text-[22px] font-thin text-white" />
+                                </div>
                             </div>
                         </div>
-                        <div className='absolute right-[300px]  bottom-[-32px] 2xl:flex xl:flex lg:flex md:hidden sm:hidden hidden overflow-hidden object-cover justify-end '>
+                        <div className='absolute right-[363px]  bottom-[-127px] 2xl:flex xl:flex lg:flex md:hidden sm:hidden hidden overflow-hidden object-cover justify-end '>
                             <Image className="rounded-0 " width={200} height={200} src="/Images/dot-img.png" alt="image" objectFit="cover" />
-
                         </div>
-                        <div className='absolute left-[285px]  bottom-[-22px] 2xl:flex xl:flex lg:flex md:hidden sm:hidden hidden overflow-hidden object-cover justify-end '>
-                            <Image className="rounded-0 " width={100} height={100} src="/Images/dot-circle.png" alt="image" objectFit="cover" />
-                            {/* <div class="flex flex-col">
-                                <div class="bg-blue-500 text-white p-4 mb-1">Top </div>
-                                <div class="bg-green-500 text-white p-4">Div</div>
-                            </div> */}
+                        <div className='absolute left-[392px] bottom-[-123px] 2xl:flex xl:flex lg:flex md:hidden sm:hidden hidden overflow-hidden object-cover justify-end '>
+                            <Image className="rounded-0 " width={100} height={100} src="/Images/dot-circle.png" alt="image" objectFit="cover" />                        
                         </div>
                     </div>
                 </div>

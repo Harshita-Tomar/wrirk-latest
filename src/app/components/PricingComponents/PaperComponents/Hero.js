@@ -13,9 +13,7 @@ const Hero = () => {
 		setPriceTable(!priceTable);
 	}
 	return (
-		<div>
-
-			
+		<div>			
 
 			<div className='w-full py-6 2xl:px-10 xl:px-10 lg:px-10 md:px-10 sm:px-6 px-4'>
 
